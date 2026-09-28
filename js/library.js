@@ -13,48 +13,15 @@
 
   var BOOKS = [
     {
-      slug: "moby-dick",
-      title: "Moby-Dick",
-      author: "Herman Melville",
-      year: 1851,
-      src: "books/moby-dick.md",
-      tone: "ink",
-      chapters: 3,
-      words: 9342,
-      blurb: "A whaling voyage, a pale deck, and a captain who has read too much about whales."
-    },
-    {
-      slug: "wonderland",
-      title: "Alice's Adventures in Wonderland",
-      author: "Lewis Carroll",
-      year: 1865,
-      src: "books/wonderland.md",
+      slug: "forbidden-flower",
+      title: "Forbidden Flower",
+      author: "Anonymous",
+      year: 2026,
+      src: "books/forbidden-flower.md",
       tone: "plum",
-      chapters: 6,
-      words: 12024,
-      blurb: "Six chapters of falling down holes, taken at the pace of a curious child."
-    },
-    {
-      slug: "walden",
-      title: "Walden",
-      author: "Henry David Thoreau",
-      year: 1854,
-      src: "books/walden.md",
-      tone: "moss",
-      chapters: 2,
-      words: 29526,
-      blurb: "Two years in a hut by a pond, written down plainly on purpose."
-    },
-    {
-      slug: "frankenstein",
-      title: "Frankenstein",
-      author: "Mary Shelley",
-      year: 1818,
-      src: "books/frankenstein.md",
-      tone: "slate",
-      chapters: 4,
-      words: 11988,
-      blurb: "Four letters from the Arctic, and the thing that followed the ship home."
+      chapters: 114,
+      words: 685000,
+      blurb: "A story of love, dreams, and forbidden desires spanning ten chapters across Guangzhou's seasons."
     }
   ];
 

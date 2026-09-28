@@ -3,35 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Inkwell: four books, read slowly</title>
-<meta name="description" content="A small shelf of four public domain books with a Markdown reader that keeps your place, your highlights, and your reading preferences on your own machine.">
-<link rel="canonical" href="https://inknikk.github.io/p-library/">
-<meta name="color-scheme" content="dark light">
-<meta name="theme-color" content="#0b0d10">
-<meta name="author" content="Inkwell">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Inkwell">
-<meta property="og:title" content="Inkwell: four books, read slowly">
-<meta property="og:description" content="Four public domain books kept as plain Markdown, read in the browser. No account, no tracking, and your place is stored on your own machine.">
-<meta property="og:locale" content="en">
-<meta property="og:url" content="https://inknikk.github.io/p-library/">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Inkwell: four books, read slowly">
-<meta name="twitter:description" content="Four public domain books kept as plain Markdown, read in the browser. No account, no tracking, and your place is stored on your own machine.">
-<script type="application/ld+json">
+<title>Inkwell: Forbidden Flower</title>
+  <meta name="description" content="Forbidden Flower — a story of love, dreams, and forbidden desires. Read in the browser, no account, no tracking, your place stored on your own machine.">
+  <link rel="canonical" href="https://inknikk.github.io/p-library/">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="author" content="Inkwell">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Inkwell">
+  <meta property="og:title" content="Inkwell: Forbidden Flower">
+  <meta property="og:description" content="A story of love, dreams, and forbidden desires spanning ten chapters across Guangzhou's seasons. Read in the browser, no account, no tracking.">
+  <meta property="og:locale" content="en">
+  <meta property="og:url" content="https://inknikk.github.io/p-library/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Inkwell: Forbidden Flower">
+  <meta name="twitter:description" content="A story of love, dreams, and forbidden desires. Read in the browser, no account, no tracking.">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Inkwell",
-  "description": "A small shelf of four public domain books with a Markdown reader that keeps your place, your highlights, and your reading preferences on your own machine.",
+  "description": "Forbidden Flower — a story of love, dreams, and forbidden desires. Read in the browser, no account, no tracking.",
   "inLanguage": "en",
   "url": "https://inknikk.github.io/p-library/",
   "isAccessibleForFree": true,
   "hasPart": [
-    { "@type": "Book", "name": "Moby-Dick", "author": { "@type": "Person", "name": "Herman Melville" }, "bookEdition": "opening chapters" },
-    { "@type": "Book", "name": "Alice's Adventures in Wonderland", "author": { "@type": "Person", "name": "Lewis Carroll" }, "bookEdition": "opening chapters" },
-    { "@type": "Book", "name": "Walden", "author": { "@type": "Person", "name": "Henry David Thoreau" }, "bookEdition": "opening chapters" },
-    { "@type": "Book", "name": "Frankenstein", "author": { "@type": "Person", "name": "Mary Shelley" }, "bookEdition": "opening chapters" }
+    { "@type": "Book", "name": "Forbidden Flower", "author": { "@type": "Person", "name": "Anonymous" }, "bookEdition": "complete novel" }
   ]
 }
 </script>
@@ -72,9 +69,9 @@
   </button>
   <a class="brand" href="#"><span class="brand-mark" aria-hidden="true"></span>Inkwell</a>
   <span class="appbar-spacer"></span>
-  <div class="appbar-tools">
-    <span class="label" id="countLabel">4 titles</span>
-    <button type="button" class="btn btn-ghost btn-sm" id="aboutOpen">About &amp; keys</button>
+<div class="appbar-tools">
+    <span class="label" id="countLabel">1 title</span>
+    <button type="button" class="btn btn-ghost btn-sm" id="aboutOpen">About & keys</button>
   </div>
 </header>
 
@@ -86,13 +83,13 @@
 
   <div class="shelf-scroll" id="shelfScroll" tabindex="-1">
   <section class="shelf" aria-labelledby="shelfTitle">
-    <div class="shelf-head">
+<div class="shelf-head">
       <div>
-        <h1 class="shelf-title" id="shelfTitle">Four books,<br>read slowly.</h1>
-        <p class="shelf-lede">Public domain texts kept as plain Markdown. Your place, your highlights and
-          your reading preferences stay in this browser and never leave it.</p>
+        <h1 class="shelf-title" id="shelfTitle">One book,<br>read slowly.</h1>
+        <p class="shelf-lede">A story kept as plain Markdown. Your place, your highlights and your reading preferences stay in this browser and never leave it.</p>
       </div>
       <p class="label">Plain text, no accounts, no tracking</p>
+    </div>
     </div>
 
     <button type="button" class="resume" id="resumeCard" hidden>
@@ -117,8 +114,7 @@
   </div>
 
   <footer class="foot">
-    <p>Texts from Project Gutenberg, trimmed to their opening chapters. Markdown files live in
-      <code>books/</code>; add a row to <code>js/library.js</code> and a new title appears on the shelf.</p>
+    <p>Markdown files live in <code>books/</code>; add a row to <code>js/library.js</code> and a new title appears on the shelf.</p>
   </footer>
 </main>
 
@@ -184,6 +180,12 @@
     <!-- type + background -->
     <div class="dock-pad" id="prefsPanel" hidden>
       <div class="prefs">
+        <div class="prefs-head">
+          <span class="label">Type & Background</span>
+          <button type="button" class="icon-btn" id="prefsClose" aria-label="Close type and background settings">
+            <svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg>
+          </button>
+        </div>
         <div class="prefs-group">
           <span class="label">Background</span>
           <div class="chips" id="bgChips" role="group" aria-label="Reading background">
@@ -341,7 +343,7 @@
 <dialog class="prefs" id="aboutDialog" aria-labelledby="aboutTitle">
   <h2 id="aboutTitle" class="prefs-title">About this shelf</h2>
   <p class="prefs-lede">
-    Four public domain books, stored as Markdown, parsed in your browser. There is no account, no
+    One story, stored as Markdown, parsed in your browser. There is no account, no
     server and no analytics. Reading position, highlights and preferences are kept in
     <code>localStorage</code> on this device only, and clearing site data removes them for good.
   </p>

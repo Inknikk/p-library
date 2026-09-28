@@ -833,6 +833,7 @@
       dom.findNext.addEventListener("click", function () { stepFind(1); });
       dom.findPrev.addEventListener("click", function () { stepFind(-1); });
       dom.findClose.addEventListener("click", function () { clearFind(); setPanel(null); });
+      dom.prefsClose.addEventListener("click", function () { setPanel(null); });
 
       dom.noteExport.addEventListener("click", exportNotes);
       dom.noteClear.addEventListener("click", function () {

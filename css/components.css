@@ -459,6 +459,16 @@ mark.rd-mark:hover { background: var(--mark); }
   color: var(--fg-muted);
   font-size: var(--fs-200);
 }
+.prefs-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: var(--rule-w) solid var(--border-soft);
+}
 .prefs-group { display: grid; gap: var(--space-3); }
 .prefs-row {
   display: flex;
