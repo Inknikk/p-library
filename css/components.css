@@ -388,8 +388,6 @@
   border: var(--rule-w) solid var(--border);
   box-shadow: var(--shadow-1);
   min-height: var(--tap);
-  position: relative;
-  z-index: var(--z-sticky);
 }
 
 .resume-body {
@@ -440,10 +438,9 @@
   aspect-ratio: 2 / 3;
 }
 
-/* Ensure shelf grid is above resume card in stacking context */
+/* Ensure shelf grid is clickable */
 #shelfGrid {
   position: relative;
-  z-index: var(--z-base);
 }
 
 /* ==================================================================== *
