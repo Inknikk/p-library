@@ -8,6 +8,14 @@ requests the page makes are the ones that load it, and one same-origin fetch whe
 you open a book that has not been bundled inline, and there is no analytics, no CDN,
 no font service and no telemetry.
 
+## Deploying
+
+An empty `.nojekyll` sits in the root. Without it GitHub Pages runs Jekyll, which
+treats `books/*.md` as a source format and refuses to publish it, so every book
+returns 404 and the reader silently falls back to the 139 kB inline bundle. The
+file turns Jekyll off and Pages serves the directory as it is, which is what a
+site with no build step needs. Set Pages to "Deploy from a branch", `main`, `/`.
+
 ## Try it
 
 Clone, then open the file. That is the whole install.

@@ -28,6 +28,7 @@ inkwell/
 +-- README.md              # human overview + quick start
 +-- CONTRIBUTING.md        # how to contribute
 +-- LICENSE
++-- .nojekyll            # disables Jekyll on GitHub Pages, required or books/*.md 404
 +-- .gitignore
 +-- index.html             # semantic page skeleton
 +-- css/                   # tokens, base, components, sections, motion
