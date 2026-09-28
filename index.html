@@ -92,16 +92,16 @@
     </div>
     </div>
 
-    <button type="button" class="resume" id="resumeCard" hidden>
-      <span class="cover" id="resumeCover" data-tone="ink" aria-hidden="true">
-        <span class="cover-title" id="resumeCoverTitle"></span>
-        <span class="cover-author" id="resumeCoverAuthor"></span>
+    <button type="button" class="resume" id="resumeCard">
+      <span class="cover" id="resumeCover" data-tone="plum" aria-hidden="true">
+        <span class="cover-title" id="resumeCoverTitle">Forbidden Flower</span>
+        <span class="cover-author" id="resumeCoverAuthor">Anonymous</span>
       </span>
       <span class="resume-body">
         <span class="label">Continue reading</span>
-        <span class="resume-title" id="resumeTitle"></span>
-        <span class="resume-meta" id="resumeMeta"></span>
-        <span class="resume-bar" id="resumeBar"><span></span></span>
+        <span class="resume-title" id="resumeTitle">Forbidden Flower</span>
+        <span class="resume-meta" id="resumeMeta"><span>Anonymous</span><span>0% read</span></span>
+        <span class="resume-bar" id="resumeBar"><span style="width: 0%;"></span></span>
       </span>
       <span class="resume-actions">
         <span class="shelf-pct" id="resumePct">0%</span>
@@ -109,7 +109,21 @@
       </span>
     </button>
 
-    <div class="grid" id="shelfGrid"></div>
+    <div class="grid" id="shelfGrid">
+      <button type="button" class="card" data-slug="forbidden-flower">
+        <span class="cover" data-tone="plum" aria-hidden="true">
+          <span class="cover-title">Forbidden Flower</span>
+          <span class="cover-author">Anonymous</span>
+        </span>
+        <span class="card-body">
+          <span class="card-title">Forbidden Flower</span>
+          <span class="card-author">Anonymous</span>
+        </span>
+        <span class="card-foot">
+          <span>685,000 words</span>
+        </span>
+      </button>
+    </div>
   </section>
   </div>
 
@@ -305,7 +319,14 @@
       <svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg>
     </button>
   </div>
-  <div class="drawer-body" id="shelfList"></div>
+  <div class="drawer-body" id="shelfList">
+      <button type="button" class="shelf-row" data-slug="forbidden-flower">
+        <span class="shelf-thumb" data-tone="plum"></span>
+        <span><span class="shelf-name">Forbidden Flower</span>
+        <span class="shelf-meta">Anonymous</span></span>
+        <span class="shelf-pct">—</span>
+      </button>
+    </div>
   <div class="drawer-body" id="toolsWrap" hidden>
     <p class="label drawer-label">Tools</p>
     <div class="tool-list">
