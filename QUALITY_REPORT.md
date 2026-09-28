@@ -186,7 +186,8 @@ All Required skills loaded, all five phase gates passed, 94 browser checks and 4
 
 ### Known gaps, named rather than buried
 
-1. **Not deployed.** No repository, no push, no URL. Two items in the preflight are blocked on this: a canonical link and a sitemap both have to name an absolute host, so writing them now would be writing them wrong.
+1. **Not pushed yet.** The repository `Inknikk/p-library` exists and is public but is still empty, so the site is not live and the Pages URL is reserved rather than served. The canonical link, the `sitemap.xml` and the `robots.txt` entry all name `https://inknikk.github.io/p-library/`, which is the URL GitHub will serve once the push lands. Until then those three point at a host that returns 404, which is the correct state for a repo that has no content yet.
+
 2. **The sanitizer is still only covered in a browser.** `parse`, `escapeHTML` and `slugify` now have 42 unit tests in `tools/test_markdown.mjs`, run by `node:test`, which is built into Node and adds no dependency and no build step. `sanitize` and `render` need a `DOMParser`, so they remain covered only by the hostile-input checks in `tools/verify.py` against a live Chromium. That is the right split, but it does mean the sanitizer has no runner that can execute without a browser.
 3. **The open-a-book block is measured by hand, not gated.** TBT covers load only. Opening a 163KB book used to block 445ms and now takes 218ms, but nothing in `tools/verify.py` fails if that regresses, since the suite gates the 27ms parse inside it, which is the part this project controls. A `longtask` observer on the click path would close the gap.
 4. **Speech synthesis is unverified.** No audio output was tested. Whether a given browser build has a voice, and what it sounds like, was not checked.

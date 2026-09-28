@@ -147,11 +147,12 @@ Measured by Playwright, not Lighthouse. Lighthouse is not installed in this envi
 
 - [x] Title 33 characters, unique
 - [x] Description 154 characters
-- [x] Open Graph: type, site_name, title, description, locale
+- [x] Open Graph: type, site_name, title, description, locale, url
 - [x] Twitter Card: `summary` with title and description
-- [x] JSON-LD `WebSite` with a `hasPart` list of the four `Book` entries; parses clean
-- [x] Canonical URL: **blocked on the repository name.** This repo has to work from `file://` and from a Pages URL that does not exist yet. A canonical tag would be a guess, so it is omitted rather than written wrong. Add it with the deploy
-- [x] `robots.txt` present. No `sitemap.xml`, same reason as canonical
+- [x] JSON-LD `WebSite` with a `url` and a `hasPart` list of the four `Book` entries; parses clean
+- [x] Canonical URL: `https://inknikk.github.io/p-library/`, the Pages URL for `Inknikk/p-library`. The absolute host is known, so the tag is written rather than guessed. A `file://` reader ignores it
+- [x] `robots.txt` present, allowing everything. The app is one page with a hash route, so there is no URL tree to restrict
+- [x] `sitemap.xml` present, naming the same host, and referenced from `robots.txt`
 - [x] Semantic HTML
 
 ## Cross-Device Verification

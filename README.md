@@ -13,8 +13,8 @@ no font service and no telemetry.
 Clone, then open the file. That is the whole install.
 
 ```bash
-git clone <your-remote> inkwell
-cd inkwell
+git clone https://github.com/Inknikk/p-library.git
+cd p-library
 python3 -m http.server 8000
 ```
 
