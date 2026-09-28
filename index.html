@@ -3,32 +3,36 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>p library: Forbidden Flower</title>
-  <meta name="description" content="Forbidden Flower — a story of love, dreams, and forbidden desires. Read in the browser, no account, no tracking, your place stored on your own machine.">
+<title>p library: Five books</title>
+  <meta name="description" content="Five stories — Forbidden Flower, Frankenstein, Moby-Dick, Walden, Alice's Adventures in Wonderland. Read in the browser, no account, no tracking, your place stored on your own machine.">
   <link rel="canonical" href="https://inknikk.github.io/p-library/">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#0b0d10">
   <meta name="author" content="p library">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="p library">
-  <meta property="og:title" content="p library: Forbidden Flower">
-  <meta property="og:description" content="A story of love, dreams, and forbidden desires spanning ten chapters across Guangzhou's seasons. Read in the browser, no account, no tracking.">
+  <meta property="og:title" content="p library: Five books">
+  <meta property="og:description" content="Five stories including Forbidden Flower and four classics. Read in the browser, no account, no tracking.">
   <meta property="og:locale" content="en">
   <meta property="og:url" content="https://inknikk.github.io/p-library/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="p library: Forbidden Flower">
-  <meta name="twitter:description" content="A story of love, dreams, and forbidden desires. Read in the browser, no account, no tracking.">
+  <meta name="twitter:title" content="p library: Five books">
+  <meta name="twitter:description" content="Five stories. Read in the browser, no account, no tracking.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "p library",
-  "description": "Forbidden Flower — a story of love, dreams, and forbidden desires. Read in the browser, no account, no tracking.",
+  "description": "Five stories — Forbidden Flower, Frankenstein, Moby-Dick, Walden, Alice's Adventures in Wonderland. Read in the browser, no account, no tracking.",
   "inLanguage": "en",
   "url": "https://inknikk.github.io/p-library/",
   "isAccessibleForFree": true,
   "hasPart": [
-    { "@type": "Book", "name": "Forbidden Flower", "author": { "@type": "Person", "name": "Anonymous" }, "bookEdition": "complete novel" }
+    { "@type": "Book", "name": "Forbidden Flower", "author": { "@type": "Person", "name": "Anonymous" }, "bookEdition": "complete novel" },
+    { "@type": "Book", "name": "Frankenstein", "author": { "@type": "Person", "name": "Mary Shelley" }, "bookEdition": "opening chapters" },
+    { "@type": "Book", "name": "Moby-Dick", "author": { "@type": "Person", "name": "Herman Melville" }, "bookEdition": "opening chapters" },
+    { "@type": "Book", "name": "Walden", "author": { "@type": "Person", "name": "Henry David Thoreau" }, "bookEdition": "opening chapters" },
+    { "@type": "Book", "name": "Alice's Adventures in Wonderland", "author": { "@type": "Person", "name": "Lewis Carroll" }, "bookEdition": "opening chapters" }
   ]
 }
 </script>
@@ -70,7 +74,7 @@
   <a class="brand" href="#"><span class="brand-mark" aria-hidden="true"></span>p library</a>
   <span class="appbar-spacer"></span>
 <div class="appbar-tools">
-    <span class="label" id="countLabel">1 title</span>
+    <span class="label" id="countLabel">5 titles</span>
     <button type="button" class="btn btn-ghost btn-sm" id="aboutOpen">About & keys</button>
   </div>
 </header>
@@ -85,8 +89,8 @@
   <section class="shelf" aria-labelledby="shelfTitle">
 <div class="shelf-head">
       <div>
-        <h1 class="shelf-title" id="shelfTitle">One book,<br>read slowly.</h1>
-        <p class="shelf-lede">A story kept as plain Markdown. Your place, your highlights and your reading preferences stay in this browser and never leave it.</p>
+        <h1 class="shelf-title" id="shelfTitle">Five books,<br>read slowly.</h1>
+        <p class="shelf-lede">Stories kept as plain Markdown. Your place, your highlights and your reading preferences stay in this browser and never leave it.</p>
       </div>
       <p class="label">Plain text, no accounts, no tracking</p>
     </div>
@@ -121,6 +125,58 @@
         </span>
         <span class="card-foot">
           <span>685,000 words</span>
+        </span>
+      </button>
+      <button type="button" class="card" data-slug="frankenstein">
+        <span class="cover" data-tone="slate" aria-hidden="true">
+          <span class="cover-title">Frankenstein</span>
+          <span class="cover-author">Mary Shelley</span>
+        </span>
+        <span class="card-body">
+          <span class="card-title">Frankenstein</span>
+          <span class="card-author">Mary Shelley</span>
+        </span>
+        <span class="card-foot">
+          <span>11,988 words</span>
+        </span>
+      </button>
+      <button type="button" class="card" data-slug="moby-dick">
+        <span class="cover" data-tone="ink" aria-hidden="true">
+          <span class="cover-title">Moby-Dick</span>
+          <span class="cover-author">Herman Melville</span>
+        </span>
+        <span class="card-body">
+          <span class="card-title">Moby-Dick</span>
+          <span class="card-author">Herman Melville</span>
+        </span>
+        <span class="card-foot">
+          <span>9,342 words</span>
+        </span>
+      </button>
+      <button type="button" class="card" data-slug="walden">
+        <span class="cover" data-tone="moss" aria-hidden="true">
+          <span class="cover-title">Walden</span>
+          <span class="cover-author">Henry David Thoreau</span>
+        </span>
+        <span class="card-body">
+          <span class="card-title">Walden</span>
+          <span class="card-author">Henry David Thoreau</span>
+        </span>
+        <span class="card-foot">
+          <span>29,526 words</span>
+        </span>
+      </button>
+      <button type="button" class="card" data-slug="wonderland">
+        <span class="cover" data-tone="plum" aria-hidden="true">
+          <span class="cover-title">Alice's Adventures in Wonderland</span>
+          <span class="cover-author">Lewis Carroll</span>
+        </span>
+        <span class="card-body">
+          <span class="card-title">Alice's Adventures in Wonderland</span>
+          <span class="card-author">Lewis Carroll</span>
+        </span>
+        <span class="card-foot">
+          <span>12,024 words</span>
         </span>
       </button>
     </div>
@@ -319,12 +375,36 @@
       <svg class="ico" aria-hidden="true"><use href="#i-close"></use></svg>
     </button>
   </div>
-  <div class="drawer-body" id="shelfList">
+<div class="drawer-body" id="shelfList">
       <button type="button" class="shelf-row" data-slug="forbidden-flower">
         <span class="shelf-thumb" data-tone="plum"></span>
         <span><span class="shelf-name">Forbidden Flower</span>
         <span class="shelf-meta">Anonymous</span></span>
-        <span class="shelf-pct">—</span>
+        <span class="shelf-pct">-</span>
+      </button>
+      <button type="button" class="shelf-row" data-slug="frankenstein">
+        <span class="shelf-thumb" data-tone="slate"></span>
+        <span><span class="shelf-name">Frankenstein</span>
+        <span class="shelf-meta">Mary Shelley</span></span>
+        <span class="shelf-pct">-</span>
+      </button>
+      <button type="button" class="shelf-row" data-slug="moby-dick">
+        <span class="shelf-thumb" data-tone="ink"></span>
+        <span><span class="shelf-name">Moby-Dick</span>
+        <span class="shelf-meta">Herman Melville</span></span>
+        <span class="shelf-pct">-</span>
+      </button>
+      <button type="button" class="shelf-row" data-slug="walden">
+        <span class="shelf-thumb" data-tone="moss"></span>
+        <span><span class="shelf-name">Walden</span>
+        <span class="shelf-meta">Henry David Thoreau</span></span>
+        <span class="shelf-pct">-</span>
+      </button>
+      <button type="button" class="shelf-row" data-slug="wonderland">
+        <span class="shelf-thumb" data-tone="plum"></span>
+        <span><span class="shelf-name">Alice's Adventures in Wonderland</span>
+        <span class="shelf-meta">Lewis Carroll</span></span>
+        <span class="shelf-pct">-</span>
       </button>
     </div>
   <div class="drawer-body" id="toolsWrap" hidden>
@@ -364,7 +444,7 @@
 <dialog class="prefs" id="aboutDialog" aria-labelledby="aboutTitle">
   <h2 id="aboutTitle" class="prefs-title">About this shelf</h2>
   <p class="prefs-lede">
-    One story, stored as Markdown, parsed in your browser. There is no account, no
+    Five stories, stored as Markdown, parsed in your browser. There is no account, no
     server and no analytics. Reading position, highlights and preferences are kept in
     <code>localStorage</code> on this device only, and clearing site data removes them for good.
   </p>
