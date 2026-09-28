@@ -43,7 +43,10 @@
       var s = bookProgress(b.slug);
       if (s.opened && (!best || s.opened > best.state.opened)) best = { book: b, state: s };
     });
-    if (!best) return null;
+    if (!best) {
+      // No reading history yet - return first book as default
+      return { book: BOOKS[0], state: { percent: 0, opened: 0 } };
+    }
     if (best.state.percent > 0.98) best.state.percent = 0;
     return best;
   }
@@ -75,24 +78,22 @@
     }).join("");
 
     var recent = mostRecent();
-    if (recent) {
-      var r = recent.state;
-      var pct2 = Math.round((r.percent || 0) * 100);
-      dom.resumeCard.hidden = false;
-      dom.resumeTitle.textContent = recent.book.title;
-      var rCover = dom.resumeCover || null;
-      if (rCover) {
-        rCover.setAttribute("data-tone", recent.book.tone || "ink");
-        var rt = dom.resumeCoverTitle, ra = dom.resumeCoverAuthor;
-        if (rt) rt.textContent = recent.book.title;
-        if (ra) ra.textContent = recent.book.author;
-      }
-      dom.resumeMeta.innerHTML = '<span>' + Inkwell.markdown.escapeHTML(recent.book.author) + "</span>" +
-        "<span>" + pct2 + "% read</span>";
-      dom.resumePct.textContent = pct2 + "%";
+    var r = recent.state;
+    var pct2 = Math.round((r.percent || 0) * 100);
+    dom.resumeCard.hidden = false;
+    dom.resumeTitle.textContent = recent.book.title;
+    var rCover = dom.resumeCover || null;
+    if (rCover) {
+      rCover.setAttribute("data-tone", recent.book.tone || "ink");
+      var rt = dom.resumeCoverTitle, ra = dom.resumeCoverAuthor;
+      if (rt) rt.textContent = recent.book.title;
+      if (ra) ra.textContent = recent.book.author;
+    }
+    dom.resumeMeta.innerHTML = '<span>' + Inkwell.markdown.escapeHTML(recent.book.author) + "</span>" +
+      "<span>" + pct2 + "% read</span>";
+    dom.resumePct.textContent = pct2 + "%";
+    if (dom.resumeBar.firstElementChild) {
       dom.resumeBar.firstElementChild.style.width = pct2 + "%";
-    } else {
-      dom.resumeCard.hidden = true;
     }
 
     dom.countLabel.textContent = BOOKS.length + (BOOKS.length === 1 ? " title" : " titles");
@@ -144,7 +145,10 @@
       dom.drawer.setAttribute("data-open", "false");
       dom.scrim.setAttribute("data-open", "false");
     });
-    dom.resumeCard.addEventListener("click", function () { reader.open(mostRecent().book.slug); });
+    dom.resumeCard.addEventListener("click", function () {
+      var recent = mostRecent();
+      if (recent && recent.book) reader.open(recent.book.slug);
+    });
 
     global.INKWELL_onClose = function () { renderShelf(); };
     global.INKWELL_onProgress = function () { renderShelf(); };
