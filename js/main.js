@@ -138,6 +138,10 @@
       var card = e.target.closest(".card");
       if (card) reader.open(card.getAttribute("data-slug"));
     });
+    dom.shelfGrid.addEventListener("touchend", function (e) {
+      var card = e.target.closest(".card");
+      if (card) { e.preventDefault(); reader.open(card.getAttribute("data-slug")); }
+    }, { passive: false });
     dom.shelfList.addEventListener("click", function (e) {
       var row = e.target.closest(".shelf-row");
       if (!row) return;
@@ -145,10 +149,23 @@
       dom.drawer.setAttribute("data-open", "false");
       dom.scrim.setAttribute("data-open", "false");
     });
+    dom.shelfList.addEventListener("touchend", function (e) {
+      var row = e.target.closest(".shelf-row");
+      if (!row) return;
+      e.preventDefault();
+      reader.open(row.getAttribute("data-slug"));
+      dom.drawer.setAttribute("data-open", "false");
+      dom.scrim.setAttribute("data-open", "false");
+    }, { passive: false });
     dom.resumeCard.addEventListener("click", function () {
       var recent = mostRecent();
       if (recent && recent.book) reader.open(recent.book.slug);
     });
+    dom.resumeCard.addEventListener("touchend", function (e) {
+      e.preventDefault();
+      var recent = mostRecent();
+      if (recent && recent.book) reader.open(recent.book.slug);
+    }, { passive: false });
 
     global.INKWELL_onClose = function () { renderShelf(); };
     global.INKWELL_onProgress = function () { renderShelf(); };
