@@ -28,7 +28,7 @@
       "shelfList", "tocWrap", "tocList", "toolsWrap", "drawer", "drawerClose", "scrim",
       "menuBtn", "readerMenu", "reader",
       "readerBar", "readerTitle", "readerAuthor", "dock", "findBar", "findInput",
-      "findCount", "findPrev", "findNext", "findClose", "prefsPanel", "bgChips",
+      "findCount", "findPrev", "findNext", "findClose", "prefsPanel", "prefsClose", "bgChips",
       "fontSeg", "sizeSeg", "leadSeg", "measureSeg", "notesPanel", "noteList",
       "noteExport", "noteClear", "speechPanel", "speechPlay", "speechStop",
       "speechBack", "speechFwd", "speechRate", "speechTime", "speechTrack",
