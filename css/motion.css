@@ -1,0 +1,134 @@
+/* motion.css - every transition in the build is declared here or in the
+ * component it belongs to, always with its properties listed. There is no
+ * `transition: all` anywhere in this project.
+ *
+ * Reduced motion is a hard requirement, not a nice to have: the interfaces
+ * skill makes it non negotiable above MOTION_INTENSITY 3 and this build
+ * sits at 4. */
+
+/* ---------------------------------------------------------------- *
+ * ENTRANCES
+ * Only for the first paint of the shelf. A reading surface never has
+ * an entrance animation: text that fades in is text you wait for.
+ * ---------------------------------------------------------------- */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(var(--lift-4)); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.shelf-head,
+.resume,
+.grid .card {
+  animation: rise var(--dur-slow) var(--ease-out) backwards;
+}
+.shelf-head { animation-delay: 0ms; }
+.resume { animation-delay: 40ms; }
+.grid .card:nth-child(1) { animation-delay: 60ms; }
+.grid .card:nth-child(2) { animation-delay: 100ms; }
+.grid .card:nth-child(3) { animation-delay: 140ms; }
+.grid .card:nth-child(4) { animation-delay: 180ms; }
+.grid .card:nth-child(n + 5) { animation-delay: 220ms; }
+
+/* ---------------------------------------------------------------- *
+ * PRESS
+ * Scale 0.96, never below 0.95. Applied in components.css.
+ * ---------------------------------------------------------------- */
+
+/* ---------------------------------------------------------------- *
+ * ICON CROSS-FADE
+ * Both icons live in the DOM, the outgoing one is absolutely placed, so
+ * the swap has no layout shift.
+ * ---------------------------------------------------------------- */
+.icon-swap {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: var(--icon-size-sm);
+  height: var(--icon-size-sm);
+}
+.icon-swap .ico {
+  grid-area: 1 / 1;
+  transition: opacity var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.icon-swap .ico[data-off] { opacity: 0; transform: scale(0.9); }
+[aria-pressed="true"] .icon-swap .ico[data-on] { opacity: 0; transform: scale(0.9); }
+[aria-pressed="true"] .icon-swap .ico[data-off] { opacity: 1; transform: scale(1); }
+
+/* ---------------------------------------------------------------- *
+ * SPEECH PLAYHEAD
+ * A hairline that fills while the book is being read aloud. Transform
+ * only, driven by a CSS custom property the script updates.
+ * ---------------------------------------------------------------- */
+.speech-track {
+  position: relative;
+  flex: 1;
+  min-width: var(--speech-w);
+  height: var(--icon-size);
+  display: grid;
+  align-items: center;
+}
+.speech-track::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: var(--rule-w-xl);
+  border-radius: var(--radius-pill);
+  background: var(--rd-rule);
+}
+.speech-track::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: calc(var(--speech, 0) * 100%);
+  height: var(--rule-w-xl);
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+  transition: width var(--dur) linear;
+}
+
+/* ---------------------------------------------------------------- *
+ * REDUCED MOTION
+ * Collapse everything to a static render. The base HTML is identical
+ * with this block applied, so nothing depends on animation having run.
+ * ---------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .shelf-head,
+  .resume,
+  .grid .card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .card:hover { transform: none; }
+  .card:active { transform: none; }
+  .btn:active,
+  .icon-btn:active,
+  .chip:active,
+  .seg button:active { transform: none; }
+
+  .skeleton { animation: none; background: var(--surface-raised); }
+  .drawer { transition: none; }
+  .toast { transform: none; }
+}
+
+/* Transparency is an accessibility setting, not a preference. Under
+   reduced transparency the surface fills go solid. */
+@media (prefers-reduced-transparency: reduce) {
+  .scrim { background: var(--c-void); }
+  .toast,
+  .prefs,
+  .find { background: var(--surface-raised); }
+}

@@ -1,0 +1,157 @@
+/* base.css - reset, document defaults, focus, skip link, utilities. */
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--f-ui);
+  font-size: var(--fs-300);
+  line-height: var(--lh-ui);
+  letter-spacing: var(--track-ui);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The noise and mesh layers the scaffold shipped are deleted. A reading
+   surface gets a flat ground and a hairline, nothing more. */
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: var(--fw-semi);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--track-tight);
+  text-wrap: balance;
+}
+
+p { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+
+a {
+  color: var(--accent);
+  text-decoration-color: var(--accent-dim);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: var(--rule-w);
+  transition: color var(--dur-fast) var(--ease),
+              text-decoration-color var(--dur-fast) var(--ease);
+}
+a:hover { color: var(--fg); text-decoration-color: var(--fg); }
+
+img { max-width: 100%; display: block; }
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+button {
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------- *
+ * FOCUS
+ * Visible, from a token, on everything focusable. Never removed.
+ * ---------------------------------------------------------------- */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-control-inner);
+}
+
+/* ---------------------------------------------------------------- *
+ * SKIP LINK
+ * ---------------------------------------------------------------- */
+.skip {
+  position: absolute;
+  left: var(--space-4);
+  top: var(--space-4);
+  z-index: var(--z-toast);
+  padding: var(--space-3) var(--space-4);
+  background: var(--surface-raised);
+  border: var(--rule-w) solid var(--border);
+  border-radius: var(--radius-control);
+  color: var(--fg);
+  font-size: var(--fs-200);
+  transform: translateY(calc(-100% - var(--space-6)));
+  transition: transform var(--dur) var(--ease);
+}
+.skip:focus { transform: translateY(0); }
+
+/* A <dialog> the UA hides with display:none must stay hidden. Any rule that
+   sets display on a dialog, and .prefs does, silently un-hides the closed one
+   so it keeps taking up layout space. On a phone that showed up as a 0.41
+   cumulative layout shift, all of it on one element. */
+dialog:not([open]) { display: none; }
+
+/* ---------------------------------------------------------------- *
+ * LABELS
+ * One small caps label style. Used for legal text and metadata only.
+ * The taste skill caps section eyebrows at one per three sections, and
+ * this build uses exactly one, on the shelf header.
+ * ---------------------------------------------------------------- */
+.label {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--track-label);
+  text-transform: uppercase;
+  color: var(--fg-faint);
+}
+
+.sr-only {
+  position: absolute;
+  width: var(--rule-w);
+  height: var(--rule-w);
+  margin: calc(var(--rule-w) * -1);
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------------- *
+ * SHARED PIECES
+ * ---------------------------------------------------------------- */
+.divider {
+  height: var(--rule-w);
+  background: var(--border-soft);
+  border: 0;
+  margin: 0;
+}
+
+.shell {
+  width: 100%;
+  max-width: var(--maxw-shell);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+}
+
+/* The shelf page is a full height frame so the footer can be pinned. The
+   reader hides #reader on its own 100dvh frame instead, and :has() keys off
+   that one attribute, so there is no class for script to set late and no
+   flash of a scrolled document. Where :has() is unsupported the rule is
+   simply ignored and the page scrolls as an ordinary document. */
+body:has(#reader[hidden]) { height: 100dvh; overflow: hidden; }
+body:has(#reader[hidden]) .shell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+[hidden] { display: none !important; }

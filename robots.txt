@@ -1,0 +1,11 @@
+# Robots
+#
+# This is a single page app, not a site with a tree of URLs, so the whole of
+# it is crawlable and there is no path worth blocking.
+#
+# There is no Sitemap: this file is shared between local file:// use and a
+# GitHub Pages deploy, and a sitemap has to name an absolute host. Add one
+# when the deployment URL is fixed.
+
+User-agent: *
+Allow: /

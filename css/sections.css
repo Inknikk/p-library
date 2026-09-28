@@ -1,0 +1,557 @@
+/* sections.css - page level layout: the shelf, and the reader surface. */
+
+/* ==================================================================== *
+ *  APP BAR
+ *  Height capped at 64px. One line, always.
+ * ==================================================================== */
+
+.appbar {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-height: var(--appbar-h);
+  padding: var(--space-3) var(--space-6);
+  background: var(--bg);
+  border-bottom: var(--rule-w) solid var(--border-soft);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  min-height: var(--tap);
+  padding-inline: var(--space-1);
+  color: var(--fg);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-semi);
+  letter-spacing: var(--track-tight);
+  text-decoration: none;
+}
+.brand:hover { color: var(--fg); }
+.brand-mark {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  align-self: center;
+  border-radius: var(--radius-xs);
+  background: var(--accent);
+  position: relative;
+}
+/* A nib. Two rules, no icon font. */
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: var(--space-1);
+  width: var(--rule-w);
+  height: var(--nib-h);
+  background: var(--c-void);
+  transform: translateX(-50%);
+}
+
+.appbar-spacer { flex: 1; }
+
+.appbar-tools {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+/* ==================================================================== *
+ *  SHELF
+ * ==================================================================== */
+
+.shelf { padding-block: var(--space-8) var(--space-10); }
+
+.shelf-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+  padding-bottom: var(--space-6);
+  border-bottom: var(--rule-w) solid var(--border-soft);
+}
+
+.shelf-title {
+  font-size: var(--fs-900);
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+.shelf-lede {
+  max-width: 42ch;
+  margin-top: var(--space-4);
+  color: var(--fg-muted);
+  font-size: var(--fs-300);
+  line-height: var(--lh-loose);
+}
+
+/* Continue reading. The one thing the reader came back for, so it gets the
+   first viewport and the only filled panel on the page. */
+.resume {
+  display: grid;
+  grid-template-columns: var(--cover-min) 1fr auto;
+  gap: var(--space-6);
+  align-items: center;
+  margin-top: var(--space-7);
+  padding: var(--space-5);
+  background: var(--surface);
+  border: var(--rule-w) solid var(--border);
+  border-radius: var(--radius-surface);
+  box-shadow: var(--shadow-1);
+}
+.resume .cover { width: var(--cover-min); }
+.resume-body { display: grid; gap: var(--space-2); min-width: 0; }
+.resume-title {
+  font-size: var(--fs-600);
+  letter-spacing: var(--track-tight);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.resume-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--fs-200);
+  color: var(--fg-muted);
+  flex-wrap: wrap;
+}
+.resume-bar {
+  height: var(--rule-w-xl);
+  border-radius: var(--radius-pill);
+  background: var(--c-void);
+  overflow: hidden;
+}
+.resume-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+.resume-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* The grid is asymmetric on purpose (VARIANCE 6): the first card is wider
+   because it is the one most likely to be opened. */
+/* The shelf is an app frame, not a document that scrolls: masthead at the
+   top, footer pinned to the bottom, and only the book list scrolls in the
+   middle. The reason is measurable. The grid is filled by script, and the
+   parser has not finished the last two script files when the browser takes
+   its first frame, so a document-flow footer below the grid jumps by the
+   full height of four cards the moment they arrive: 0.41 CLS on a phone.
+   With the grid inside a scroll region the footer has no dependency on how
+   many books there are, and the shift is zero. */
+.shelf-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-block: var(--space-6) var(--space-7);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--card-min), 1fr));
+  gap: var(--space-7) var(--space-6);
+  margin-top: var(--space-8);
+}
+
+.card {
+  display: grid;
+  gap: var(--space-4);
+  padding: 0;
+  text-align: left;
+  color: inherit;
+  border-radius: var(--radius-surface);
+  transition: transform var(--dur) var(--ease-out);
+}
+.card:hover { transform: translateY(calc(var(--lift-2) * -1)); }
+.card:active { transform: scale(0.97); }
+.card:focus-visible { box-shadow: var(--focus-ring); }
+
+.card-body { display: grid; gap: var(--space-1); }
+.card-title {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-medium);
+  line-height: 1.2;
+  letter-spacing: var(--track-tight);
+  text-wrap: balance;
+}
+.card-author {
+  font-size: var(--fs-200);
+  color: var(--fg-muted);
+}
+.card-foot {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--fs-100);
+  color: var(--fg-faint);
+  font-variant-numeric: tabular-nums;
+}
+.card-pct { color: var(--accent); }
+
+/* The taste skill bans a long list of thin rows. Books are the product, so
+   they get covers, which is the right component for the content type. */
+.shelf-empty {
+  margin-top: var(--space-8);
+  padding: var(--space-8) var(--space-6);
+  text-align: center;
+  border: var(--rule-w) dashed var(--border);
+  border-radius: var(--radius-surface);
+  color: var(--fg-muted);
+  font-size: var(--fs-200);
+}
+
+.foot {
+  padding-block: var(--space-7) var(--space-8);
+  border-top: var(--rule-w) solid var(--border-soft);
+  color: var(--fg-faint);
+  font-size: var(--fs-200);
+}
+.foot a { color: var(--fg-muted); }
+
+/* ==================================================================== *
+ *  READER
+ * ==================================================================== */
+
+.reader {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-overlay);
+  display: flex;
+  flex-direction: column;
+  background: var(--rd-bg);
+  color: var(--rd-fg);
+  font-family: var(--rd-font);
+  transition: background var(--dur-slow) var(--ease);
+}
+
+/* Fullscreen takes over the viewport. The API is asked first, the class is
+   the fallback, and both produce the same result. */
+.reader:fullscreen,
+.reader.is-fullscreen {
+  inset: 0;
+  width: 100%;
+  height: 100dvh;
+}
+
+/* --- reader chrome ------------------------------------------------- */
+
+.reader-bar {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: var(--bar-h);
+  padding-inline: var(--space-4);
+  background: var(--rd-bg);
+  border-bottom: var(--rule-w) solid var(--rd-rule);
+  color: var(--rd-fg);
+  font-family: var(--f-ui);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.reader-bar .icon-btn { color: var(--rd-muted); }
+.reader-bar .icon-btn:hover { background: var(--rd-rule); color: var(--rd-fg); }
+.reader-bar .icon-btn[aria-pressed="true"] { color: var(--accent); background: transparent; }
+
+/* Title and author are two spans with a gap between them, not a string with
+   a separator in it. A middle dot between two pieces of metadata is a
+   template tell, and a gap does the same job without being punctuation. */
+.reader-title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  min-width: 0;
+  margin-inline: var(--space-2);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-medium);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.reader-title span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reader-title span:first-child { flex: 0 1 auto; }
+#readerAuthor {
+  flex: 0 0 auto;
+  color: var(--rd-muted);
+  font-weight: var(--fw-normal);
+}
+#readerAuthor:empty { display: none; }
+
+/* The current chapter, truncated so a long title can never push the
+   toolbar off the bar. */
+.section-now {
+  max-width: 22ch;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--rd-muted);
+}
+
+/* Docked panel: the toolbar row plus the open panel share one surface. */
+.reader-dock {
+  flex: none;
+  max-height: 70dvh;
+  overflow-y: auto;
+  background: var(--rd-bg);
+  border-bottom: var(--rule-w) solid var(--rd-rule);
+  font-family: var(--f-ui);
+}
+.reader-dock .prefs,
+.reader-dock .notes,
+.reader-dock .speech {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: var(--rd-fg);
+}
+.reader-dock .prefs-row > .label { color: var(--rd-muted); }
+.reader-dock .field label { color: var(--rd-muted); }
+.reader-dock .field textarea,
+.reader-dock .field input[type="text"] {
+  background: var(--rd-bg);
+  border-color: var(--rd-rule);
+  color: var(--rd-fg);
+}
+.reader-dock .field textarea::placeholder { color: var(--rd-muted); }
+.reader-dock .note {
+  background: transparent;
+  border-color: var(--rd-rule);
+  color: var(--rd-fg);
+}
+.reader-dock .note-quote { color: var(--rd-fg); }
+.reader-dock .note-meta,
+.reader-dock .note-text { color: var(--rd-muted); }
+.reader-dock .note-empty { border-color: var(--rd-rule); color: var(--rd-muted); }
+.reader-dock .seg { background: var(--rd-bg); border-color: var(--rd-rule); }
+.reader-dock .seg button { color: var(--rd-muted); }
+.reader-dock .seg button[aria-pressed="true"] {
+  background: var(--rd-rule);
+  color: var(--rd-fg);
+}
+.reader-dock .speech-time { color: var(--rd-muted); }
+.reader-dock .speech input[type="range"] { accent-color: var(--accent); }
+.reader-dock .find {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: var(--rd-fg);
+}
+.reader-dock .find input { color: var(--rd-fg); }
+.reader-dock .find input::placeholder { color: var(--rd-muted); }
+.reader-dock .find-count { color: var(--rd-muted); }
+
+.dock-pad { padding: var(--space-5) var(--space-6) var(--space-6); }
+
+/* --- the page ------------------------------------------------------ */
+
+.reader-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-behavior: smooth;
+  background: var(--rd-bg);
+}
+
+.reader-page {
+  max-width: calc(var(--measure-reader) + 2 * var(--space-7));
+  margin-inline: auto;
+  padding: var(--space-8) var(--space-7) 40vh;
+  font-size: var(--rd-size);
+  line-height: var(--rd-lh);
+  letter-spacing: var(--track-tight);
+  color: var(--rd-fg);
+}
+
+.reader-page > * + * { margin-top: 1.1em; }
+.reader-page p { text-wrap: pretty; }
+
+/* The first paragraph after a title gets the opening treatment every
+   manuscript has used since Gutenberg. */
+.reader-page > p:first-of-type::first-letter {
+  float: left;
+  margin: 0.06em var(--space-2) 0 0;
+  font-size: 3.1em;
+  line-height: 0.82;
+  font-weight: var(--fw-semi);
+  color: var(--rd-fg);
+}
+
+.reader-page h2 {
+  margin-top: 2.2em;
+  margin-bottom: 0.7em;
+  font-size: 1.32em;
+  font-weight: var(--fw-semi);
+  line-height: 1.2;
+  letter-spacing: var(--track-tight);
+}
+.reader-page h3 {
+  margin-top: 1.9em;
+  font-size: 1.1em;
+  font-weight: var(--fw-semi);
+}
+.reader-page h1 {
+  font-size: 1.9em;
+  margin-bottom: 0.4em;
+}
+.reader-page em { font-style: italic; }
+.reader-page strong { font-weight: var(--fw-semi); }
+.reader-page hr {
+  height: var(--rule-w);
+  margin-block: 2.4em;
+  background: var(--rd-rule);
+  border: 0;
+}
+.reader-page blockquote {
+  margin-inline: 0;
+  padding-left: var(--space-5);
+  border-left: var(--rule-w-lg) solid var(--rd-rule);
+  color: var(--rd-muted);
+  font-style: italic;
+}
+.reader-page ul,
+.reader-page ol {
+  padding-left: 1.4em;
+  list-style: revert;
+}
+.reader-page li + li { margin-top: 0.4em; }
+.reader-page a { color: var(--rd-fg); text-decoration-color: var(--rd-muted); }
+.reader-page a:hover { color: var(--accent); }
+.reader-page code {
+  font-family: var(--f-read-mono);
+  font-size: 0.9em;
+  background: var(--rd-rule);
+  padding: 0.1em 0.35em;
+  border-radius: var(--radius-xs);
+}
+.reader-page pre {
+  padding: var(--space-4);
+  background: var(--rd-rule);
+  border-radius: var(--radius-control);
+  overflow-x: auto;
+  font-size: 0.86em;
+  line-height: 1.45;
+}
+.reader-page pre code { background: none; padding: 0; }
+.reader-page img {
+  border-radius: var(--radius-control);
+  margin-inline: auto;
+}
+.reader-page table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92em;
+}
+.reader-page th,
+.reader-page td {
+  padding: var(--space-2) var(--space-3);
+  border-bottom: var(--rule-w) solid var(--rd-rule);
+  text-align: left;
+}
+.reader-page th { font-weight: var(--fw-semi); }
+
+/* Chapter heading gets a hairline above it, the way a printed page marks a
+   new section. */
+.reader-page h2 + p { margin-top: 0; }
+
+/* --- reader modes -------------------------------------------------- */
+
+/* Auto hide: scrolling down drops the chrome out of the way, any upward
+   movement brings it back. The bar keeps its box, so nothing reflows and
+   the reading position never jumps. */
+.reader-chrome-hidden .reader-bar {
+  opacity: 0;
+  transform: translateY(calc(var(--lift-3) * -1));
+  pointer-events: none;
+}
+
+/* Focus mode: the chrome leaves the flow entirely and the text takes the
+   whole viewport. The script restores the scroll fraction after the
+   reflow, so the paragraph you were on is still the paragraph you are on. */
+.reader[data-mode="focus"] .reader-bar,
+.reader[data-mode="focus"] .reader-dock {
+  z-index: var(--z-reader-chrome);
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+.reader[data-mode="focus"] .reader-scroll { scroll-behavior: auto; }
+
+/* ==================================================================== *
+ *  RESPONSIVE
+ *  Declared per section, not left to chance.
+ * ==================================================================== */
+
+@media (max-width: 860px) {
+  .appbar { padding-inline: var(--space-4); }
+  .shell { padding-inline: var(--space-4); }
+  .shelf { padding-block: var(--space-6) var(--space-8); }
+
+  .resume {
+    grid-template-columns: var(--cover-min-sm) 1fr;
+    gap: var(--space-4);
+    padding: var(--space-4);
+  }
+  .resume .cover { width: var(--cover-min-sm); }
+  .resume-actions { grid-column: 1 / -1; }
+  .resume-actions .btn { flex: 1; }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(var(--card-min-sm), 1fr));
+    gap: var(--space-6) var(--space-4);
+    margin-top: var(--space-6);
+  }
+
+  .reader-bar { padding-inline: var(--space-2); }
+  .reader-page { padding: var(--space-6) var(--space-4) 40vh; }
+  .dock-pad { padding: var(--space-4); }
+  .section-now { display: none; }
+  .drawer { width: min(var(--drawer-w-sm), 88vw); }
+}
+
+@media (max-width: 420px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+  .card-title { font-size: var(--fs-200); }
+  .shelf-lede { font-size: var(--fs-200); }
+  .reader-title { max-width: 12ch; }
+}
+
+/* Desktop site shown on a phone. The layout gate hard fails on horizontal
+   overflow here, so the shelf collapses to two columns. */
+/* The drawer's own sections. The tools list only appears on narrow
+   screens, where the toolbar cannot hold ten full size targets in one line. */
+.drawer-label { padding: var(--space-3) var(--space-3) var(--space-1); }
+
+.tool-list { display: grid; gap: var(--space-1); }
+.tool-list .shelf-row {
+  grid-template-columns: var(--icon-size) 1fr;
+  min-height: var(--tap);
+}
+.tool-list .ico { color: var(--fg-faint); }
+
+/* The reader menu button is the phone route into the drawer. It is hidden
+   on wide screens, where the toolbar shows every control directly. */
+.reader-menu { display: none; }
+
+@media (max-width: 900px) {
+  .reader-menu { display: inline-grid; }
+  #topBtn, #notesBtn, #ttsBtn, #modeBtn, #fsBtn { display: none; }
+  #toolsWrap:not([hidden]) { display: block; }
+}
+
+@media (max-width: 1024px) {
+  .shelf-head { flex-direction: column; align-items: flex-start; gap: var(--space-4); }
+}

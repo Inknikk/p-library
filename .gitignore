@@ -1,0 +1,26 @@
+# dependencies
+node_modules/
+dist/
+build/
+.out/
+
+# env
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.idea/
+.vscode/
+*.swp
+
+# local preview
+__pycache__/

@@ -1,0 +1,296 @@
+/* tokens.css - the only file in this project allowed to contain a raw value.
+ *
+ * Two independent systems live here and they never mix:
+ *
+ *   1. APP CHROME  - cold luxury smoke, near black, one jade accent.
+ *   2. READING SURFACES - eight paper and night grounds, each with its own
+ *      ink. A reader chooses its own background, so the reading system has to
+ *      stand on its own without borrowing from the chrome.
+ *
+ * Components reference the semantic layer only. No raw hex below this line in
+ * any other stylesheet.
+ *
+ * Design read: docs/DESIGN_READ.md. Dials: VARIANCE 6, MOTION 4, DENSITY 3.
+ */
+
+:root {
+  /* ------------------------------------------------------------------ *
+   * LAYER 1 - PRIMITIVES (app chrome)
+   * ------------------------------------------------------------------ */
+  --c-void: #08090b;
+  --c-smoke-900: #0d0f12;
+  --c-smoke-800: #14171b;
+  --c-smoke-700: #1b1f24;
+  --c-smoke-600: #242931;
+  --c-smoke-500: #2e343d;
+  --c-line-soft: #1c2026;
+  --c-line: #262b33;
+  --c-fog-600: #6d757f;
+  --c-fog-400: #9aa1ab;
+  --c-fog-200: #c9d0d8;
+  --c-chalk: #eef1f4;
+  --c-jade: #17b98a;
+  --c-jade-dim: #0f8a67;
+  --c-jade-wash: rgba(23, 185, 138, 0.12);
+  --c-amber: #e8b13a;
+  --c-amber-wash: rgba(232, 177, 58, 0.16);
+  --c-danger: #e06a5c;
+
+  /* ------------------------------------------------------------------ *
+   * LAYER 2 - SEMANTIC (app chrome). Components use these, never layer 1.
+   * ------------------------------------------------------------------ */
+  --bg: var(--c-smoke-900);
+  --bg-sunk: var(--c-void);
+  --surface: var(--c-smoke-800);
+  --surface-raised: var(--c-smoke-700);
+  --surface-hover: var(--c-smoke-600);
+  --border: var(--c-line);
+  --border-soft: var(--c-line-soft);
+  --fg: var(--c-chalk);
+  --fg-muted: var(--c-fog-400);
+  --fg-faint: var(--c-fog-600);
+  --accent: var(--c-jade);
+  --accent-dim: var(--c-jade-dim);
+  --accent-wash: var(--c-jade-wash);
+  --mark: var(--c-amber);
+  --mark-wash: var(--c-amber-wash);
+  --focus: var(--c-jade);
+
+  /* ------------------------------------------------------------------ *
+   * TYPE
+   * Type scale adapted from the measured Readwise Reader scale
+   * (docs/PROJECT_BRIEF.md 2.3). Tracking taken from Apple Books
+   * (-0.374px on 17px = -0.022em).
+   * ------------------------------------------------------------------ */
+  --f-ui: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --f-read-serif: Iowan Old Style, "Palatino Linotype", Palatino, Charter, Georgia, "Times New Roman", serif;
+  --f-read-sans: var(--f-ui);
+  --f-read-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --fs-100: 0.75rem;    /* 12  labels, legal */
+  --fs-200: 0.875rem;   /* 14  metadata */
+  --fs-300: 1rem;       /* 16  interface body */
+  --fs-400: 1.125rem;   /* 18  reader body, the default */
+  --fs-500: 1.25rem;    /* 20  card title small */
+  --fs-600: 1.5rem;     /* 24  card title */
+  --fs-700: 1.75rem;    /* 28  section title */
+  --fs-800: 2.5rem;     /* 40  page title */
+  --fs-900: clamp(2.25rem, 5vw, 3.5rem);
+
+  --lh-tight: 1.15;
+  --lh-ui: 1.4;
+  --lh-prose: 1.5;      /* 18/27. Measured, see brief 2.3. */
+  --lh-loose: 1.7;
+  --reader-flow: 1.1em; /* space between reader blocks */
+
+  --track-tight: -0.022em;  /* body at 17px and up */
+  --track-ui: -0.011em;
+  --track-label: 0.14em;    /* small caps labels only, never a section eyebrow */
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+
+  /* ------------------------------------------------------------------ *
+   * SPACE (8pt base, generous)
+   * ------------------------------------------------------------------ */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  --maxw-shell: 1240px;
+  --maxw-prose: 34rem;      /* ~66 characters at 18px */
+  --measure-reader: 34rem;
+
+  /* ------------------------------------------------------------------ *
+   * RADIUS - one scale, one documented rule:
+   *   chips and pills are full round, controls 10px, surfaces 16px.
+   * ------------------------------------------------------------------ */
+  --radius-pill: 999px;
+  --radius-control: 10px;
+  --radius-surface: 16px;
+  --radius-cover: 4px;
+  --radius-xs: 3px;
+
+  /* Concentric radius: an inner surface inside an outer one adds the padding
+   * of the gap that separates them, so the curves stay parallel. */
+  --gap-control-inner: 3px;
+  --radius-control-inner: 7px;
+
+  /* ------------------------------------------------------------------ *
+   * SHADOWS - layered, tinted to the surface hue, never zero offset
+   * ------------------------------------------------------------------ */
+  --shadow-1: 0 1px 2px rgba(4, 6, 9, 0.5), 0 4px 14px rgba(4, 6, 9, 0.34);
+  --shadow-2: 0 2px 6px rgba(4, 6, 9, 0.5), 0 14px 38px rgba(4, 6, 9, 0.44);
+  --shadow-3: 0 4px 12px rgba(4, 6, 9, 0.55), 0 28px 72px rgba(4, 6, 9, 0.55);
+  --shadow-inset-top: inset 0 1px 0 rgba(238, 241, 244, 0.045);
+  --shadow-mark: 0 0 0 1px var(--mark-wash);
+
+  /* ------------------------------------------------------------------ *
+   * MOTION
+   * ------------------------------------------------------------------ */
+  --ease: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 120ms;
+  --dur: 200ms;
+  --dur-slow: 380ms;
+
+  --tap: 44px;              /* minimum touch target */
+  --bar-h: 56px;             /* reader chrome height, 52 on small screens */
+
+  /* Hairlines, icon boxes and swatches are sized here so a component never
+     writes a bare number. Breakpoints cannot be, because @media does not
+     accept custom properties in any shipping browser; those five widths
+     are the documented exception and they appear in tokens.css as
+     --bp-sm, --bp-md, --bp-lg, --bp-wide, --bp-shell. */
+  --rule-w: 1px;
+  --rule-w-lg: 2px;
+  --rule-w-xl: 3px;
+  --icon-size: 20px;
+  --icon-size-sm: 18px;
+  --icon-box: 44px;
+  --swatch-size: 22px;
+  --thumb-size: 34px;
+  --cover-min: 96px;
+  --cover-min-sm: 64px;
+  --card-min: 190px;
+  --card-min-sm: 140px;
+  --drawer-w: 300px;
+  --drawer-w-sm: 320px;
+  --scrim: rgba(4, 6, 9, 0.6);
+  --appbar-h: 64px;
+  --drawer-head-h: 64px;
+  --speech-w: 120px;
+  --progress-h: 2px;
+  --nib-h: 12px;
+
+  /* Motion offsets, so a transform never carries a bare number either. */
+  --lift-1: 6px;
+  --lift-2: 3px;
+  --lift-3: 8px;
+  --lift-4: 10px;
+
+
+  --bp-sm: 420px;
+  --bp-md: 860px;
+  --bp-lg: 1024px;
+  --bp-wide: 1240px;
+  --bp-shell: 720px;
+
+  /* LAYERS - used instead of ad hoc z-index */
+  --z-base: 0;
+  --z-sticky: 10;
+  --z-drawer: 20;
+  --z-reader-chrome: 30;
+  --z-overlay: 40;
+  --z-toast: 50;
+
+  --focus-ring: 0 0 0 2px var(--bg-sunk), 0 0 0 4px var(--focus);
+}
+
+/* ------------------------------------------------------------------ *
+ * COVER TONES
+ * Five cover grounds for the typographic covers. A book picks a tone by
+ * name in js/library.js, so no raw colour ever appears in markup or CSS.
+ * Declared for .cover and .shelf-thumb together so a shelf row and the
+ * full size cover can never drift apart.
+ * Each pair is checked for text contrast, see QUALITY_REPORT.md.
+ * ------------------------------------------------------------------ */
+.cover[data-tone="slate"], .shelf-thumb[data-tone="slate"] { --cover-bg: #1c222b; --cover-fg: #dbe3ec; }
+.cover[data-tone="moss"],  .shelf-thumb[data-tone="moss"]  { --cover-bg: #16241e; --cover-fg: #dceade; }
+.cover[data-tone="clay"],  .shelf-thumb[data-tone="clay"]  { --cover-bg: #2a1c19; --cover-fg: #ecdcd4; }
+.cover[data-tone="plum"],  .shelf-thumb[data-tone="plum"]  { --cover-bg: #211a2b; --cover-fg: #e2d9ee; }
+.cover[data-tone="ink"],   .shelf-thumb[data-tone="ink"]   { --cover-bg: #0d0f12; --cover-fg: #eef1f4; }
+
+/* Swatches. Same eight grounds as the reading surfaces, named here so the
+ * background switcher needs no raw colour of its own. */
+:root {
+  --sw-paper: #faf9f7;
+  --sw-sepia: #f2e7d3;
+  --sw-sand:  #e8e2d6;
+  --sw-mint:  #e4eee8;
+  --sw-slate: #e6e8ec;
+  --sw-dusk:  #2a2f3a;
+  --sw-night: #14161a;
+  --sw-ink:   #0a0b0d;
+}
+
+@media (max-width: 860px) {
+  :root { --bar-h: 52px; }
+}
+
+/* ==================================================================== *
+ * READING SURFACES
+ * Eight grounds. Each sets its own ink, its own muted ink and its own
+ * rule colour. Body contrast is measured, not assumed: see
+ * QUALITY_REPORT.md for the per-theme ratio, lowest is 10.3:1.
+ * ==================================================================== */
+
+[data-reader="paper"] {
+  --rd-bg: #faf9f7;  --rd-fg: #23211d;  --rd-muted: #6b6660;  --rd-rule: #e2ded6;
+  --rd-mark-wash: rgba(232, 177, 58, 0.32);
+}
+[data-reader="sepia"] {
+  --rd-bg: #f2e7d3;  --rd-fg: #3b3227;  --rd-muted: #7a6a55;  --rd-rule: #e0d2b8;
+  --rd-mark-wash: rgba(198, 140, 40, 0.3);
+}
+[data-reader="sand"] {
+  --rd-bg: #e8e2d6;  --rd-fg: #2a2620;  --rd-muted: #6f6858;  --rd-rule: #d6cdbd;
+  --rd-mark-wash: rgba(198, 140, 40, 0.3);
+}
+[data-reader="mint"] {
+  --rd-bg: #e4eee8;  --rd-fg: #1e2a25;  --rd-muted: #5c6f66;  --rd-rule: #cfded5;
+  --rd-mark-wash: rgba(23, 150, 110, 0.24);
+}
+[data-reader="slate"] {
+  --rd-bg: #e6e8ec;  --rd-fg: #1c2026;  --rd-muted: #5f6771;  --rd-rule: #d2d6dc;
+  --rd-mark-wash: rgba(60, 110, 190, 0.22);
+}
+[data-reader="dusk"] {
+  --rd-bg: #2a2f3a;  --rd-fg: #e2e6ee;  --rd-muted: #9aa3b2;  --rd-rule: #3b414f;
+  --rd-mark-wash: rgba(232, 177, 58, 0.26);
+}
+[data-reader="night"] {
+  --rd-bg: #14161a;  --rd-fg: #dfe2e7;  --rd-muted: #8f959e;  --rd-rule: #24272d;
+  --rd-mark-wash: rgba(232, 177, 58, 0.26);
+}
+[data-reader="ink"] {
+  --rd-bg: #0a0b0d;  --rd-fg: #e8eaed;  --rd-muted: #9298a1;  --rd-rule: #1c1f24;
+  --rd-mark-wash: rgba(232, 177, 58, 0.26);
+}
+
+/* ------------------------------------------------------------------ *
+ * READER TYPOGRAPHY VARIABLES - the reader's own dials, all set from
+ * the preferences panel and persisted per device.
+ * ------------------------------------------------------------------ */
+.reader {
+  --rd-size: var(--fs-400);
+  --rd-lh: var(--lh-prose);
+  --rd-font: var(--f-read-serif);
+  --rd-progress: 0;
+}
+
+.reader[data-font="sans"] { --rd-font: var(--f-read-sans); }
+.reader[data-font="mono"] { --rd-font: var(--f-read-mono); }
+
+/* Size steps: 0.875rem to 1.5rem in 1/8rem steps, so the scale is a scale. */
+.reader[data-size="s"]   { --rd-size: 0.875rem; }
+.reader[data-size="m"]   { --rd-size: 1rem; }
+.reader[data-size="l"]   { --rd-size: var(--fs-400); }
+.reader[data-size="xl"]  { --rd-size: 1.3125rem; }
+.reader[data-size="xxl"] { --rd-size: 1.5rem; }
+
+.reader[data-leading="tight"]  { --rd-lh: 1.4; }
+.reader[data-leading="normal"] { --rd-lh: var(--lh-prose); }
+.reader[data-leading="open"]   { --rd-lh: 1.75; }
+
+.reader[data-measure="narrow"] { --measure-reader: 28rem; }
+.reader[data-measure="normal"] { --measure-reader: 34rem; }
+.reader[data-measure="wide"]   { --measure-reader: 42rem; }
