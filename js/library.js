@@ -18,9 +18,9 @@
       author: "Anonymous",
       year: 2026,
       src: "books/forbidden-flower.md",
-      tone: "plum",
-      chapters: 114,
-      words: 685000,
+      tone: "clay",
+      chapters: 10,
+      words: 126568,
       blurb: "A story of love, dreams, and forbidden desires spanning ten chapters across Guangzhou's seasons."
     },
     {

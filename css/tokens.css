@@ -187,10 +187,14 @@
   /* LAYERS - used instead of ad hoc z-index */
   --z-base: 0;
   --z-sticky: 10;
-  --z-drawer: 20;
   --z-reader-chrome: 30;
   --z-overlay: 40;
-  --z-toast: 50;
+  /* The drawer has to clear the reader. On the shelf it overlays the appbar;
+     while reading it is the only route into the table of contents, so it
+     cannot sit under the reader overlay. */
+  --z-scrim: 45;
+  --z-drawer: 50;
+  --z-toast: 60;
 
   --focus-ring: 0 0 0 2px var(--bg-sunk), 0 0 0 4px var(--focus);
 }

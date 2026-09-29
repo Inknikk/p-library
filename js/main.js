@@ -10,17 +10,6 @@
   var reader = null;
   var dom = {};
 
-  function toast(message) {
-    var dock = dom.toastDock;
-    if (!dock) return;
-    var node = document.createElement("div");
-    node.className = "toast";
-    node.textContent = message;
-    node.style.cssText = "position:fixed;left:50%;bottom:2rem;transform:translateX(-50%);background:#1a1a22;border:1px solid #2a2a32;padding:.75rem 1.25rem;border-radius:999px;font-size:.875rem;color:#e8e6f0;z-index:50;box-shadow:0 8px 30px rgba(0,0,0,.4);";
-    dock.appendChild(node);
-    setTimeout(function () { node.style.opacity = "0"; node.style.transition = "opacity .3s"; setTimeout(function () { node.remove(); }, 300); }, 2000);
-  }
-
   function collect() {
     [
       "shelfGrid", "resumeCard", "resumeTitle", "resumeMeta", "resumePct", "resumeBar",
@@ -54,10 +43,7 @@
       var s = bookProgress(b.slug);
       if (s.opened && (!best || s.opened > best.state.opened)) best = { book: b, state: s };
     });
-    if (!best) {
-      // No reading history yet - return first book as default
-      return { book: BOOKS[0], state: { percent: 0, opened: 0 } };
-    }
+    if (!best) return null;
     if (best.state.percent > 0.98) best.state.percent = 0;
     return best;
   }
@@ -89,22 +75,26 @@
     }).join("");
 
     var recent = mostRecent();
-    var r = recent.state;
-    var pct2 = Math.round((r.percent || 0) * 100);
-    dom.resumeCard.hidden = false;
-    dom.resumeTitle.textContent = recent.book.title;
-    var rCover = dom.resumeCover || null;
-    if (rCover) {
-      rCover.setAttribute("data-tone", recent.book.tone || "ink");
-      var rt = dom.resumeCoverTitle, ra = dom.resumeCoverAuthor;
-      if (rt) rt.textContent = recent.book.title;
-      if (ra) ra.textContent = recent.book.author;
-    }
-    dom.resumeMeta.innerHTML = '<span>' + Inkwell.markdown.escapeHTML(recent.book.author) + "</span>" +
-      "<span>" + pct2 + "% read</span>";
-    dom.resumePct.textContent = pct2 + "%";
-    if (dom.resumeBar.firstElementChild) {
-      dom.resumeBar.firstElementChild.style.width = pct2 + "%";
+    if (recent) {
+      var r = recent.state;
+      var pct2 = Math.round((r.percent || 0) * 100);
+      dom.resumeCard.hidden = false;
+      dom.resumeTitle.textContent = recent.book.title;
+      var rCover = dom.resumeCover || null;
+      if (rCover) {
+        rCover.setAttribute("data-tone", recent.book.tone || "ink");
+        var rt = dom.resumeCoverTitle, ra = dom.resumeCoverAuthor;
+        if (rt) rt.textContent = recent.book.title;
+        if (ra) ra.textContent = recent.book.author;
+      }
+      dom.resumeMeta.innerHTML = '<span>' + Inkwell.markdown.escapeHTML(recent.book.author) + "</span>" +
+        "<span>" + pct2 + "% read</span>";
+      dom.resumePct.textContent = pct2 + "%";
+      if (dom.resumeBar.firstElementChild) {
+        dom.resumeBar.firstElementChild.style.width = pct2 + "%";
+      }
+    } else {
+      dom.resumeCard.hidden = true;
     }
 
     dom.countLabel.textContent = BOOKS.length + (BOOKS.length === 1 ? " title" : " titles");
@@ -147,38 +137,19 @@
 
     dom.shelfGrid.addEventListener("click", function (e) {
       var card = e.target.closest(".card");
-      if (card) { toast("Opening: " + card.getAttribute("data-slug")); reader.open(card.getAttribute("data-slug")); }
+      if (card) reader.open(card.getAttribute("data-slug"));
     });
-    dom.shelfGrid.addEventListener("touchend", function (e) {
-      var card = e.target.closest(".card");
-      if (card) { e.preventDefault(); toast("Touch: " + card.getAttribute("data-slug")); reader.open(card.getAttribute("data-slug")); }
-    }, { passive: false });
     dom.shelfList.addEventListener("click", function (e) {
       var row = e.target.closest(".shelf-row");
       if (!row) return;
-      toast("Drawer: " + row.getAttribute("data-slug"));
       reader.open(row.getAttribute("data-slug"));
       dom.drawer.setAttribute("data-open", "false");
       dom.scrim.setAttribute("data-open", "false");
     });
-    dom.shelfList.addEventListener("touchend", function (e) {
-      var row = e.target.closest(".shelf-row");
-      if (!row) return;
-      e.preventDefault();
-      toast("Drawer touch: " + row.getAttribute("data-slug"));
-      reader.open(row.getAttribute("data-slug"));
-      dom.drawer.setAttribute("data-open", "false");
-      dom.scrim.setAttribute("data-open", "false");
-    }, { passive: false });
     dom.resumeCard.addEventListener("click", function () {
       var recent = mostRecent();
-      if (recent && recent.book) { toast("Resume click: " + recent.book.slug); reader.open(recent.book.slug); }
+      if (recent && recent.book) reader.open(recent.book.slug);
     });
-    dom.resumeCard.addEventListener("touchend", function (e) {
-      e.preventDefault();
-      var recent = mostRecent();
-      if (recent && recent.book) { toast("Resume touch: " + recent.book.slug); reader.open(recent.book.slug); }
-    }, { passive: false });
 
     global.INKWELL_onClose = function () { renderShelf(); };
     global.INKWELL_onProgress = function () { renderShelf(); };

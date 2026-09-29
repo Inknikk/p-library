@@ -1,6 +1,6 @@
 # Inkwell
 
-Four public domain books, read slowly. A small shelf and a full screen reader that
+Five public domain books, read slowly. A small shelf and a full screen reader that
 keeps your place, your highlights and your reading preferences on your own machine.
 
 No account. No tracking. Nothing you do leaves the machine. The only network
@@ -147,7 +147,7 @@ css/sections.css      shelf and reader layouts
 css/motion.css        entrances, icon swaps, reduced motion
 js/store.js           preferences and per-book state
 js/markdown.js        parser and sanitiser
-js/library.js         the four books
+js/library.js         the five books
 js/reader.js          the reader
 js/main.js            shelf, routing, boot
 books/*.md            the texts

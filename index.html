@@ -3,27 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>p library: Five books</title>
-  <meta name="description" content="Five stories — Forbidden Flower, Frankenstein, Moby-Dick, Walden, Alice's Adventures in Wonderland. Read in the browser, no account, no tracking, your place stored on your own machine.">
+<title>p library: five books, read slowly</title>
+  <meta name="description" content="Five public domain and original stories to read slowly in the browser. No account, no tracking, your place stays on your own machine.">
   <link rel="canonical" href="https://inknikk.github.io/p-library/">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#0b0d10">
   <meta name="author" content="p library">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="p library">
-  <meta property="og:title" content="p library: Five books">
+  <meta property="og:title" content="p library: five books, read slowly">
   <meta property="og:description" content="Five stories including Forbidden Flower and four classics. Read in the browser, no account, no tracking.">
   <meta property="og:locale" content="en">
   <meta property="og:url" content="https://inknikk.github.io/p-library/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="p library: Five books">
+  <meta name="twitter:title" content="p library: five books, read slowly">
   <meta name="twitter:description" content="Five stories. Read in the browser, no account, no tracking.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "p library",
-  "description": "Five stories — Forbidden Flower, Frankenstein, Moby-Dick, Walden, Alice's Adventures in Wonderland. Read in the browser, no account, no tracking.",
+  "description": "Forbidden Flower, Frankenstein, Moby-Dick, Walden and Alice's Adventures in Wonderland. Read in the browser, no account, no tracking.",
   "inLanguage": "en",
   "url": "https://inknikk.github.io/p-library/",
   "isAccessibleForFree": true,
@@ -75,7 +75,7 @@
   <span class="appbar-spacer"></span>
 <div class="appbar-tools">
     <span class="label" id="countLabel">5 titles</span>
-    <button type="button" class="btn btn-ghost btn-sm" id="aboutOpen">About & keys</button>
+    <button type="button" class="btn btn-ghost btn-sm" id="aboutOpen">About &amp; keys</button>
   </div>
 </header>
 
@@ -87,99 +87,32 @@
 
   <div class="shelf-scroll" id="shelfScroll" tabindex="-1">
   <section class="shelf" aria-labelledby="shelfTitle">
-<div class="shelf-head">
+    <div class="shelf-head">
       <div>
         <h1 class="shelf-title" id="shelfTitle">Five books,<br>read slowly.</h1>
         <p class="shelf-lede">Stories kept as plain Markdown. Your place, your highlights and your reading preferences stay in this browser and never leave it.</p>
       </div>
       <p class="label">Plain text, no accounts, no tracking</p>
     </div>
-    </div>
 
-    <button type="button" class="resume" id="resumeCard">
-      <span class="cover" id="resumeCover" data-tone="plum" aria-hidden="true">
-        <span class="cover-title" id="resumeCoverTitle">Forbidden Flower</span>
-        <span class="cover-author" id="resumeCoverAuthor">Anonymous</span>
+    <button type="button" class="resume" id="resumeCard" hidden>
+      <span class="cover" id="resumeCover" data-tone="ink" aria-hidden="true">
+        <span class="cover-title" id="resumeCoverTitle"></span>
+        <span class="cover-author" id="resumeCoverAuthor"></span>
       </span>
       <span class="resume-body">
         <span class="label">Continue reading</span>
-        <span class="resume-title" id="resumeTitle">Forbidden Flower</span>
-        <span class="resume-meta" id="resumeMeta"><span>Anonymous</span><span>0% read</span></span>
-        <span class="resume-bar" id="resumeBar"><span style="width: 0%;"></span></span>
+        <span class="resume-title" id="resumeTitle"></span>
+        <span class="resume-meta" id="resumeMeta"></span>
+        <span class="resume-bar" id="resumeBar"><span></span></span>
       </span>
       <span class="resume-actions">
-        <span class="shelf-pct" id="resumePct">0%</span>
+        <span class="shelf-pct" id="resumePct"></span>
         <span class="btn btn-primary">Resume</span>
       </span>
     </button>
 
-    <div class="grid" id="shelfGrid">
-      <button type="button" class="card" data-slug="forbidden-flower">
-        <span class="cover" data-tone="plum" aria-hidden="true">
-          <span class="cover-title">Forbidden Flower</span>
-          <span class="cover-author">Anonymous</span>
-        </span>
-        <span class="card-body">
-          <span class="card-title">Forbidden Flower</span>
-          <span class="card-author">Anonymous</span>
-        </span>
-        <span class="card-foot">
-          <span>685,000 words</span>
-        </span>
-      </button>
-      <button type="button" class="card" data-slug="frankenstein">
-        <span class="cover" data-tone="slate" aria-hidden="true">
-          <span class="cover-title">Frankenstein</span>
-          <span class="cover-author">Mary Shelley</span>
-        </span>
-        <span class="card-body">
-          <span class="card-title">Frankenstein</span>
-          <span class="card-author">Mary Shelley</span>
-        </span>
-        <span class="card-foot">
-          <span>11,988 words</span>
-        </span>
-      </button>
-      <button type="button" class="card" data-slug="moby-dick">
-        <span class="cover" data-tone="ink" aria-hidden="true">
-          <span class="cover-title">Moby-Dick</span>
-          <span class="cover-author">Herman Melville</span>
-        </span>
-        <span class="card-body">
-          <span class="card-title">Moby-Dick</span>
-          <span class="card-author">Herman Melville</span>
-        </span>
-        <span class="card-foot">
-          <span>9,342 words</span>
-        </span>
-      </button>
-      <button type="button" class="card" data-slug="walden">
-        <span class="cover" data-tone="moss" aria-hidden="true">
-          <span class="cover-title">Walden</span>
-          <span class="cover-author">Henry David Thoreau</span>
-        </span>
-        <span class="card-body">
-          <span class="card-title">Walden</span>
-          <span class="card-author">Henry David Thoreau</span>
-        </span>
-        <span class="card-foot">
-          <span>29,526 words</span>
-        </span>
-      </button>
-      <button type="button" class="card" data-slug="wonderland">
-        <span class="cover" data-tone="plum" aria-hidden="true">
-          <span class="cover-title">Alice's Adventures in Wonderland</span>
-          <span class="cover-author">Lewis Carroll</span>
-        </span>
-        <span class="card-body">
-          <span class="card-title">Alice's Adventures in Wonderland</span>
-          <span class="card-author">Lewis Carroll</span>
-        </span>
-        <span class="card-foot">
-          <span>12,024 words</span>
-        </span>
-      </button>
-    </div>
+    <div class="grid" id="shelfGrid"></div>
   </section>
   </div>
 

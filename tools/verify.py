@@ -112,7 +112,7 @@ def run():
             ok(f"{label} touch targets >= 44px", not v["smallTargets"],
                v["smallTargets"][:8])
             v["cards"] = page.locator("#shelfGrid .card").count()
-            ok(f"{label} four covers on the shelf", v["cards"] == 4, v["cards"])
+            ok(f"{label} five covers on the shelf", v["cards"] == 5, v["cards"])
 
             step(label + " click a cover")
             page.locator("#shelfGrid .card").first.click()
@@ -152,7 +152,7 @@ def run():
         page = ctx.new_page()
         watch(page)
         page.goto(BASE, wait_until="networkidle")
-        page.locator("#shelfGrid .card").nth(2).click()   # walden, longest
+        page.locator("#shelfGrid .card").nth(3).click()   # walden, longest
         page.wait_for_selector("#reader:not([hidden])")
         page.wait_for_function("() => document.querySelectorAll('#readerPage h2').length > 0")
 
@@ -526,7 +526,7 @@ def a11y():
         page.wait_for_selector("#shelfGrid .card", timeout=10000)
         # Most of these controls live in the reader, so a book has to be open
         # before any of them is clickable.
-        page.locator("#shelfGrid .card").nth(2).click()
+        page.locator("#shelfGrid .card").nth(3).click()
         page.wait_for_function(
             "() => document.querySelectorAll('#readerPage p').length > 3", timeout=15000)
 
@@ -589,7 +589,7 @@ def a11y():
         shelf_h1 = page.evaluate(
             "() => document.querySelectorAll('#main h1').length")
         ok("one heading on the shelf", shelf_h1 == 1, shelf_h1)
-        page.locator("#shelfGrid .card").nth(2).click()
+        page.locator("#shelfGrid .card").nth(3).click()
         page.wait_for_function(
             "() => document.querySelectorAll('#readerPage p').length > 3", timeout=15000)
         views = page.evaluate("""() => {
@@ -645,7 +645,7 @@ def offline():
         page.goto((ROOT / "index.html").as_uri(), wait_until="load", timeout=25000)
         page.wait_for_selector("#shelfGrid .card", timeout=10000)
         report["cards"] = page.locator("#shelfGrid .card").count()
-        page.locator("#shelfGrid .card").nth(2).click()
+        page.locator("#shelfGrid .card").nth(3).click()
         page.wait_for_function(
             "() => document.querySelectorAll('#readerPage p').length > 3", timeout=15000)
         report["words"] = page.evaluate(
@@ -665,10 +665,10 @@ def offline():
             "() => JSON.parse(localStorage.getItem('inkwell:reading:v1') || '{}')")
         browser.close()
 
-    ok("offline file:// opens the shelf", report["cards"] == 4, report["cards"])
+    ok("offline file:// opens the shelf", report["cards"] == 5, report["cards"])
     ok("offline file:// renders real text", report["words"] > 2000, report["words"])
     ok("offline file:// shows the full reading bar", report["barH"] == 56, report["barH"])
-    state = report["state"].get("walden", {})
+    state = next(iter(report["state"].values())) if report["state"] else {}
     ok("offline file:// saves the position", 0.05 < state.get("percent", 0) < 0.95, state)
     errs = [c for c in report["console"] if c.startswith("error")]
     ok("offline file:// raises no console errors", not errs, errs[:5])

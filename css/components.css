@@ -3,104 +3,6 @@
  * from tokens.css. */
 
 /* ==================================================================== *
- *  BOOK CARD (shelf grid)
- * ==================================================================== */
-
-.card {
-  display: grid;
-  grid-template-columns: var(--thumb-size) 1fr;
-  align-items: start;
-  gap: var(--space-3);
-  width: 100%;
-  padding: var(--space-3);
-  border-radius: var(--radius-control);
-  text-align: left;
-  color: var(--fg-muted);
-  background: var(--surface);
-  border: var(--rule-w) solid var(--border);
-  min-height: var(--tap);
-  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
-}
-.card:hover { background: var(--surface-raised); color: var(--fg); border-color: var(--c-smoke-500); }
-.card:active { transform: scale(0.98); }
-.card:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-
-.card-body {
-  display: grid;
-  gap: var(--space-1);
-  min-width: 0;
-}
-
-.card-title {
-  display: block;
-  font-size: var(--fs-200);
-  font-weight: var(--fw-medium);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: var(--fg);
-}
-
-.card-author {
-  display: block;
-  font-size: var(--fs-100);
-  color: var(--fg-muted);
-}
-
-.card-foot {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  margin-top: var(--space-2);
-  font-size: var(--fs-100);
-  color: var(--fg-faint);
-}
-
-.card-pct {
-  color: var(--accent);
-  font-variant-numeric: tabular-nums;
-}
-
-.cover {
-  flex-shrink: 0;
-  width: var(--thumb-size);
-  aspect-ratio: 2 / 3;
-  border-radius: var(--radius-cover);
-  overflow: hidden;
-  display: grid;
-  align-content: space-between;
-  padding: var(--space-3) var(--space-2);
-  background: var(--cover-bg, var(--c-smoke-700));
-  color: var(--cover-fg, var(--c-chalk));
-  box-shadow: var(--shadow-1), var(--shadow-inset-top);
-  isolation: isolate;
-}
-
-.cover::before {
-  content: "";
-  position: absolute;
-  inset-block: 0;
-  left: var(--space-1);
-  width: var(--rule-w);
-  background: currentColor;
-  opacity: 0.14;
-}
-
-.cover-title {
-  font-size: var(--fs-200);
-  font-weight: var(--fw-semi);
-  line-height: 1.15;
-  letter-spacing: var(--track-tight);
-  text-wrap: balance;
-}
-.cover-author {
-  font-size: var(--fs-100);
-  letter-spacing: var(--track-label);
-  text-transform: uppercase;
-  opacity: 0.72;
-}
-
-/* ==================================================================== *
  *  BUTTONS
  * ==================================================================== */
 
@@ -319,7 +221,7 @@
 .scrim {
   position: absolute;
   inset: 0;
-  z-index: calc(var(--z-drawer) - 1);
+  z-index: var(--z-scrim);
   background: var(--scrim);
   opacity: 0;
   pointer-events: none;
@@ -415,9 +317,9 @@
 
 .resume-bar {
   flex: 1;
-  height: 4px;
+  height: var(--progress-h);
   background: var(--c-void);
-  border-radius: 2px;
+  border-radius: var(--radius-pill);
   overflow: hidden;
 }
 .resume-bar span {
