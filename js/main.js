@@ -22,7 +22,7 @@
       "noteExport", "noteClear", "speechPanel", "speechPlay", "speechStop",
       "speechBack", "speechFwd", "speechRate", "speechTime", "speechTrack",
       "closeBtn", "fsBtn", "modeBtn", "typeBtn", "notesBtn", "findBtn", "ttsBtn",
-      "topBtn", "copyBtn", "readerScroll", "readerPage", "progress", "progressPct", "sectionNow",
+      "topBtn", "chapterPrevBtn", "chapterNextBtn", "copyBtn", "readerScroll", "readerPage", "progress", "progressPct", "sectionNow",
       "toastDock", "aboutDialog", "aboutOpen", "aboutClose", "storageWarn", "countLabel",
       "appbar", "main"
     ].forEach(function (id) { dom[id] = document.getElementById(id); });

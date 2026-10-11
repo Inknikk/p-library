@@ -790,6 +790,37 @@
         setMode(dom.reader.getAttribute("data-mode") === "focus" ? "reader" : "focus");
       });
       dom.fsBtn.addEventListener("click", toggleFullscreen);
+      if (dom.chapterPrevBtn) {
+        dom.chapterPrevBtn.addEventListener("click", function () {
+          var idx = -1;
+          for (var i = 0; i < sections.length; i += 1) {
+            if (sections[i].getBoundingClientRect().top <= 80) idx = i;
+            else break;
+          }
+          if (idx > 0) {
+            sections[idx - 1].scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            toast("Already at the first chapter");
+          }
+        });
+      }
+      if (dom.chapterNextBtn) {
+        dom.chapterNextBtn.addEventListener("click", function () {
+          var idx = -1;
+          for (var i = 0; i < sections.length; i += 1) {
+            if (sections[i].getBoundingClientRect().top <= 120) idx = i;
+          }
+          if (idx >= 0 && idx < sections.length - 1) {
+            sections[idx + 1].scrollIntoView({ behavior: "smooth", block: "start" });
+          } else if (sections.length > 0 && idx === sections.length - 1) {
+            toast("Already at the last chapter");
+          } else if (sections.length > 0) {
+            sections[0].scrollIntoView({ behavior: "smooth", block: "start" });
+          } else {
+            toast("No chapters found");
+          }
+        });
+      }
       dom.topBtn.addEventListener("click", function () { scroll.scrollTo({ top: 0, behavior: "smooth" }); });
       dom.copyBtn.addEventListener("click", function () {
         loadText(book.src).then(function (t) {
