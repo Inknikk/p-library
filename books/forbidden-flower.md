@@ -1,10 +1,6 @@
----
-title: Forbidden Flower
-author: Anonymous
-year: 2026
----
+## The Beginning of Love
 
-## Chapter One: The Beginning of Love
+### Chapter 1
 
 There are many kinds of first encounters in this world—beautiful, unforgettable, fleeting, and familiar—but none can compare to the feeling He Ran had when she first met Xiao Han. With the arrival of March, the humid, rainy season begins in Guangzhou. The weather remains unpredictable, damp, and foggy. The walls and tiles were covered with layers of water droplets, mold had grown in the dark corners, and clothes that had been hanging out to dry for several days were still not dry. All of was unbearable. He Ran hasn't been sleeping well these past few days, partly because of the torturous weather, and partly because of a man she's never met. She had dreamed of that man for several nights in a row. He had an extremely pleasant voice, and in the dead of night, he would whisper in her ear, saying all the things that lovers say that would make them blush. Perhaps this is what others call a young girl's first stirrings of love, but He Ran had never even seen the man's face, nor did she know his name. Even He Ran herself found it strange. It all started with a chance encounter a week ago. It was just an ordinary Friday afternoon. After school, He Ran and Ding Xiaoxu went home together. It had become a routine for He Ran to take a taxi and for Ding Xiaoxu to hitch a ride with her. While hailing a car at the school gate, Ding Xiaoxu suddenly scratched his head and said with a smile,
 
@@ -59,13 +55,8 @@ He Ran replied,
 "Okay."
 
 The man quickly wet her hair, then squeezed out some shampoo and rubbed it into her hair.
----
-title: 'Chapter One: The Beginning of Love'
-chapter: 2
-wordCount: 962
-date: 2026-09-28
-time: 08:04:03
----
+
+### Chapter 2
 
 Halfway through the shower, He Ran asked him,
 
@@ -138,13 +129,8 @@ The whole process took about ten minutes, which is neither long nor short. After
 Her head felt even dizzier. He Ran took a deep breath, forced herself to stay awake, and turned to go downstairs. The Han and He families have been close friends for generations, their friendship continuing to this day. However, by the time of He Ran and Han Yu, they had become irreconcilable enemies. It seemed their fates were incompatible; wherever they went, they seemed to run into each other like sworn enemies. The adults, however, believed this was simply another manifestation of their close relationship, attributing it all to their immaturity. During dinner, He Ran overheard some gossip from the adults—her cousin, the second daughter of her uncle's family, had been caught having an affair with the family's hired driver a few days earlier. The driver was reprimanded and kicked out, and her cousin was severely criticized by her elders and confined to the house for a month to reflect on her actions. As Yang Wenping spoke, she turned back to give He Ran a heads-up:
 
 "If you ever dare to do something so shameful in the future, I will disown you as my daughter."
----
-title: 'Chapter One: The Beginning of Love'
-chapter: 3
-wordCount: 1174
-date: 2026-09-28
-time: 08:06:24
----
+
+### Chapter 3
 
 Mrs. Han smiled and smoothed things over,
 
@@ -279,22 +265,12 @@ Han Yu paused slightly, his expression one of utter scoundrel,
 After saying that, he slammed the door shut and left, his actions behaving in his usual style, showing no regard for the feelings of others. The room finally quieted down. He Ran was too lazy to think about the threats he had made before leaving. She threw all his homework books aside, climbed into bed, and fell asleep. He Ran had another dream that night. The cramped space was stuffy and humid, and sweat clung tightly to my body. She didn't know where she was. In the chaos, everything seemed to be shaking. A stimulating sensation like ice and charcoal being burned together surged wildly within her. In her fading consciousness, she could only make out a familiar voice. A hot, strong body embraced him, and a voice was close at hand:
 
 "Is this water temperature alright?"
----
-title: 'Chapter One: The Beginning of Love'
-chapter: 4
-wordCount: 1181
-date: 2026-09-28
-time: 08:07:11
----
+
+### Chapter 4
 
 The voice, both intimate and seductive, made her feel weak in the knees. When I woke up the next day, the first rays of dawn were just beginning to appear on the horizon, piercing through the clouds in wisps. He Ran sat up. The bedside was empty. She hugged her legs, buried her face between her knees, and sighed softly. This is the umpteenth night I've dreamt of him again. During the day, she never thought about that man who had nothing to do with her, but at night he would appear in her dreams. She couldn't control her dreams; she couldn't just not sleep. He Ran is 18 years old this year, a beautiful age. She doesn't know if girls her age around her have such dreams, but she is not shameless enough to ask others. He Ran wiped her face, trying to clear her mind. She got out of bed, walked to her desk, took out her long-forgotten sketchbook and charcoal pencils from the drawer, and then found a trash can. As she sharpened her pencil, she mentally sketched out what she would draw later. The man in her dream had very strong arms, broad shoulders, and a sturdy back—all things she vividly felt in her dream. But his face... His face was blank. After drawing a few simple auxiliary lines, He Ran began to draw. In her figure drawing class, she had drawn many nude men, both copies and sketches, but this was the first time she had imagined them out of thin air. It's the same old story, the basic structure of the human body is pretty much the same, except she felt that his muscle lines should be smoother and more defined, and that needed to be emphasized. He Ran's order of drawing the human body is rather strange. He starts with the feet, then the calves, thighs, then the waist, chest, and so on upwards. Finally, her pen stopped between his eyebrows. I couldn't bring myself to write. Her mind went completely blank when it came to men's facial features. What will he look like? He Ran tried to make connections based on his voice, but she couldn't match it with any. She had no idea where the intuition came from, but she was certain that his appearance was not the effeminate type. Even if someone is ordinary and unremarkable, they shouldn't be like that. After a long pause, He Ran put down her pen, as if she had made an important decision, and suddenly stood up. At 11:30, He Ran sat in a taxi, staring blankly at the endless stream of vehicles on the highway outside the window. The phone in my bag vibrated for a long time before finally stopping; this was the fourteenth missed call in an hour. An hour earlier, when Han Yu made his first call, He Ran had just arrived at the popular hair salon in Zhengjia Plaza. She specifically asked number 33 to wash her hair, but when she went upstairs, let her hair down, and lay down, a woman walked in instead. It was only after inquiring that we learned that the original number 33 had resigned a week earlier. After washing her hair, He Ran left in a hurry without even drying it. Before leaving, she asked the shop manager about the whereabouts of number 33. The shop manager gave her an address and told her that Xiao Han had his own small hair salon in Xiaozhou Village and had gone back to run his own business. Xiao Han. He Ran silently recited it in her mind. That's the man's name. The taxi stopped at the crossroads in Xiaozhou Village. The road inside was too narrow for vehicles to pass through easily. When He Ran was paying, Han Yu called for the fifteenth time. She took the change from the driver, put her phone on airplane mode, and then got out of the car. Xiaozhou Village was originally a simple and rustic village with distinctive Lingnan characteristics, but in recent years, due to the surge in the number of art studios, the population has become denser, and the original atmosphere has gradually been eroded. He Ran participated in an art studio training program last semester and stayed here for more than half a year. However, unlike other students around her, she doesn't like to go out and play in groups whenever she has free time, so she is still not very familiar with the roads here. Although Xiaozhou Village is not large, its alleys are intricate and shaded by dense foliage, making it easy to get lost once you enter. He Ran walked down the street from house to house, going around in circles several times. Before her shoes wore out, she finally found a barbershop in an extremely secluded alley. At the end of a quiet, cobblestone alley, the barbershop sits quietly without any signs or markings. The two wooden doors are covered with old couplets and yellowed old photos. The black and white striped lampposts turn slowly, looking ancient and full of the vicissitudes of time. There was a high cement staircase in front of the door, and He Ran stood at the bottom of that staircase looking up. She had been standing for a while, and the long hours of looking up had caused her neck to ache terribly. Just as she was about to twist her neck, the door of the hair salon suddenly opened. A white and gray cat darted out from inside, its posture languid. Then, a man came out. There are many kinds of first encounters in this world—beautiful, unforgettable, fleeting, and familiar—but none can compare to the feeling He Ran had when she first met Xiao Han. She traveled from afar, without any reason or consequence, simply because she desperately wanted to see him. The man was wearing a black vest, camel-colored shorts, and flip-flops, looking unkempt overall. He splashed the water from the basin into the grass beside him, and then noticed He Ran standing at the bottom of the steps. He squinted and looked her over. Their eyes met, and the man preemptively asked, "Want a haircut?" He Ran recognized him as soon as he opened his mouth. She couldn't help but look him up and down again. How to describe the man's appearance? He looked relatively young, but there was a sense of maturity in him, especially in the area from his eyebrows to the bridge of his nose, which was deep and strong contours. His hairstyle was also clean and neat, growing naturally and smoothly along his sideburns, unlike those boys in school who deliberately used hair masks to make their hair stand up high. That face and features were ordinary enough to blend into a crowd and not be easily recognized at first glance, yet once you saw it, you wouldn't want to look away. He Ran thought that perhaps this was what was called masculinity, something that needed to be savored.
----
-title: 'Chapter One: The Beginning of Love'
-chapter: 5
-wordCount: 1108
-date: 2026-09-28
-time: 08:07:48
----
+
+### Chapter 5
 
 He Ran stared at him intently for a while, and the man probably thought she was considering his question, so he stood still and waited quietly. It's certain that he no longer remembers her. That's normal; he has so many guests to entertain every day, how could he possibly remember her?
 
@@ -399,13 +375,8 @@ He Ran paused, as if thinking, and finally nodded:
 The man turned to grab the hair clipper, shook it twice in the air, and then wrapped it around He Ran's neck. It was a white hair clipper stained with specks of dirt, of very poor quality. Without any neck wrap, He Ran felt the fabric rubbing uncomfortablely against the skin around her neck. The man then brought out his hairdressing tools, a few pairs of scissors, and they were ready to get started. He Ran had previously guessed that he was an amateur, and now it seems that her guess was true. The man's knife work was chaotic, with no discernible pattern. He would make a few cuts on one side and a few cuts on the other, making He Ran wonder what her hairstyle would eventually look like. A woman suddenly came down the narrow staircase leading to the second floor. He Ran first heard the sharp sound of high heels hitting the ground, and then looked up at the mirror. The woman had long, wavy hair, somewhat disheveled, and looked like she had just woken up. She was only wearing a red vest dress, and her breasts were faintly visible under the thin fabric. The woman walked over to the barber's chair opposite He Ran, sat down, crossed her legs, yawned, and asked,
 
 "When are you making lunch? I'm starving."
----
-title: 'Chapter One: The Beginning of Love'
-chapter: 6
-wordCount: 1207
-date: 2026-09-28
-time: 08:08:22
----
+
+### Chapter 6
 
 She was speaking in a dialect, and judging from her accent, she was probably from the Sichuan area. The man was focused on fixing his hair, not looking at her, and simply replied,
 
@@ -450,13 +421,8 @@ After saying that, he handed a bottle of beverage of an indescribable color to H
 He Ran frowned slightly, staring at the strange-looking bottle, expressing her resistance with silence.
 
 "What, you don't want to drink?"
----
-title: 'Chapter One: The Beginning of Love'
-chapter: 7
-wordCount: 1141
-date: 2026-09-28
-time: 08:09:13
----
+
+### Chapter 7
 
 "May I have some tea?"
 
@@ -563,13 +529,8 @@ The man paused slightly,
 "Girlfriend? Which girlfriend?"
 
 He Ran didn't know whether he meant he didn't have a girlfriend or he had many girlfriends.
----
-title: 'Chapter One: The Beginning of Love'
-chapter: 8
-wordCount: 1110
-date: 2026-09-28
-time: 08:09:38
----
+
+### Chapter 8
 
 "Uh...it's that lady who was here this morning,"
 
@@ -702,13 +663,8 @@ As He Ran turned to leave, Yang Wenping added,
 "Your dad's company has been doing increasingly poorly in recent years. Be careful with your spending lately, and don't be so extravagant."
 
 Knowing she couldn't reason with her, He Ran walked upstairs without looking back.
----
-title: 'Chapter One: The Beginning of Love'
-chapter: 9
-wordCount: 1577
-date: 2026-09-28
-time: 08:10:00
----
+
+### Chapter 9
 
 The next day, He Ran couldn't go to deliver the money to Xiao Han because she had to go back to school. That was fine; she didn't want to appear in front of him too frequently for the time being. The monthly exams are this week, and the atmosphere in the class has become tense without anyone noticing. He Ran, however, hasn't been affected much. Her grades have always hovered in the lower middle range, and no matter how many tutors she hires, it's all to no avail. Yang Wenping has given up on worrying about her studies, and He Ran herself is quite content with the status quo.
 
@@ -839,15 +795,10 @@ section. Apart from the Nike logo being relatively conspicuous, there was nothin
 "He Ran"
 
 .
----
-title: 'Chapter Two: Testing'
-chapter: 10
-wordCount: 1154
-date: 2026-09-28
-time: 08:10:30
----
 
-## Chapter Two: Testing
+## Testing
+
+### Chapter 10
 
 Although she didn't understand men, the message conveyed in Xiao Han's eyes inexplicably gave her the courage to give it a try. After Xiao Han finished work, the two went back to Xiaozhou Village for lunch. He Ran said she would treat them to lunch, and Xiao Han didn't hesitate or refuse, readily agreeing. At the fat man's fast food restaurant, he cooked a few home-style dishes. He Ran said she couldn't eat spicy food, so the fat man made the flavors milder. Several dishes were brought out of the kitchen and arranged in a circle on the table. The three sat down around the table. The fat man first picked up a piece of fish-flavored eggplant and asked He Ran to try it, asking her how it tasted. He Ran nodded, praising without reservation:
 
@@ -934,13 +885,8 @@ His tone was casual, yet it sounded perfectly natural. He Ran was stunned for a 
 "You drew very well."
 
 He Ran was startled. She wasn't usually a carefree person, but she didn't notice Xiao Han's arrival at all. He Ran turned around and looked up at the tall man standing in front of her.
----
-title: 'Chapter Two: Testing'
-chapter: 11
-wordCount: 1090
-date: 2026-09-28
-time: 08:10:56
----
+
+### Chapter 11
 
 Just as I was about to ask him when he got back, he beat me to it:
 
@@ -1061,13 +1007,8 @@ For a moment, she thought that Xiao Han might invite her to stay and eat with hi
 "okay"
 
 indifferently. He Ran then slung her backpack over her shoulder, turned around, and left the barbershop, without feeling as disappointed as she had imagined. Over the weekend, He Ran went to visit her second uncle's house with her parents. My second uncle's mansion is located in a mountain resort at the foot of Baiyun Mountain. It is a magnificent and luxurious detached villa with a garden and swimming pool. He Ran had visited a few times and didn't feel anything about the overly modern architecture. Yang Wenping, on the other hand, was very fascinated and kept nagging that her house was inferior to others. He Ran remembered that her father, He Jin, didn't look too happy when she said these things. Inside the villa, the adults chatted and drank tea on the first floor, while my second cousin was confined to her room and not allowed to come out to see guests. Among her siblings, He Ran was closest to her second cousin. The two had similar personalities, being quiet and not talkative, so they got along very well in private. Her second aunt felt sorry for her daughter and asked He Ran to go and comfort her. He Ran went upstairs to find her as instructed, but she felt that she did not have the ability to persuade others.
----
-title: 'Chapter Two: Testing'
-chapter: 12
-wordCount: 1266
-date: 2026-09-28
-time: 08:11:22
----
+
+### Chapter 12
 
 My second cousin recounted the events of that day in their entirety: Xiao Hou suddenly said he wanted to elope with her, but she refused. They got into a fight in the car, and were then discovered by the servants who rushed over after hearing the commotion. At this point, the second cousin's voice lowered:
 
@@ -1190,13 +1131,8 @@ Xiao Han turned around and said,
 He mentioned the name of a park that He Ran had never heard of before, and He Ran continued,
 
 "I don't have class this afternoon, and I'd like to find a place to relax. Can I go with you?"
----
-title: 'Chapter Two: Testing'
-chapter: 13
-wordCount: 1040
-date: 2026-09-28
-time: 08:11:43
----
+
+### Chapter 13
 
 Xiao Han was silent for a moment, then said,
 
@@ -1331,13 +1267,8 @@ He Ran couldn't help but smile; she knew he wouldn't agree. Xiao Han said,
 He Ran shook her head:
 
 "It's nothing."
----
-title: 'Chapter Two: Testing'
-chapter: 14
-wordCount: 1117
-date: 2026-09-28
-time: 08:12:08
----
+
+### Chapter 14
 
 Xiao Han sat in the studio for a total of five hours that day, and He Ran gave him 150 yuan. He took it, said thank you, and turned to leave. He Ran called him back and asked,
 
@@ -1424,13 +1355,8 @@ The fat man said,
 "Old Xiao sings a song every time he comes out. I suspect that this is the only song he can sing."
 
 He Ran smiled but didn't say anything.
----
-title: 'Chapter Two: Testing'
-chapter: 15
-wordCount: 1146
-date: 2026-09-28
-time: 08:12:25
----
+
+### Chapter 15
 
 The fat man was right. Xiao Han really only sang one song throughout the entire show, which was far from enough to leave a lasting impression, but He Ran had already gotten what she wanted. He Ran was even more stingy, not singing a single song. The microphone was passed to her several times, but she refused with various excuses. Knowing she was tone-deaf, she decided against going up there to embarrass herself. The event ended at 10:30 p.m. Fortunately, after leaving the KTV, the fat man did not suggest going to a bar, otherwise He Ran would have really been unable to cope. She had already gone to the bathroom to vomit several times during the event, and the dim lighting could not hide her pale face. They took the subway to the university town, and then took a motorcycle back to Xiaozhou Village. It was 11:30 p.m., past the studio's curfew, and He Ran's accommodation for the night became a problem. The fat man gave her some advice:
 
@@ -1493,13 +1419,8 @@ After a while, Xiao Han spoke up,
 He Ran was taken aback.
 
 "What kind of help?"
----
-title: 'Chapter Two: Testing'
-chapter: 16
-wordCount: 766
-date: 2026-09-28
-time: 08:12:48
----
+
+### Chapter 16
 
 Xiao Han asked,
 
@@ -1656,13 +1577,8 @@ He Ran couldn't help but feel ashamed of herself. She had studied and grown up i
 Xiao Han shook his head:
 
 "No need, it's not heavy."
----
-title: 'Chapter Two: Testing'
-chapter: 17
-wordCount: 1049
-date: 2026-09-28
-time: 08:13:10
----
+
+### Chapter 17
 
 He Ran insisted,
 
@@ -1739,13 +1655,8 @@ and as adults, we all understand what that means. He Ran waited for his answer w
 He Ran met his gaze calmly and replied,
 
 "Yes."
----
-title: 'Chapter Two: Testing'
-chapter: 18
-wordCount: 905
-date: 2026-09-28
-time: 08:15:57
----
+
+### Chapter 18
 
 Although she didn't understand men, the message conveyed in Xiao Han's eyes inexplicably gave her the courage to give it a try. He Ran slowly took a step forward, getting closer to him, and finally stopped in front of him, her clothes almost brushing against his front.
 
@@ -1824,13 +1735,8 @@ Xiao Han stubbed out his cigarette and threw it into the trash can next to him. 
 "Are you ready for today?"
 
 Xiao Han looked down at her, remaining silent for a long time. His dark, unfathomable eyes gave her a sense of unease and helplessness.
----
-title: 'Chapter Two: Testing'
-chapter: 19
-wordCount: 930
-date: 2026-09-28
-time: 08:16:29
----
+
+### Chapter 19
 
 It was as if a huge vortex was sucking He Ran in, and she forgot to speak for a moment. Then a vendor nearby called out,
 
@@ -1929,13 +1835,8 @@ He Ran said casually,
 "It's nothing, I was going the same way."
 
 She herself knew that this statement was not very convincing, as the art studio and the hair salon were completely different things. However, she was only giving a token explanation and didn't expect Xiao Han to believe her. In the darkness, she heard Xiao Han sigh softly. The sigh was so brief that she wondered if it was just her imagination.
----
-title: 'Chapter Two: Testing'
-chapter: 20
-wordCount: 843
-date: 2026-09-28
-time: 08:16:49
----
+
+### Chapter 20
 
 The next second, Xiao Han took the picture frame from her hands. The frame was made of solid wood and was quite heavy. He Ran's slender arms had been carrying it all the way, and her arms were already a little sore. Xiao Han asked,
 
@@ -2072,13 +1973,8 @@ The next day, at lunchtime, the two met again at the fast food restaurant, just 
 ---
 
 After dinner, she went to the refrigerator to buy yogurt and then got a bottle of beer for Xiao Han. This time, he didn't refuse. As He Ran left the fast food restaurant, she noticed that Xiao Han was walking in a different direction than before. It was neither the road back to the barbershop nor the road to his job.
----
-title: 'Chapter Two: Testing'
-chapter: 21
-wordCount: 1247
-date: 2026-09-28
-time: 08:17:58
----
+
+### Chapter 21
 
 He Ran followed him and called out,
 
@@ -2155,13 +2051,8 @@ He Ran asked. Xiao Han squatted down and rubbed Zaozao's head, replying,
 "No, it's been with me for many years."
 
 He Ran stared at the cat, which was even more affectionate than a woman, and inexplicably thought of some things. After an unknown amount of time, she suddenly turned her gaze and found that Xiao Han was also staring at her without moving.
----
-title: 'Chapter Two: Testing'
-chapter: 22
-wordCount: 1091
-date: 2026-09-28
-time: 08:18:22
----
+
+### Chapter 22
 
 She asked him,
 
@@ -2256,15 +2147,10 @@ She bit her lip, then let go after a moment, and said,
 "How do you know if it's small or not if you haven't looked closely?"
 
 When she said those words, her hand was on the hem of her dress; whether or not to lift it was just a matter of a moment's thought. Her implication was obvious, and they both understood it, but Xiao Han remained silent and did not express his opinion. Looking back on that moment, He Ran regretted not speaking in a brighter place. The last rays of the setting sun were not enough to illuminate the dark little house, and Xiao Han's face was hidden behind a patchwork of shadows, so she could not see the expression on his face.
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 23
-wordCount: 1109
-date: 2026-09-28
-time: 08:18:42
----
 
-## Chapter Three: Dreams and Reality
+## Dreams and Reality
+
+### Chapter 23
 
 In the very beginning, all the impulse stemmed from a voice that haunted my dreams. And now, the dream has finally become reality. For the next three days, He Ran went to the hair salon but couldn't find Xiao Han. Later, she asked the fat man for information and learned that Xiao Han had gone back to his hometown to take care of some things. Because of his sudden departure, He Ran felt depressed for a short while. Actually, it can't be considered leaving without saying goodbye. Xiao Han had no obligation to inform her where he was going. It seems to have become a habit; He Ran has been taking walks and sketching near the barbershop every few days these past few days, while also checking to see if Xiao Han has returned.
 
@@ -2385,13 +2271,8 @@ Several years ago, during the time when He Ran was being bullied by Han Yu the m
 "Good people don't live long, but evil people live for a thousand years."
 
 Han Yu usually acts like a bully and tyrant on campus, but he still lives a comfortable life. So when He Ran heard the news of Han Yu's car accident, she was quite surprised. Had God finally remembered to punish this bastard? In He Ran's mind, car accidents were often associated with major incidents that resulted in severe injuries. She thought she would see Han Yu lying in bed, but when she actually stood in front of Han Yu's hospital bed, she found that it was not like that at all. He only suffered minor injuries; the most serious injury was to his right leg, a slight fracture. He had a cast on, which made walking a little difficult, but the rest were just minor cuts and bruises. Yang Wenping chatted with Mrs. Han for a few minutes and then left the ward, asking He Ran to stay and talk to Han Yu.
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 24
-wordCount: 1272
-date: 2026-09-28
-time: 08:18:59
----
+
+### Chapter 24
 
 He Ran was still carrying the fruit basket that Yang Wenping had asked her to buy, and it was quite heavy as she carried it. Unfortunately, her bedside table was already piled high with gifts from visitors, and she had nowhere to put it. This mischievous little devil may have a bad character, but he's quite popular. Han Yu leaned back against the pillows, and even though he was wearing a plain hospital gown, his face still held an arrogant and domineering expression. Even though He Ran was standing, he insisted on craning his neck and striking a pose as if he were looking down on her. He smirked and said,
 
@@ -2498,13 +2379,8 @@ Yang Wenping added,
 He Ran nodded, then waved to her,
 
 "I'm leaving now, goodbye."
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 25
-wordCount: 1115
-date: 2026-09-28
-time: 08:19:14
----
+
+### Chapter 25
 
 He Ran saw Xiao Han again by chance. That day, she suddenly wanted to eat fruit, so she went to the market. As she finished buying fruit and was heading back to her studio, she suddenly caught a glimpse of a familiar figure standing in front of a stall not far away. Her gaze first fell on the back of the person's head, and then she noticed that he was holding the hand of a little boy. He Ran hesitated for a moment, but finally took a step and followed, walking behind the person.
 
@@ -2615,13 +2491,8 @@ Xiao Han said,
 "He can't eat that much; he still needs to eat later."
 
 He Ran then reached out and took it.
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 26
-wordCount: 1061
-date: 2026-09-28
-time: 08:19:39
----
+
+### Chapter 26
 
 After finishing her apple, He Ran left. She had classes in the afternoon and couldn't stay there for too long. Perhaps it was something Xiao Han said to Quan Quan after He Ran left, because when she went to the hair salon the next day, she felt that Quan Quan's attitude towards her had changed. He Ran stood at the door. The little guy hesitated for a while, then suddenly mustered up his courage and walked towards her step by step. When he got close enough, he stopped and whispered,
 
@@ -2754,13 +2625,8 @@ He Ran found a stool for Xiao Han and sat down next to him. The faint smell of s
 "Go to the first floor and wait for me. We'll talk after you take a shower."
 
 After saying that, he turned around and went into the bathroom. He Ran was in a daze for a while before silently going downstairs. However, she didn't wait for him and left directly. Because she could sense that he wouldn't be able to say anything, and even if he could, it wouldn't be what she wanted to hear. Sometimes a man's silence is a form of rejection. Thinking of this, she subtly shifted her calf slightly to the side. When the two sat together, Xiao Han's trouser leg would always brush against her calf almost imperceptibly, a subtle sensation that was quite bothersome.
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 27
-wordCount: 1133
-date: 2026-09-28
-time: 08:20:00
----
+
+### Chapter 27
 
 There are still 20 minutes until 6:30. Sitting still like this isn't a solution. He Ran casually started a conversation:
 
@@ -2871,13 +2737,8 @@ He Ran looked in the direction he was pointing, and the
 "big and round"
 
 thing that Quan Quan was talking about was actually a common Ferris wheel. Xiao Han was very accommodating to his requests. After resting for a few minutes, the three of them headed towards the Ferris wheel.
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 28
-wordCount: 1091
-date: 2026-09-28
-time: 08:20:25
----
+
+### Chapter 28
 
 While queuing at the ticket counter, Xiao Han suddenly said,
 
@@ -2984,13 +2845,8 @@ She only said half of what she meant, but both of them understood that she was r
 "I am afraid of heights, but I am not so afraid that I don't even have the ability to resist."
 
 In the afternoon, I accompanied Quan Quan to play some other rides at the amusement park. The three of us had dinner outside before returning to Xiaozhou Village. A light drizzle unexpectedly began on the road from the bus stop to the archway. The rain wasn't heavy; it was just a fine mist drifting through the alleyways. They quickened their pace back to the barbershop, their hair and clothes inevitably covered in fine raindrops. Once inside, Xiao Han first wiped his face haphazardly with his hands, then helped Quan Quan wipe the water droplets from her face. After doing this, he turned to look at He Ran, who was standing to the side fixing her hair. The light rain wasn't a problem, but it was a real ordeal for people who wear glasses. The raindrops gathered frequently, densely packed, and were particularly uncomfortable blocking the lenses. Xiao Han walked up to He Ran and reached out to remove her glasses. He lifted a corner of his shirt, vaguely revealing his muscular waist beneath the T-shirt. He carefully wiped the lenses several times through the fabric, following their curves, then breathed on them before wiping them again.
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 29
-wordCount: 917
-date: 2026-09-28
-time: 08:20:51
----
+
+### Chapter 29
 
 After repeating this several times, Xiao Han returned the clean and bright glasses to her. He Ran reached out and took it, then looked up at him. His face was blurry in her severely nearsighted vision. She smiled at him, then put on her glasses. A light rain brought a slight chill, and to prevent Quan Quan from catching a cold again, Xiao Han immediately led him upstairs to take a hot bath. He Ran sat on the bed outside, separated by a curtain, waiting. Quan Quan cooperated well during her bath, without crying or fussing, and it was over in ten minutes. Xiao Han lifted the curtain, and Quan Quan came out wearing clean, warm pajamas. It was a children's bear pajama set, which looked very cute on Quan Quan's chubby face that hadn't yet lost its baby fat. He Ran couldn't help but want to pinch his cheeks. She had just stood up when she felt a momentary dizziness, lost her balance, and slumped to the side. Fortunately, the place was small, and Xiao Han reacted quickly, immediately reaching out to help her. He Ran barely managed to steady herself, her expression dazed. Xiao Han asked,
 
@@ -3103,13 +2959,8 @@ Xiao Han then asked,
 He Ran said without hesitation,
 
 "Why should I regret it?"
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 30
-wordCount: 1181
-date: 2026-09-28
-time: 08:21:11
----
+
+### Chapter 30
 
 She took a small step back and looked him up and down with a strange gaze:
 
@@ -3214,13 +3065,8 @@ Xiao Han and Quan Quan left Guangzhou by train that night. He Ran had dinner wit
 He Ran raised her chin, signaling him to close the door. Strangely enough, Xiao Han had visited He Ran's studio several times, and no one had ever suspected their relationship. But Han Yu had only appeared once, and people below were already whispering and speculating: was this blond-haired, seemingly delinquent-looking boy He Ran's boyfriend? He Ran banged loudly on the easel and said,
 
 "Draw quietly!"
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 31
-wordCount: 1138
-date: 2026-09-28
-time: 08:22:33
----
+
+### Chapter 31
 
 He Ran was usually serious and reserved, and he was quite respected among the students. The group of people immediately dared not act recklessly again. After class, she took Han Yu to the cafeteria to talk, but there was no one there. He Ran's first words were,
 
@@ -3337,13 +3183,8 @@ Xiao Han was about to fall asleep when he heard He Ran's voice and slowly opened
 "A few times."
 
 "And now?"
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 32
-wordCount: 1114
-date: 2026-09-28
-time: 08:23:26
----
+
+### Chapter 32
 
 "there is none left."
 
@@ -3476,13 +3317,8 @@ He Ran shook her head:
 After several attempts to persuade her, she still refused to eat. Xiao Han had no choice but to push her noodles into his own bowl, and then put the remaining two steamed dumplings into her bowl, saying,
 
 "Then you eat these two."
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 33
-wordCount: 1331
-date: 2026-09-28
-time: 08:24:03
----
+
+### Chapter 33
 
 He Ran also conceded,
 
@@ -3607,13 +3443,8 @@ but she would forget it again after a while. However, it must be said that the e
 He Ran smiled and said,
 
 "Of course she has to be pretty. How can she seduce Tang Sanzang if she's not pretty?"
----
-title: 'Chapter Three: Dreams and Reality'
-chapter: 34
-wordCount: 1225
-date: 2026-09-28
-time: 08:24:24
----
+
+### Chapter 34
 
 She held the pen tip up and gently poked his chest, a smirk playing on her lips:
 
@@ -3746,15 +3577,10 @@ He Ran shook her head and said calmly,
 "It's nothing, I just have a lot of bleeding, I don't have menstrual cramps."
 
 She knew her own body best, and since she insisted on going, Xiao Han didn't say anything more. The weather wasn't too hot today, but at He Ran's request, Xiao Han still applied sunscreen all over his limbs and wore a wide-brimmed hat before going out. It was still early, and they ran into the fat man who was buying groceries at the archway. The group exchanged glances. When the fat man saw Xiao Han and He Ran together, his smile was unmistakable. It was still in the same park I visited last time. The morning light was faint and scattered. The morning air was fresh, and there were many elderly people doing their morning exercises in the park. A few meters away from He Ran, under a camphor tree, a young man was reciting ancient poems in the shade of a book. His rhythmic and melodious tone was quite interesting. If you ignore the hot weather, this moment is actually quite pleasant. He Ran stood under the dark green willow branches, gazing at the man surrounded by flowers not far away, and could faintly smell the delicate fragrance. The two acres of land around here represent the workload Xiao Han needed to complete this morning; the task was arduous. He bent over, pruning the flower branches, occasionally stopping to straighten up and wipe the sweat from his brow. Sunlight shone on his dark skin, and in several places soaked with sweat, the reflected light was dazzling. He Ran thought Xiao Han must love his job, otherwise he wouldn't have planted so many plants in front of the barbershop. Occasionally, he would turn his head and glance in He Ran's direction. He Ran smiled in response. Time is peaceful, and with you and me here, there is probably nothing more pleasant than this moment.
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 35
-wordCount: 1078
-date: 2026-09-28
-time: 08:24:46
----
 
-## Chapter Four: Indefinite Term
+## Indefinite Term
+
+### Chapter 35
 
 Previous page: The sunlight stretched Xiao Han's shadow infinitely long. He stood there motionless, and even without turning around, he could be seen. A minivan was moving at a snail's pace along the Inner Ring West Road. In the driver's seat, He Ran carefully gripped the steering wheel, her eyes fixed straight ahead. In the passenger seat, Xiao Han rested his chin on his hand and let out a soft yawn. Outside the window, a bicycle rang its bell and sped past, its frame barely touching the ground. A little while later, several pedestrians chased and played, chatting and laughing as they ran past. Xiao Han finally couldn't help but turn around and say to He Ran,
 
@@ -3839,13 +3665,8 @@ He Ran thought for a moment and said,
 Xiao Han's eyes remained calm and indifferent as he replied,
 
 "Not many."
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 36
-wordCount: 1103
-date: 2026-09-28
-time: 08:25:15
----
+
+### Chapter 36
 
 "Not many, but how many?"
 
@@ -3936,13 +3757,8 @@ He Ran remained uninterested throughout, only half-heartedly responding to Yang 
 He Ran had met the man once before, and after a few glances, she confirmed that he was her second cousin's driver. But this time, he seemed strangely familiar, though she couldn't quite place who he resembled. He Ran looked down at the man and said softly,
 
 "Stop making a fuss, she won't see you."
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 37
-wordCount: 1379
-date: 2026-09-28
-time: 08:25:39
----
+
+### Chapter 37
 
 The man ignored him and continued repeating,
 
@@ -4067,13 +3883,8 @@ After a while, He Ran scratched his Adam's apple with her fingertip and softly c
 Xiao Han felt a little itchy and grabbed her hand.
 
 "Hmm?"
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 38
-wordCount: 751
-date: 2026-09-28
-time: 08:26:00
----
+
+### Chapter 38
 
 He Ran said,
 
@@ -4230,13 +4041,8 @@ Fortunately, he wasn't mistaken, otherwise He Ran would have considered flipping
 Xiao Han took out some money from his pocket, looking for change as he said,
 
 "Didn't she see you standing next to me?"
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 39
-wordCount: 1150
-date: 2026-09-28
-time: 08:26:21
----
+
+### Chapter 39
 
 He Ran pouted:
 
@@ -4351,13 +4157,8 @@ He Ran smiled and said,
 My back pressed against the trunk of the bald cypress, and I slid down slowly. Even through my clothes, I could feel the rough texture of the bark, and my skin felt a slight pain from the friction. Xiao Han, mindful of his surroundings, initially refused to cooperate. He Ran, however, refused to let go, striking at vital points with every move, saying,
 
 "Today I'm the birthday boy, you have to listen to me."
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 40
-wordCount: 975
-date: 2026-09-28
-time: 08:26:54
----
+
+### Chapter 40
 
 A dark light flickered in his eyes. The two faced each other for a long time before Xiao Han slowly released her hand. Half an hour later, they rested against a tree stump. The grass beneath them smelled slightly earthy and damp. An ant quietly crawled onto He Ran's hand, which she gently flicked away. Then, He Ran simply took Xiao Han's shirt that he had taken off and put it under his buttocks, not caring at all about the dirt. Xiao Han looked at her and asked,
 
@@ -4444,13 +4245,8 @@ Xiao Han didn't speak, but he tugged at her hand again,
 He Ran poked his chest with her finger, and Xiao Han passively took a step to the side. She still asked him,
 
 "Are you scared?"
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 41
-wordCount: 1072
-date: 2026-09-28
-time: 08:28:00
----
+
+### Chapter 41
 
 Xiao Han's gaze was calm.
 
@@ -4567,13 +4363,8 @@ He Ran hugged a pillow and said indifferently,
 Yang Wenping was silent for a while, then said earnestly,
 
 "Don't end up like your second cousin. You've seen what happened to her."
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 42
-wordCount: 1246
-date: 2026-09-28
-time: 08:28:20
----
+
+### Chapter 42
 
 One sentence made He Ran's mind even more chaotic, and she stopped responding to whatever Yang Wenping said after that. My second cousin's funeral was held at the end of August. Han Yu also attended the funeral that day. He appeared in a black suit with eight buttons neatly fastened, a rare sight for him. The eldest son of the Han family made a grand entrance, with two rows of black-clad bodyguards following behind him, clearly showing the air of someone following in his father's footsteps. Everyone treated him with utmost respect, except for He Ran, who kept her distance and wished she could stay as far away from him as possible. However, before He Ran could even leave the scene after the funeral, Han Yu angrily dragged her into his car. His leg injury hadn't fully healed, but his limp made him surprisingly fast in chasing after her. He Ran sat expressionless in the closed back seat of the car. She knew she could only hide for a moment, but she accepted it. Han Yu glared at her fiercely:
 
@@ -4644,13 +4435,8 @@ The next second she was lying on the bed, pinned down by him. He Ran, with droop
 "Don't do it, I haven't slept all night, I'm so sleepy."
 
 Xiao Han kissed her on the lips, but received no response. He Ran half-pushed and half-refused, her body weak and powerless. He tentatively explored her body with his hands, but He Ran was too tired to be interested.
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 43
-wordCount: 762
-date: 2026-09-28
-time: 08:28:38
----
+
+### Chapter 43
 
 She punched him hard in the back, yelling,
 
@@ -4781,13 +4567,8 @@ Mm.
 " He Ran smiled jokingly, "
 
 Remember to miss me." Xiao Han did not respond. With the lights off and all was quiet, his bright, focused eyes could still be seen in the darkness.
----
-title: 'Chapter Four: Indefinite Term'
-chapter: 44
-wordCount: 1104
-date: 2026-09-28
-time: 08:28:56
----
+
+### Chapter 44
 
 He Ran cupped his face in her hands, her fingers tracing his lower eyelids, and breathed slowly. She murmured softly,
 
@@ -4882,15 +4663,10 @@ At that moment, He Ran recalled a scene from the movie they had watched together
 "The Legend of 1900"
 
 —we said goodbye with smiles, but knew deep down that goodbye was a long way off. He will not repeat the mistake of the past, and she is no longer the girl who would have any lingering ties with him. He Ran got on the car and sat in the window seat. The sunlight stretched Xiao Han's shadow infinitely long. He stood there motionless, and even without turning around, he could be seen. As the car drove forward, amidst the swirling sand and dust, that figure gradually receded into the distance. If only time could stop at this moment, that would be the best ending.
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 45
-wordCount: 1244
-date: 2026-09-28
-time: 08:29:11
----
 
-## Chapter Five: The Youngest Son
+## The Youngest Son
+
+### Chapter 45
 
 Previous page: The gazes exchanged between lovers are never enough. In the past six months, her hair has grown quite a bit, almost reaching her chest. Her figure is still petite, but she is gradually revealing the charm of a mature woman. In her second month in Beijing, He Ran's toothache returned. At night, she lay in her bed, clutching her cheek which throbbed intermittently, unable to sleep a wink. This past month has been filled with school registration, freshman military training, and then the busy search for housing. The hectic days of September have passed, and life is gradually returning to normal. He Ran currently lives in a rented apartment near the school. She doesn't like living in a cramped dormitory because it's too noisy, and it's quieter to live alone. The room is quite nice, a one-bedroom, one-living room, one-bathroom apartment, costing four thousand yuan a month. It faces south and is warm in winter and cool in summer. The landlords are from Chongqing, a middle-aged couple. They are not young, but they have a lot of energy. They argue every night, but make up the next morning. They live right across from He Ran, separated by a wall, and the soundproofing is barely adequate. He Ran was already suffering from a toothache, and having to listen to other people arguing every night made it almost impossible for her to sleep. Several times she regretted moving here, but considering that the couple seemed nice, and that she had already paid three months' rent, she decided to stay for the time being. At the end of the month, He Ran went to the hospital for a follow-up examination. Although she was alone in another province, Yang Wenping had already helped her contact a highly qualified traditional Chinese medicine expert here. She has to have regular check-ups every month, and if there are any abnormalities in her body, she has to take a lot of medication to regulate it. Fortunately, her condition has been very stable, and apart from occasional back and leg pain at night, she is otherwise fine. October. Han Yu visited Beijing during the National Day holiday. While waiting for him at the airport, He Ran received a warning text message from Yang Wenping:
 
@@ -4979,13 +4755,8 @@ She looked up at him and said slowly,
 After a long pause, Han Yu sat down on the sofa without any temper and said sullenly,
 
 "I know."
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 46
-wordCount: 1312
-date: 2026-09-28
-time: 08:29:27
----
+
+### Chapter 46
 
 In truth, He Ran had long been aware that as long as Han Yu continued to pursue her relentlessly, and as long as Yang Wenping remained persistent, it was only a matter of time before she and Han Yu got together. But she also needed more time to convince herself, at least not now.
 
@@ -5048,13 +4819,8 @@ He Ran said calmly,
 Han Yu thought for a moment, then pretended to realize something.
 
 "Oh, are you afraid I'll make things difficult for him? Don't worry, I won't do anything."
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 47
-wordCount: 1036
-date: 2026-09-28
-time: 08:29:42
----
+
+### Chapter 47
 
 He Ran stared at him with a scrutinizing gaze, unable to figure out what this man was up to. Han Yu shrugged and then reassured himself,
 
@@ -5145,13 +4911,8 @@ It was sent at exactly 12 o'clock. The sender was Xiao Han. He Ran held her phon
 "Have fun together"
 
 ), then went back and deleted it after a while. She sat up angrily. He Ran, when did you become such a fussy person?
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 48
-wordCount: 1236
-date: 2026-09-28
-time: 08:29:58
----
+
+### Chapter 48
 
 Whether to do it or not is just a matter of a single sentence. He Ran quickly deleted the text message and called Xiao Han directly. The call was answered shortly afterward.
 
@@ -5214,13 +4975,8 @@ Xiao Han pointed in a direction up the mountain:
 "There."
 
 He Ran looked up and followed his finger... Ah, it's really far. Their village wasn't the poorest; a road had been built before the Lunar New Year, and tourist buses occasionally passed through, making transportation relatively convenient. However, further in, the roads became much worse. Just as Mr. Lu Xun once said, roads are made by people walking on them. The dirt road is uneven and full of potholes, and when you look down you can see rows of footprints, some shallow and some deep. Occasionally, He Ran would encounter a few rural women wearing headscarves, carrying vegetable baskets, seemingly heading somewhere. Their faces, dry and rough from the wind, were flushed with a deep rosy hue, possessing a unique, rustic beauty in He Ran's eyes. Having finally reached Xiao Han's doorstep, He Ran straightened up and carefully observed her surroundings with wide eyes. This earthen house was just as simple as the ones we had seen along the way. The door was tall, and a new couplet was pasted on both sides. The six strips of red paper below the horizontal scroll were being blown wildly by the wind. The windows were grid-shaped and rusty. A pile of grains, red peppers, and a few salted fish hung by the door, and some poultry were kept in cages next to it. It seemed that someone was cooking inside, with a wisp of white smoke rising from the chimney. An old woman was sitting at the doorway, husking corn. Xiao Han walked up to her, and the old woman looked up at him, then at He Ran behind her. The old lady spoke to Xiao Han in dialect. Although He Ran couldn't understand the content, she could guess that she was asking who she was. Xiao Han replied in dialect, and then led He Ran into the house. Although the room was large, it was cluttered with a lot of things. In the corner was an old-fashioned sewing machine covered in dust, next to which were hoes and shovels used for farming leaning against the wall, and several low stools were casually placed on the ground. He Ran felt that any item she picked out from there was older than her. The center of the room was a bit tidier, with a square wooden table that was wiped clean and shiny, and four long benches arranged in a circle around it.
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 49
-wordCount: 1117
-date: 2026-09-28
-time: 08:30:18
----
+
+### Chapter 49
 
 Xiao Han asked He Ran to sit on a bench for a while,
 
@@ -5361,13 +5117,8 @@ Xiao Han tried to scare her:
 "..."
 
 He Ran shut her mouth and remained silent.
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 50
-wordCount: 1257
-date: 2026-09-28
-time: 08:30:36
----
+
+### Chapter 50
 
 After that, she buried her head in Xiao Han's arms. The surroundings were very quiet, with only the sound of his heartbeat nearby and the occasional bark of a dog in the distance. This environment actually fostered a sense of tranquility, and although He Ran was not sleepy, she slowly closed her eyes. After she fell asleep, it was already past midnight. Xiao Han patted her shoulder to wake her up. The night was still long, and she couldn't help but chuckle.
 
@@ -5452,13 +5203,8 @@ After lunch, Xiao Han said a few words to the old lady and then took He Ran out.
 After crossing several mountains, they finally arrived at the market. The market was larger than He Ran had imagined; the street stretched as far as the eye could see, and it sold all sorts of things. Xiao Han asked He Ran if there was anything she needed to buy. He Ran thought for a while and asked,
 
 "Is there a pharmacy? My tooth hurts, and I want to buy some anti-inflammatory medicine."
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 51
-wordCount: 1145
-date: 2026-09-28
-time: 08:30:56
----
+
+### Chapter 51
 
 Xiao Han nodded:
 
@@ -5597,13 +5343,8 @@ After a long while, he finally uttered a soft
 "Mmm"
 
 .
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 52
-wordCount: 1065
-date: 2026-09-28
-time: 08:31:16
----
+
+### Chapter 52
 
 He Ran smiled again and asked,
 
@@ -5706,13 +5447,8 @@ He Ran asked, puzzled,
 "..."
 
 This sentence made He Ran fall silent.
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 53
-wordCount: 1202
-date: 2026-09-28
-time: 08:31:33
----
+
+### Chapter 53
 
 She never expected that even in the most simple and honest mountains there would be some children with bad intentions. With mixed feelings, she touched Quan Quan's head and didn't know what to say for a moment. Quan Quan turned around and patted He Ran on the back, saying optimistically,
 
@@ -5811,13 +5547,8 @@ Xiao Han didn't look at her. After a while, he lowered his eyes and said in a fa
 "I'm sorry."
 
 He Ran turned away, not wanting to pay him any attention. A few minutes later, Xiao Han turned off the light and climbed into bed. He Ran felt him press against her from behind. She was still angry and wanted to get away from him, but perhaps because it was too cold, her body unconsciously craved that warmth. Xiao Han reached out and pulled her into his arms, his hand resting lightly on her lower abdomen. The warmth emanating from his palm gradually warmed He Ran's body, and her heart softened unconsciously. The night was quiet and warm. On a red-skinned train that has restarted its journey to Guangzhou. The nearly 22-hour journey was extremely difficult for He Ran. Xiao Han bought her a hard sleeper ticket, while he bought a standing ticket. They didn't have much luggage; all they brought on the train were local specialties that He Ran had bought. He Ran's phone had long since run out of battery, and she only managed to charge it after buying a charger on the train. To kill time, she randomly picked a movie to watch with Xiao Han, but the mobile network was poor, and the video buffered every few minutes, making it quite boring. He Ran didn't eat anything at noon, just drank a few sips of water. She didn't dare drink too much water, trying to minimize the number of times she needed to use the restroom. During the Spring Festival travel rush, the train carriages were too crowded, the restrooms were clogged, and the smell was unpleasant; she didn't want to go a second time after her first visit. After 10 p.m., the lights in the carriage were turned off, and everyone around her gradually went to bed. He Ran then took out her toothbrush and toothpaste, brushed her teeth, tied her hair up in a high bun, and washed her face. She returned to her bed and let Xiao Han wash up.
----
-title: 'Chapter Five: The Youngest Son'
-chapter: 54
-wordCount: 1116
-date: 2026-09-28
-time: 08:31:53
----
+
+### Chapter 54
 
 Xiao Han stood up, looked at her, and smiled. He Ran asked,
 
@@ -5936,15 +5667,10 @@ As if the scene from six months ago were repeating itself, Xiao Han stood motion
 Xiao Han smiled and nodded slightly:
 
 "Okay."
----
-title: 'Chapter Six: First Clues'
-chapter: 55
-wordCount: 824
-date: 2026-09-28
-time: 08:32:10
----
 
-## Chapter Six: First Clues
+## First Clues
+
+### Chapter 55
 
 Chapter Preface:
 
@@ -6057,13 +5783,8 @@ He Ran thought back for a moment. It was when they first met that she left her p
 After saying that, she didn't receive a response from Xiao Han, but she could feel that his breathing on the other end seemed to have become heavier. He Ran continued,
 
 "But I'm also in Baiyun District now, which is quite close to you. Come over when you have time."
----
-title: 'Chapter Six: First Clues'
-chapter: 56
-wordCount: 1056
-date: 2026-09-28
-time: 08:32:25
----
+
+### Chapter 56
 
 After a long pause, Xiao Han gave a low
 
@@ -6186,13 +5907,8 @@ No. Xiao Han looked at her, puzzled:
 Xiao Han estimated for a long time before saying,
 
 "About tens of thousands of yuan."
----
-title: 'Chapter Six: First Clues'
-chapter: 57
-wordCount: 840
-date: 2026-09-28
-time: 08:32:41
----
+
+### Chapter 57
 
 "Only tens of thousands?"
 
@@ -6341,13 +6057,8 @@ The next morning, Xiao Chen was preparing breakfast in the kitchen when He Ran w
 He Ran went back to the bedside, found her glasses and put them on. Then she leaned against the wall, brushing her teeth while listening to Xiao Han on the phone. She could only vaguely understand the dialect Xiao Han was speaking. Five minutes later, Xiao Han hung up the phone. He Ran asked casually,
 
 "Is it a phone call from home?"
----
-title: 'Chapter Six: First Clues'
-chapter: 58
-wordCount: 1208
-date: 2026-09-28
-time: 08:33:00
----
+
+### Chapter 58
 
 Xiao Han seemed to still be pondering the contents of the phone call, his expression serious. Seeing his expression, He Ran asked,
 
@@ -6472,13 +6183,8 @@ She turned to meet Xiao Han's eyes and repeated what she had just said, her voic
 "I pushed Xu Yafei down the stairs."
 
 Despite receiving such harsh words, the pair of eyes opposite her simply looked at her quietly, without any irritation or reproach. Xiao Han seemed to be waiting for her to give a reasonable explanation. But there was no explanation. At that moment, a fleeting thought of revenge seized He Ran's mind. She wanted to see Xu Yafei tumble down the stairs, so she reached out and pushed her forcefully. There was no excuse; it was purely to satisfy her desire for revenge. Of Han Yu's many girlfriends, Xu Yafei was the only one He Ran had ever slept with, and she also suffered the worst fate. He Ran still remembers that night when she was locked in the equipment room of the gymnasium and kept there all night. The surroundings were cold, damp, and pitch black. Squeaks came from the corners, and cockroaches occasionally scurried across her feet; everything was repulsive. He Ran felt disgusted by these pests, but not afraid of them. She had experienced similar encounters many times before and was used to it.
----
-title: 'Chapter Six: First Clues'
-chapter: 59
-wordCount: 1313
-date: 2026-09-28
-time: 08:33:32
----
+
+### Chapter 59
 
 But that day was unusual. He Ran's aunt was critically ill, and she had planned to visit her in the hospital after school. This visit might be the last time she saw her aunt. The last class before school ended was physical education, and He Ran was on duty, responsible for tidying up the equipment. After struggling to carry the basket full of basketballs into the equipment room, she had just straightened up when the iron door behind her slammed shut without warning, accompanied by Xu Yafei's smug laughter from outside. At that moment, He Ran was truly anxious, and for the first time, she begged Xu Yafei to let her out. The latter, however, laughed heartily and said, "You actually begged me? That's hilarious! He Ran, say what you just said again, I want to record it and play it for Han Yu!" He Ran did not speak again.
 
@@ -6583,13 +6289,8 @@ He Ran didn't answer the question. Instead, she asked in surprise,
 Zhou Tiantian nodded and said,
 
 "That time I accompanied Han Yu to the hospital to see you, but he didn't let me into the ward. I just peeked at you from outside the door."
----
-title: 'Chapter Six: First Clues'
-chapter: 60
-wordCount: 842
-date: 2026-09-28
-time: 08:36:37
----
+
+### Chapter 60
 
 Perhaps recalling something funny, Zhou Tian laughed again,
 
@@ -6716,13 +6417,8 @@ He Ran tapped the pencil tip lightly on the drawing board and said casually,
 "...... For a moment, they were speechless, listening to each other's breathing over the phone. After an unknown amount of time, just as He Ran was about to hang up, Xiao Han spoke again: "
 
 Kid."
----
-title: 'Chapter Six: First Clues'
-chapter: 61
-wordCount: 962
-date: 2026-09-28
-time: 08:37:04
----
+
+### Chapter 61
 
 "Um?"
 
@@ -6841,13 +6537,8 @@ After finishing her coffee, He Ran called the waiter to pay the bill. She stood 
 "He lost a finger because of you. If I were you, I wouldn't have the face to see him."
 
 I left the coffee shop; it was still early. The weather was nice today—the sun was shining warmly, and the wind was gentle and the clouds were clear. He Ran stood by the roadside, hailed a car, and drove to Xiaozhou Village. Xiao Han wasn't home; he must have gone out to work. He Ran unlocked the door, glanced around, and noticed three cups on the table. She walked over and picked one up to examine it; a layer of yellowish tea stains remained on the inner wall of the bottom of the cup. It must have been left unwashed after entertaining. He Ran put down the teacup, yawned softly, and went upstairs to rest. The roads in Xiaozhou Village are the most agonizing for people wearing high heels. He Ran walked to the bedside and hastily kicked off her shoes. Just as she sat down, she heard a wail and something darted past her. He Ran looked closely and saw it was Xiao Han's cat; she had accidentally stepped on its tail. He Ran ignored it, rubbed her aching ankle, and then sprawled out on the bed. The cat stood still, arching its back and staring intently at her, motionless and full of hostility. Zaozao arrived before He Ran, but He Ran is now the mistress of the house, and it's unclear who has usurped the place.
----
-title: 'Chapter Six: First Clues'
-chapter: 62
-wordCount: 995
-date: 2026-09-28
-time: 08:37:27
----
+
+### Chapter 62
 
 Xiao Han arrived home in the evening and was taken aback when he saw He Ran sitting on the bed.
 
@@ -6974,13 +6665,8 @@ Qin Zao said in a low voice,
 "Who?"
 
 He Ran asked. Qin Zao avoided eye contact, refusing to continue.
----
-title: 'Chapter Six: First Clues'
-chapter: 63
-wordCount: 1164
-date: 2026-09-28
-time: 08:37:44
----
+
+### Chapter 63
 
 He Ran waited calmly, then tried a different approach to get information out of her:
 
@@ -7153,13 +6839,8 @@ He Ran's face darkened, thinking he was joking with her, and she glared at him. 
 "Hmm?"
 
 He Ran waited for him to continue.
----
-title: 'Chapter Six: First Clues'
-chapter: 64
-wordCount: 1192
-date: 2026-09-28
-time: 08:38:02
----
+
+### Chapter 64
 
 "When I bloom, all other flowers wither."
 
@@ -7310,13 +6991,8 @@ He Ran paused slightly.
 Qin Zao didn't reply. She hesitated for a long time, then glanced at the card lying quietly on the table out of the corner of her eye. After a while, she whispered,
 
 "I...can I think about it for a few more days?"
----
-title: 'Chapter Six: First Clues'
-chapter: 65
-wordCount: 868
-date: 2026-09-28
-time: 08:38:27
----
+
+### Chapter 65
 
 "Okay."
 
@@ -7425,13 +7101,8 @@ Xiao Han frowned, caught up with her in a few steps, grabbed her hand, and shove
 "I'm sick."
 
 Xiao Han didn't care.
----
-title: 'Chapter Six: First Clues'
-chapter: 66
-wordCount: 769
-date: 2026-09-28
-time: 08:38:49
----
+
+### Chapter 66
 
 He Ran continued to avoid it, saying,
 
@@ -7570,13 +7241,8 @@ He Ran mumbled a confused
 "No, it's too hot. I'll take you to the hospital."
 
 After saying that, he immediately pulled He Ran out of bed, picked up her clothes from the floor, and helped her put them on. He Ran's body was so limp that she seemed to have no bones, and she fell onto the bed several times, only to be helped up by Xiao Han.
----
-title: 'Chapter Six: First Clues'
-chapter: 67
-wordCount: 963
-date: 2026-09-28
-time: 08:39:13
----
+
+### Chapter 67
 
 After much effort, Xiao Han finally managed to get her dressed. He then picked her up and carried her out the door. In the dead of night, there is no need to queue at the hospital emergency room. He Ran sat on the stool, her head resting on Xiao Han's thigh, answering the doctor's questions listlessly. Do you have a cold or cough?
 
@@ -7709,13 +7375,8 @@ Qin Zao remained silent. After a brief silence, He Ran said slowly,
 Qin Zao opened her mouth stiffly, but couldn't utter a single sound. Her expression said it all, and He Ran understood. She put the card back in her bag, stood up and left, telling her,
 
 "I won't force you to leave if you don't want to. You'd better think twice before you go."
----
-title: 'Chapter Six: First Clues'
-chapter: 68
-wordCount: 1022
-date: 2026-09-28
-time: 08:39:35
----
+
+### Chapter 68
 
 He Ran walked briskly to the entrance, turned around as if to say something more, but suddenly felt weak in her limbs. Her body tilted, and the world before her eyes was instantly swallowed by darkness. Before she closed her eyes, she saw Qin Zao scream and rush towards her. When she opened her eyes again, she was faced with a stark white ceiling. The smell of disinfectant in the air reminded He Ran where she was. Her eyes slowly moved to the other side and she saw Han Yu standing beside the hospital bed. Han Yu's eyebrows were thick, and they were especially noticeable when he furrowed them. He asked anxiously,
 
@@ -7862,13 +7523,8 @@ Seeing that she was lying and wouldn't admit it, Yang Wenping simply brought it 
 He Ran took a deep breath, and her voice finally became more even,
 
 "That's enough, stop talking."
----
-title: 'Chapter Six: First Clues'
-chapter: 69
-wordCount: 1381
-date: 2026-09-28
-time: 08:40:03
----
+
+### Chapter 69
 
 "Okay, I won't say more, but you need to know what's important."
 
@@ -7951,15 +7607,10 @@ From that day on, Xiao Han never called the phone again. He Ran also stopped usi
 ---
 
 A few days later, the phone shut down automatically. One month later, the number expired. That's fine too. It all started as a dream, and after indulging for too long, it's time to return to reality.
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 70
-wordCount: 1262
-date: 2026-09-28
-time: 08:42:36
----
 
-## Chapter Seven: Moths to a Flame
+## Moths to a Flame
+
+### Chapter 70
 
 Previous page: He and she were like moths drawn to a flame, embracing each other with the determination to perish, yet trying to find a glimmer of hope on the road to ruin. In July, universities across the country begin their summer break. The Central Academy of Fine Arts (CAFA) bids farewell to a group of graduates and is about to welcome a new batch of faces. He Ran didn't return to Guangzhou this summer; instead, she stayed comfortably in Beijing. Ding Xiaoxu had come to visit her at the beginning of the month, supposedly to attend her boyfriend's graduation ceremony and drop by to see her, but due to some unforeseen circumstances at the university, the ceremony had to be postponed until the second half of the year. Ding Xiaoxu's trip was in vain; he spent most of Beijing time there before returning home. He Ran had just seen Ding Xiaoxu off when Han Yu arrived at the end of the month. He had already received his admission letter from the Communication University of China and came to the school early to check it out. He Ran then took him on a tour around Beijing. This summer, He Ran let Han Yu kiss her on the lips. Han Yu has had many girlfriends, but he still doesn't know how to kiss; he just rushes in headfirst. His kisses have no flavor, at least He Ran didn't notice it. She was numb and stiff throughout, and was thoroughly disliked by Young Master Han. Han Yu couldn't shake his playboy nature; he was fickle and always looking for new women. He Ran frequently saw the ambiguous text messages on his phone, each one from a different person. He has his freedom, and He Ran chooses to turn a blind eye. The day before school started, Han Yu asked He Ran to accompany him to the hair salon for a new hairstyle. Anyone who's good-looking and has a bit of money is bound to be arrogant and vain, and Han Yu is the most typical example. He and the stylist discussed it for ages but couldn't come to a conclusion, while He Ran, listening nearby, was getting drowsy. Eventually, she got impatient and decided to go upstairs to get her hair washed. The second floor was less crowded and much quieter, with dimmer lighting. A tall celadon vase was placed at the top of the stairs, and the sound of a guqin (a traditional Chinese stringed instrument) filled the hall. All the utensils were made of dark brown Chinese toon wood, exuding a strong sense of antiquity. He Ran recalled the name of the shop and belatedly realized that it was a chain of the hair salon where she first met Xiao Han. No wonder the decoration style was the same. She was led deep into the corridor by the guide. Han Yu had a VIP card, so she entered a VIP room. There were only two shampoo beds in the room, right next to each other; it was supposedly a couples' room. Several plates of fresh fruit were on the table. He Ran casually forked a piece of dragon fruit and put it in her mouth, then chose the nearest shampoo bed and lay down. The person washing her hair arrived two minutes later, by which time He Ran was already feeling lightly sleepy. She squinted and sensed someone deliberately walking in quietly. She was slightly puzzled, but remained lying quietly. The man entered the room without saying a word, walked straight to He Ran, and sat down behind her. He tucked a towel into He Ran's collar, gathered her hair with one hand, and turned on the shower with the other. The water was a little cold at first, and he adjusted it slowly. Is this temperature okay? Upon hearing this voice, He Ran suddenly opened her eyes and met a pair of clear black and white eyes above her. She opened her mouth slightly, as if about to say something, when Han Yu walked in. He Ran closed her eyes and mouth as if nothing had happened. Han Yu sat beside her, excitedly talking about how avant-garde the new hairstyle the stylist had designed for him was. Even though He Ran pretended to be asleep, it did not affect his high spirits at all. A few minutes later, He Ran suddenly said,
 
@@ -8006,13 +7657,8 @@ Only he himself knows the changes in his mindset during that time. He Ran remain
 "I said I would come to Beijing to find you, so here I am."
 
 He Ran remained silent, while Xiao Han's face slowly lowered again. They got closer, their breaths mingled, and his warm breath brushed against her skin and pores, carrying a hint of probing.
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 71
-wordCount: 1024
-date: 2026-09-28
-time: 08:42:57
----
+
+### Chapter 71
 
 Just as their four lips were about to meet, He Ran whispered,
 
@@ -8123,13 +7769,8 @@ Ding Xiaoxu politely asked,
 Xiao Han nodded and succinctly introduced it to her:
 
 "Lily."
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 72
-wordCount: 1071
-date: 2026-09-28
-time: 08:43:13
----
+
+### Chapter 72
 
 Ding Xiaoxu hesitated and said,
 
@@ -8220,13 +7861,8 @@ Xiao Han did not respond. He Ran continued,
 "You'll realize later that this decision was wrong."
 
 Xiao Han remained silent for a while, then his phone rang.
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 73
-wordCount: 1078
-date: 2026-09-28
-time: 08:43:33
----
+
+### Chapter 73
 
 After hanging up the phone, Xiao Han stood up and said,
 
@@ -8363,13 +7999,8 @@ Zhang Amin nodded slowly, then smiled and said,
 "That's quite a coincidence."
 
 Afterwards, Xiao Han taught He Ran how to plant these two types of potted plants step by step, while Zhang Amin helped by running errands a few times to deliver the flowers.
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 74
-wordCount: 1054
-date: 2026-09-28
-time: 08:43:53
----
+
+### Chapter 74
 
 Around nine o'clock, the shop finally became less busy, and the group gradually had some free time. Chen Liangcai suddenly remembered that he hadn't eaten breakfast yet. He patted his stomach and urged,
 
@@ -8516,13 +8147,8 @@ After she put it that way, He Ran thought for a long time before finally changin
 "Okay, you guys set the time."
 
 On Christmas Eve, He Ran arrived at the movie theater where they were supposed to meet half an hour early. At 3 p.m., the movie theater was very busy, with several long queues at the ticket counter.
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 75
-wordCount: 872
-date: 2026-09-28
-time: 08:44:11
----
+
+### Chapter 75
 
 She has a habit of arriving early, and so does the other person. He Ran looked at Xiao Han, who was standing in front of the advertising lightbox not far away. A black, shiny down jacket, dark blue jeans, and a pair of sneakers of unknown brand, the soles almost completely worn down. A very ordinary outfit; one that would easily blend into a crowd. Xiao Han was also looking at He Ran. When He Ran turned her head towards him, he subconsciously looked away, but this self-deceptive behavior obviously did not work. He Ran walked towards him and soon stood in front of him, asking bluntly,
 
@@ -8661,13 +8287,8 @@ It was so cold that they hugged each other to keep warm. He continued to call he
 .
 
 "Um."
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 76
-wordCount: 1046
-date: 2026-09-28
-time: 08:44:29
----
+
+### Chapter 76
 
 "He Ran"
 
@@ -8770,13 +8391,8 @@ Xiao Han gave a thoughtful
 Xiao Han said,
 
 "No."
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 77
-wordCount: 984
-date: 2026-09-28
-time: 08:44:47
----
+
+### Chapter 77
 
 He Ran shrugged and said,
 
@@ -8889,13 +8505,8 @@ Halfway through dinner, He Ran's phone suddenly rang. She turned her head to loo
 "Male."
 
 "Is he pursuing you?"
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 78
-wordCount: 1037
-date: 2026-09-28
-time: 08:45:03
----
+
+### Chapter 78
 
 "yes."
 
@@ -9038,13 +8649,8 @@ The next day after school, He Ran and Xiao Bai set off together, attracting a cr
 ---
 
 After dinner, Xiaobai took a longer route to take He Ran home. He hesitated several times along the way, but He Ran knew what he was thinking and didn't point it out.
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 79
-wordCount: 920
-date: 2026-09-28
-time: 08:45:18
----
+
+### Chapter 79
 
 When they arrived at her apartment building and were about to say goodbye, Xiaobai finally mustered the courage to speak:
 
@@ -9187,13 +8793,8 @@ He Ran twirled in front of him.
 Xiao Han, oblivious to any romantic gestures, asked,
 
 "Aren't you cold?"
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 80
-wordCount: 1124
-date: 2026-09-28
-time: 08:45:35
----
+
+### Chapter 80
 
 He Ran's face fell, and she said unhappily,
 
@@ -9322,13 +8923,8 @@ Xiao Han asked,
 She raised an eyebrow at him with a half-smile. Her body broke free of the seatbelt's restraint, and she leaned close to his face, her breath sweet as orchids:
 
 "I did alright last night, didn't I?"
----
-title: 'Chapter Seven: Moths to a Flame'
-chapter: 81
-wordCount: 1009
-date: 2026-09-28
-time: 08:45:53
----
+
+### Chapter 81
 
 Xiao Han remained unsmiling and pressed her back into her seat, saying, "You're such a worry." It's hard to believe that they were stuck in traffic for the entire afternoon and didn't get home until after sunset.
 
@@ -9523,15 +9119,10 @@ He Ran gripped his hand tightly and closed her eyes:
 "Okay, I'll go crazy with you."
 
 Her first stirrings of affection were because of him, and her wavering was also because of him. Only his unwavering gaze could give her the courage to take a gamble. Now she is ready to give her all to love him. On this thorny path, whoever backs down first will perish together.
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 82
-wordCount: 980
-date: 2026-09-28
-time: 08:46:23
----
 
-## Chapter Eight: Love is Selfish
+## Love is Selfish
+
+### Chapter 82
 
 Chapter Preface: What's wrong with that? Love is inherently selfish. The moment she decided to be with Xiao Han, the collapse of the heavens and the earth became irrelevant to her; all she needed was for him to be by her side. The story of He Ran going to an art exhibition with a male classmate somehow got embellished and reached Han Yu's ears. True to his usual hot temper, this young master stormed into He Ran's house that very afternoon to confront her. He Ran calmly and carefully brewed coffee to Han Yu's liking before sitting down opposite him. When Han Yu questioned her, she readily admitted,
 
@@ -9652,13 +9243,8 @@ Xiao Han picked her up and carried her into the bedroom. He Ran clung to him, co
 "What are your plans after you've made enough money?"
 
 Xiao Han said without hesitation, "I'll marry you.
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 83
-wordCount: 951
-date: 2026-09-28
-time: 08:46:51
----
+
+### Chapter 83
 
 He Ran paused for a moment, then asked with a smile,
 
@@ -9803,13 +9389,8 @@ Zhang Amin thought carefully for a while and said,
 "I really can't remember."
 
 She then turned to ask the other two, Liu Rui and Huang Xiaoli, who both shook their heads and said they had no recollection of it. He Ran lowered her head and pondered, saying nothing more.
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 84
-wordCount: 1117
-date: 2026-09-28
-time: 08:47:10
----
+
+### Chapter 84
 
 After class, the three of them went straight to the cafeteria for lunch. Liu Rui and Huang Xiaoli walked ahead with great enthusiasm, while Zhang Amin brought up the rear. He Ran walked closer to her and said in a low voice, "Petty theft is a disease. You'd better see a psychologist." Zhang Amin's face froze instantly, and she turned her head to stare at her incredulously. He Ran quickened her pace and walked ahead of her.
 
@@ -9984,13 +9565,8 @@ Han Yu paused slightly, looking at her coldly:
 He Ran was not swayed by his provocation. She slowly walked into her room.
 
 "If you've said enough, please leave quickly. I still have a lot to do."
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 85
-wordCount: 1139
-date: 2026-09-28
-time: 08:47:30
----
+
+### Chapter 85
 
 Han Yu stopped chasing after them and snorted heavily,
 
@@ -10123,13 +9699,8 @@ After thinking for a moment, she finally conceded,
 "Okay, okay, let's go."
 
 He Ran's car was parked not far away. She helped Xiao Han into the passenger seat and fastened his seatbelt. After arriving at the hospital, He Ran accompanied him to have his leg examined and medication applied before the two went to the second floor to have his blood drawn. The process of waiting for the result is always very long. Xiao Han sat in the chair, staring at her without blinking, seemingly lost in thought.
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 86
-wordCount: 910
-date: 2026-09-28
-time: 08:47:50
----
+
+### Chapter 86
 
 He Ran lowered her gaze, subconsciously avoiding looking at his overly complicated eyes. At eight o'clock, the hospital gradually became more crowded, with people coming and going in the corridors. The noisier the environment, the more uneasy people felt. Not long after, the doctor came out with her lab results, his brow furrowed. Her white blood cell count remained the same, a worrying sign. As always, the doctor followed He Ran around like a mother hen, constantly nagging:
 
@@ -10236,13 +9807,8 @@ He Ran nodded:
 "Tell me about it."
 
 Xiao Han sat up, looking intently at her.
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 87
-wordCount: 1016
-date: 2026-09-28
-time: 08:48:05
----
+
+### Chapter 87
 
 "It's actually very simple."
 
@@ -10389,13 +9955,8 @@ The girl paused for a moment, then said,
 He Ran said,
 
 "I had a transplant before, but now it has relapsed."
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 88
-wordCount: 1052
-date: 2026-09-28
-time: 08:48:21
----
+
+### Chapter 88
 
 The girl lowered her voice, seemingly lost in thought:
 
@@ -10488,13 +10049,8 @@ Xiao Han remained silent for a while, then said in a deep voice,
 "Okay."
 
 He Ran waited in vain for Xiao Han, but instead received an uninvited guest. Qin Zao walked at the same pace as Yang Wenping in high heels. When the series of crisp footsteps rang out at the ward door, He Ran thought it was Yang Wenping who had arrived. She remained unmoved and continued reading with her head down. It wasn't until a bouquet of blue hyacinths appeared before He Ran's eyes that she realized the person standing opposite her couldn't be Yang Wenping. Yang Wenping was allergic to hyacinth pollen.
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 89
-wordCount: 1033
-date: 2026-09-28
-time: 08:48:40
----
+
+### Chapter 89
 
 He Ran looked up, stunned for a moment:
 
@@ -10627,13 +10183,8 @@ A few minutes later, Xiao Han replied with only three words:
 These three inexplicable words made He Ran restless throughout the entire haircut process. After getting her hair cut, she immediately called Xiao Han. Just like the long time it took him to reply to the text message, the phone rang for a long time before he finally answered it. He Ran pressed her, asking aggressively,
 
 "What do you mean?"
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 90
-wordCount: 957
-date: 2026-09-28
-time: 08:49:30
----
+
+### Chapter 90
 
 Xiao Han said,
 
@@ -10710,13 +10261,8 @@ This gesture signified admitting wrongdoing, but He Ran was still not satisfied 
 He Ran smiled and asked,
 
 "What are you thinking about?"
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 91
-wordCount: 1292
-date: 2026-09-28
-time: 08:49:53
----
+
+### Chapter 91
 
 "I want both."
 
@@ -10791,13 +10337,8 @@ The two people opposite remained unmoved, continuing to have lunch as if no one 
 "I'm talking to you! Can't you hear me?!"
 
 The sudden increase in decibels startled He Ran, causing her to lose her grip and drop the spoon to the ground with a clatter.
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 92
-wordCount: 1128
-date: 2026-09-28
-time: 08:50:17
----
+
+### Chapter 92
 
 Han Yu went even further, sweeping his hands across the table, knocking everything over instantly. The floor was littered with cups and plates, and scalding soup splashed onto He Ran's cheeks and dress. She calmly picked up a tissue and wiped everything clean. Under the tablecloth, Xiao Han clenched his fists secretly. Just as he was about to stand up, He Ran pressed his hand down and shook her head slightly. It takes two to tango, He Ran knew this all too well. Han Yu's madness was enough; they didn't need to play along. Han Yu's attention shifted to Xiao Han. He strolled over to him leisurely, a smirk playing on his lips.
 
@@ -10882,13 +10423,8 @@ She closed her eyes, waiting for him to slowly lower his face. Their lips met, a
 "You mustn't catch a cold right now. Go home quickly."
 
 He Ran stared at him, her gaze lingering, but Xiao Han remained expressionless. She gently brushed his lips against hers again, but he didn't react.
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 93
-wordCount: 1065
-date: 2026-09-28
-time: 08:50:41
----
+
+### Chapter 93
 
 He Ran sighed and had no choice but to stand up.
 
@@ -10979,13 +10515,8 @@ He Ran's eyes flashed with a cold light, like a sharp blade piercing straight in
 "That sounds scary, but do you dare?"
 
 Han Yu still smiled mischievously, seemingly unconcerned.
----
-title: 'Chapter Eight: Love is Selfish'
-chapter: 94
-wordCount: 1314
-date: 2026-09-28
-time: 08:51:02
----
+
+### Chapter 94
 
 He grasped He Ran's hand and pulled it closer to his chest, saying,
 
@@ -11056,15 +10587,10 @@ After a while, she stood up and walked quickly out of the ward, saying,
 Xiao Han tried to reach out to stop her, but He Ran's figure had already disappeared outside the door in a flash, and his hand only managed to grab a wisp of air. In an instant, he was left alone in the empty ward. His gaze wandered aimlessly around him. The pale white walls seemed too cold and desolate, and even the spotless white sheets beneath him seemed lifeless, which made him feel terrible. Ten minutes passed, and He Ran still hadn't returned. Xiao Han began to worry and prepared to get out of bed to look for her. Just as he was about to sit up, the sound of high heels came from the distance down the corridor. Xiao Han listened carefully for a few seconds and realized that it was not He Ran's footsteps. Of course, it's not that nurses, who work in quiet places like hospitals, can't wear shoes that make noise. The footsteps grew closer and closer, eventually stopping in front of Xiao Han's hospital room. A woman dressed like a wealthy lady pushed open the door and walked in. She had a cold and beautiful face and looked somewhat familiar. The woman walked straight towards Xiao Han, stood in front of the hospital bed, and looked down at him. The arrogant aura emanating from her was exactly the same as Han Yu's. Xiao Han had already guessed what was going on when he heard the woman say coldly,
 
 "I am He Ran's mother."
----
-title: 'Chapter Nine: My Heart Aspires To It'
-chapter: 95
-wordCount: 1213
-date: 2026-09-28
-time: 08:58:02
----
 
-## Chapter Nine: My Heart Aspires To It
+## My Heart Aspires To It
+
+### Chapter 95
 
 What might be someone else's twenties is my entire life. My life is too short; it's only enough to love one person. It has been five days since Xiao Han disappeared. He Ran finally stopped making countless phone calls every day, only to receive a message that his phone was switched off without exception. She could vaguely guess why Xiao Han had left.
 
@@ -11123,13 +10649,8 @@ He Ran raised her head, her eyes fixed on his face, lost in thought.
 ---
 
 After a while, she asked without warning, "Xiao Han, are you going to give up on me?"
----
-title: 'Chapter Nine: My Heart Aspires To It'
-chapter: 96
-wordCount: 1075
-date: 2026-09-28
-time: 08:58:17
----
+
+### Chapter 96
 
 Xiao Han was slightly taken aback, then subtly shifted his gaze away from her face. He Ran then asked,
 
@@ -11286,13 +10807,8 @@ Yu Zhen seemed to remember something, a cloud of sorrow clouding her brows. Her 
 "I'm afraid I won't live to see that day..."
 
 He Ran was speechless for a moment, not knowing what to say.
----
-title: 'Chapter Nine: My Heart Aspires To It'
-chapter: 97
-wordCount: 1121
-date: 2026-09-28
-time: 08:58:31
----
+
+### Chapter 97
 
 She picked up a piece of white paper and a charcoal pencil from the table, walked to Yu Zhen's bedside, and asked,
 
@@ -11419,13 +10935,8 @@ After a while, Yu Zhen continued,
 She almost burst into tears again as she spoke, burying her face between her legs, leaving only her thin, frail shoulders trembling. He Ran gently hugged her. After what seemed like an eternity, Yu Zhen finally raised her head again, took a piece of drawing paper from under her pillow, and handed it to He Ran, asking,
 
 "If I'm gone one day, could you please give these two things to him for me?"
----
-title: 'Chapter Nine: My Heart Aspires To It'
-chapter: 98
-wordCount: 1270
-date: 2026-09-28
-time: 08:58:48
----
+
+### Chapter 98
 
 He Ran didn't immediately agree, but instead reached out and took it, then opened it to take a look. That was the portrait she painted for Yu Zhen. A tuft of hair tied with a red string was tucked in the fold of the paper. The smile that appeared on He Ran's lips carried a strong bitter taste; it turned out that every girl harbored the same thought in her heart— Centuries later, even though their ashes have flowed eastward with the great river and vanished into the dust, these fine strands of hair remain resilient and enduring, telling a story of untold affection. Perhaps the Black and White Impermanence that Yu Zhen dreamed of that day were not just an illusion. Two nights later, she passed away permanently in her sleep. Due to organ failure caused, the doctors were powerless to save her.
 
@@ -11480,13 +10991,8 @@ He Ran turned her head away without changing her expression.
 Han Yu, enraged, laughed coldly. He kicked his leather shoes onto her bedsheets and swaggered at her, saying defiantly,
 
 "I'm not leaving today, what can you do about it?!"
----
-title: 'Chapter Nine: My Heart Aspires To It'
-chapter: 99
-wordCount: 1235
-date: 2026-09-28
-time: 08:59:07
----
+
+### Chapter 99
 
 He Ran looked at him for a while, then calmly stood up and said indifferently,
 
@@ -11551,13 +11057,8 @@ the fat man asked as he walked up to her.
 He Ran said calmly, lowering her eyes. The fat man bent down, and with his help, He Ran finally stood up slowly. She asked,
 
 "Have you seen Xiao Han?"
----
-title: 'Chapter Nine: My Heart Aspires To It'
-chapter: 100
-wordCount: 1109
-date: 2026-09-28
-time: 08:59:23
----
+
+### Chapter 100
 
 "He's gone back to Beijing."
 
@@ -11640,13 +11141,8 @@ He Ran gave a soft
 and said casually,
 
 "It's all because I wanted to find you."
----
-title: 'Chapter Nine: My Heart Aspires To It'
-chapter: 101
-wordCount: 1119
-date: 2026-09-28
-time: 08:59:38
----
+
+### Chapter 101
 
 Xiao Han then asked,
 
@@ -11801,15 +11297,10 @@ He Ran stretched out her hands to him, hoping for a tight hug.
 "Xiao Han, take me away."
 
 After a long silence, Xiao Han's expression gradually softened. He finally pulled her into his arms, his lips moving with difficulty, uttering words instead of uttering anything.
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 102
-wordCount: 1087
-date: 2026-09-28
-time: 08:59:54
----
 
-## Chapter Ten: Summer Flowers in Full Bloom
+## Summer Flowers in Full Bloom
+
+### Chapter 102
 
 Chapter Preface: That year, she was still beautiful, and he was still young. Their love may have been crazy, perhaps absurd. But because it was fleeting, it deserves all the more to be known by the world. In the end, they didn't go to Beijing, but returned to Xiao Han's hometown. That secluded place allowed He Ran to find a long-lost sense of belonging. Without informing the family beforehand, Quan Quan was overjoyed by this unexpected surprise, jumping up and down and circling around He Ran. Xiao Han's mother remained lukewarm towards He Ran, especially after learning of her serious illness. No one likes a sickly daughter-in-law, as it means countless expenses and burdens for the family. Every day after meals, the mother and son would argue about He Ran. The arguments would often escalate to a point where they couldn't hold back their anger. The old lady's face turned bright red, and she was struggling to breathe. Quan Quan helped her back into the house to rest. Xiao Han, who was not good with words, was also exhausted. At this time, He Ran remained silently in the room, not showing herself. After cleaning up the mess, Xiao Han went back to the room to find her. His expression had returned to calm:
 
@@ -11900,13 +11391,8 @@ Get out of my way, let me do it myself.
 " In the end, Xiao Han let go of her hand and stood far away. "
 
 Could you get me a rag?" He Ran said. Xiao Han walked out of the house and returned shortly afterward with a rag. He Ran took the rag, wiped the floor clean, and then tried to stand up. It was to no avail. Her legs seemed to not exist at all; she struggled, fell, struggled again, and fell again. She repeated this for an unknown amount of time, her body covered in dust, but she still refused to give up. Xiao Han couldn't bear to look any longer, so he turned around and looked up at the roof. He Ran was tired, so she sat down and rested for a while.
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 103
-wordCount: 1250
-date: 2026-09-28
-time: 09:00:11
----
+
+### Chapter 103
 
 After regaining her strength, she dragged her legs to the edge of the bed, braced herself with her hands on the bed board, and finally slowly stood up with the help of the support. People are easily satisfied in adversity. She sat on the bed, a slight smugness on her lips, and her eyes subconsciously looked for Xiao Han, but she only saw his back. He Ran called out to him,
 
@@ -11949,13 +11435,8 @@ He Ran waved her hand, covering her cheek, and said,
 Quan Quan frowned her delicate eyebrows and asked,
 
 "Does it hurt a lot?"
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 104
-wordCount: 1112
-date: 2026-09-28
-time: 09:00:31
----
+
+### Chapter 104
 
 He Ran nodded, making a wronged expression,
 
@@ -12038,13 +11519,8 @@ She looked into his dark eyes, smiled, and said,
 "No matter how much longer I have to live, I want to go with you to see the spring flowers bloom and listen to the ebb and flow of the tide."
 
 This experience can be considered a narrow escape from death for He Ran. After eight days of high fever, her temperature finally stabilized. The doctor said that if she had continued to have a fever for another two days, her condition would have been very dangerous. She was then hospitalized for three more days for observation, and was only allowed to go home after confirming that she had no fever again. Before being discharged from the hospital, He Ran had another blood test. All the blood counts were pitifully low, and she knew what was going on, so she didn't say anything. After being discharged from the hospital, they did not go home immediately, but stayed in a hotel in the county town. Xiao Han's eldest sister's father-in-law is a senior traditional Chinese medicine doctor who opened a small clinic in Fuling after retiring. Every year, countless people travel from other places to see him. After discussing it with He Ran, Xiao Han decided to pay him a visit. Throughout history, there have been many cases of people being brought back from the brink of death by traditional Chinese medicine. While some of these cases may have been exaggerated, their efficacy is not entirely fabricated. After multiple treatments with traditional Chinese medicine and acupuncture, He Ran's legs gradually improved, and a month later she was even able to stand up and walk slowly without relying on anything else. The happiest person was naturally Xiao Han. He's currently unemployed and spends all his time taking care of He Ran. Recently, He Ran's appetite has improved, so Xiao Han has started preparing various delicious meals for her, hoping to fatten her up a bit. The hotel they stayed in was in poor condition; the bathroom and kitchen were shared, and it was damp and dirty. Whenever it rained heavily, the roof leaked, dripping constantly. He Ran had been falling asleep to the intermittent sound of dripping water for the past few nights, with Xiao Han holding her until she closed her eyes.
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 105
-wordCount: 1302
-date: 2026-09-28
-time: 09:00:58
----
+
+### Chapter 105
 
 A week ago, she had another low-grade fever and spent most of the night at the hospital before the fever subsided. The hospital equipment here is not good enough, and the antibiotics and anti-inflammatory injections are not as effective as those she used in Guangzhou. Half-asleep, He Ran heard Xiao Han whisper in her ear:
 
@@ -12125,13 +11601,8 @@ He Ran didn't reply, pondering for a long time. The lingering taste in her mouth
 "It's the smell of you."
 
 The longer I stay around you, the more my cigarette smells like you.
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 106
-wordCount: 1142
-date: 2026-09-28
-time: 09:01:17
----
+
+### Chapter 106
 
 Xiao Han, whether he understood or not, took the cigarette back from her hand, tossed it aside, and said,
 
@@ -12234,13 +11705,8 @@ He Ran's appetite has been fluctuating lately, but under Xiao Han's supervision,
 "Your man is fighting with someone and you can't stop him. You have to go and see!"
 
 The rain was getting heavier and heavier, relentlessly pounding against the top of the umbrella, as if it wouldn't stop until it smashed a hole in the protective shield. He Ran struggled forward against the wind and rain, most of her body soaked by the rain that had blown in. It took nearly fifteen minutes to walk to the scene of the incident. At the bottom of a small slope, where there was nowhere to step, He Ran waded through the water, her shoes and trouser legs completely submerged.
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 107
-wordCount: 1150
-date: 2026-09-28
-time: 09:01:39
----
+
+### Chapter 107
 
 Two men not far away were locked in a fierce fight on the ground, completely disregarding the terrible weather, while several people trying to break them up were completely ineffective. He Ran quickened her pace and shouted into the distance,
 
@@ -12359,13 +11825,8 @@ Xiao Han quickly got out of bed, turned on the light, and fed her some pills. Ev
 ---
 
 The next morning, just as dawn was breaking, Xiao Han called a car to take them to the health center. At this time, most chartered drivers hadn't started work yet, and it was raining, making travel inconvenient, so the fare was twice as high as usual. Xiao Han didn't have time to haggle and agreed immediately.
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 108
-wordCount: 1378
-date: 2026-09-28
-time: 09:01:58
----
+
+### Chapter 108
 
 The local clinic was very poorly equipped, and beds were scarce. He Ran had to sit in a chair in the corridor to finish receiving two bottles of IV fluids. She was given very poor-quality anti-inflammatory drugs and fever-reducing injections, which had no effect for a long time, and her forehead was still frighteningly hot. Xiao Han was anxious to find a doctor to consult about his condition, but He Ran stopped him and said,
 
@@ -12458,13 +11919,8 @@ Xiao Han was speechless for a moment, staring at her silently. They looked at ea
 ---
 
 That evening, Xiao Han packed his things and went to He Ran's bedside to say goodbye. He Ran had just finished her injection and taken a nap. Hearing the light footsteps, she seemed to sense something and slowly opened her eyes, quietly looking at him.
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 109
-wordCount: 1315
-date: 2026-09-28
-time: 09:02:18
----
+
+### Chapter 109
 
 Xiao Han sat down, a thousand words stuck in his throat. After a long pause, he finally managed to say,
 
@@ -12557,13 +12013,8 @@ Yang Wenping called her name softly, her expression blank, with many unspoken wo
 ---
 
 Later, it's best not to mention it. He Ran wanted to respond, but when she opened her mouth, not a single sound came out. Most of her throat burned like it was on fire, as if it had been branded with a hot iron. Yang Wenping gently wiped her moist eyes, turned around and leaned her head against He Jin. He Jin sighed deeply, "What a tragedy." Now that things have come to this, scolding her for being disobedient is no longer of any use. Who can I curse? I can only curse the heavens. Xiao Han returned to Fuling County early in the morning and went straight to the hospital after getting off the bus. The old lady had just woken up and was sitting on the bed, being fed porridge by Quan Quan. Even a broken bone takes a hundred days to heal, let alone someone of her age; this fall could cause her considerable suffering.
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 110
-wordCount: 1186
-date: 2026-09-28
-time: 09:02:37
----
+
+### Chapter 110
 
 Upon seeing Xiao Han enter the ward, the old lady gave him a cold look and uttered two sinful words:
 
@@ -12646,13 +12097,8 @@ The trip started badly. Xiao Han walked several miles to the place where the bus
 "It's too dangerous in the rain. There might be landslides on the road. No matter how much money you offer, we wouldn't dare go."
 
 Xiao Han didn't give up and pleaded relentlessly for a long time, but the other party remained unmoved. With nowhere else to turn, Xiao Han was trapped in the mountains.
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 111
-wordCount: 1016
-date: 2026-09-28
-time: 09:03:00
----
+
+### Chapter 111
 
 In the evening, he returned along the same route, completely soaked. As darkness fell, the rain showed no sign of stopping. The mountain path was full of potholes, and the cold, muddy ground made each step a heavy, arduous journey. He wasn't usually an emotional person, but at that moment he couldn't help but clench his fists and slam them heavily against the door. Quan Quan heard the noise and ran out. She was startled when she saw him:
 
@@ -12703,13 +12149,8 @@ Han Yu wouldn't listen to reason, and angrily kicked the wall, shaking the entir
 "One milligram of adrenaline was administered intravenously."
 
 "Prepare for defibrillation, 200 joules."
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 112
-wordCount: 783
-date: 2026-09-28
-time: 09:03:21
----
+
+### Chapter 112
 
 "Charging complete."
 
@@ -12768,13 +12209,8 @@ At the very last moment. She finally remembered that man. She loved listening to
 Xiao Quan noticed and walked up to her. He took off his sunglasses, revealing a slight weariness on his handsome face.
 
 "Xiao Tang."
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 113
-wordCount: 1168
-date: 2026-09-28
-time: 09:03:45
----
+
+### Chapter 113
 
 Tang Ying smiled and congratulated Xiao warmly, saying,
 
@@ -12899,13 +12335,8 @@ Tang Ying couldn't help but laugh, but after laughing, she realized something wa
 Tang Ying drawled out her words, seemingly lost in thought. After chatting idly for about ten minutes, the boss finally returned. The lucky cat at the door chimed a welcome message again, and Xiao Sisi was the first to react. She turned around nimbly, and even though she couldn't see, she jumped into someone's arms with perfect accuracy, calling out softly,
 
 "Daddy."
----
-title: 'Chapter Ten: Summer Flowers in Full Bloom'
-chapter: 114
-wordCount: 1302
-date: 2026-09-28
-time: 09:04:14
----
+
+### Chapter 114
 
 Tang Ying turned around at the sound and looked at the man standing at the door, squatting down to talk to Xiao Sisi. Even though he was middle-aged, the man still maintained a good figure. He was slightly hunched over, but overall he was still thin and upright. His face didn't show many signs of age, except for two deep nasolabial folds on either side of his nose. Perhaps because his features resembled Xiao Quan's, Tang Ying didn't find him unfamiliar. After staring at him for a while, Tang Ying realized her rudeness and quickly stood up to greet him with a smile: "Hello, Mr. Xiao, I am Tang Ying." The man looked up at her and said succinctly, "Hello, Xiao Han." "Um..." The man opposite her just looked at her without making a sound, but for some reason, Tang Ying felt the same nervousness she had when she first interviewed at Xiao Quan's studio. She became incoherent: "I am Xiao Quan's assistant. I am here to interview you about that painting. I hope you can cooperate... Xiao Quan should have notified you in advance, right? I have heard him talk about some stories about you, but I still think it is better to talk to you in person." Xiao Han nodded slightly. "Yes, I know." Tang Ying took out her notebook from her backpack and asked cautiously, "So... can we begin now?" "Okay." Xiao Han nodded sparingly. He slowly and deliberately put Xiao Sisi down on the ground, then led Tang Ying into the inner room. The place was rather small, and the two sat facing each other somewhat awkwardly. Tang Ying gradually regained her professional attitude, opened her notebook in an orderly manner, took out her voice recorder, and nodded to Xiao Han, indicating that she could start speaking now and that she would take careful notes. Late October, late autumn in Beijing. According to Xiao Han, this is the woman's favorite season. Just before the golden maple forest was about to be covered by a vast expanse of white, the first exhibition of Qingbiao Gallery finally officially opened. On that day, many renowned artists and connoisseurs from the industry attended the event, and numerous media reporters also rushed to report on it, all in order to catch a glimpse of the legendary master Fu's prized student. The gallery was packed with visitors, and long queues formed outside, making it completely congested. Tang Ying had been so nervous about this matter for the past few nights that she couldn't sleep. Only now, having witnessed the successful holding of the entire art exhibition, did a huge weight lift from her heart, replaced by an overwhelming joy. Wearing her work badge, Tang Ying walked back and forth in the venue, patiently explaining each painting on display to the guests. On this day, unsurprisingly, the painting titled "He Stands Amidst the Splendor of Summer Flowers," which had never been shown before, on the main exhibition booth, sparked heated discussion. On this same day, Tang Ying recounted the story of Xiao Han and He Ran to the guests in great detail, repeating it countless times until her throat was dry. That long-buried past, unearthed twenty years later, is still filled with endless regret and helplessness. It is said that Xiao Han was unable to see He Ran one last time until her body was taken into the morgue. After her death, he was not in a suitable capacity to attend her funeral. He didn't even get to touch her ashes before they were scattered into the sea. The tragedy of life and death, separation and parting, often brings tears to one's eyes, but Tang Ying couldn't help but recall the expression on Xiao Han's face when he reminisced about this past event. The sadness on his face was very faint, so faint that it was almost impossible to find, as if these painful experiences had never happened to him. He said, "She's always been there." Tang Ying still couldn't understand what that sentence meant. Perhaps he was still living in his own memories, or perhaps he was just using this assumption to comfort himself. As dusk approached, the number of people in the gallery finally began to decrease. It had been a busy but fruitful day for Tang Ying. Xiao Quan hosted a banquet at the hotel to invite guests, while she stayed at the gallery to finish up the last bit of work. During the clearing process, Tang Ying noticed a man holding a little girl standing in front of the main booth, lingering there. She had to step forward and remind him, "Sir, I'm sorry, the gallery is about to close..." Before she could finish speaking, she paused for a moment before realizing that the person in front of her was an acquaintance. Tang Ying's voice was very soft, and Xiao Han didn't notice her arrival. His gaze remained fixed on the painting in front of him, motionless, completely oblivious to the outside world. An indescribable emotion lingered in his eyes, heavy and profound, his longing painting a picture that no one else could penetrate. Tang Ying couldn't help but look at the man standing amidst the vibrant summer flowers in the picture. A few seconds later, she turned her head and glanced at Xiao Han a few more times. From the side, he seemed to have changed exactly, just like he had back then. The man's profile, showing him intently working, leaves a lingering question. The next second, he might turn his head to look at her. Perhaps he would raise his hand at her, and she would smile back at him. Perhaps after work, he and she would go to the archway in Xiaozhou Village and share a bowl of noodles. But who knows? Holding Xiao Sisi in his arms, she was very excited and babbled, "When I grow up, I want to be a painter!" This time, Xiao Han came to his senses, and he smiled somewhat bitterly: "Silly girl, how can you draw if you can't see it?" Xiao Sisi waved her little fist in dissatisfaction, "I can draw, I can draw!" The father and daughter were enjoying themselves, and Tang Ying couldn't bear to disturb them. She quietly returned to her office and waited until Xiao Han led Xiao Sisi away before she came out. Standing at the doorway, I watched the man and the little girl's figures fade into the distance as they walked towards the road. As dusk settled, a gust of autumn wind swept by. The two walked hand in hand into the distance, their figures blurring as if they had stepped into a yellowed piece of parchment and been permanently frozen in the image. Tang Ying suddenly understood something. Perhaps, it really is as he said. Time may pass, but some things will never change, just like she has always been there. As night quietly fell, Tang Ying was the last to leave the gallery. She slowly pulled down the roller shutter, and with her last glance before turning around, she looked at the silent, unchanging painting in the distance. A painting tells an eternal story, and those who view the painting are witnesses to that story. That year, she was still beautiful, and he was still young. Their love may have been crazy, or absurd. But because it was fleeting, it deserves all the more to be known by the world.
 
