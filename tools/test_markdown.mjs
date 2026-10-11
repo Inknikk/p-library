@@ -99,6 +99,20 @@ test("parse emits a horizontal rule", () => {
   assert.equal(md.parse("***"), "<hr>");
 });
 
+test("parse strips leading frontmatter", () => {
+  assert.equal(md.parse("---\ntitle: A Book\nauthor: Anonymous\n---\n\nHello"), "<p>Hello</p>");
+});
+
+test("parse strips frontmatter between concatenated parts", () => {
+  const src = "part one\n\n---\ntitle: 'Chapter Two'\nchapter: 10\n---\n\npart two";
+  assert.equal(md.parse(src), "<p>part one</p>\n<p>part two</p>");
+});
+
+test("parse keeps a prose horizontal rule that is not frontmatter", () => {
+  const src = "a\n\n---\n\nb";
+  assert.equal(md.parse(src), "<p>a</p>\n<hr>\n<p>b</p>");
+});
+
 test("parse emits unordered and ordered lists", () => {
   assert.equal(md.parse("- a\n- b"), "<ul>\n<li>a</li>\n<li>b</li>\n</ul>");
   assert.equal(md.parse("1. a\n2. b"), "<ol>\n<li>a</li>\n<li>b</li>\n</ol>");

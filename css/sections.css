@@ -469,15 +469,6 @@
 
 /* --- reader modes -------------------------------------------------- */
 
-/* Auto hide: scrolling down drops the chrome out of the way, any upward
-   movement brings it back. The bar keeps its box, so nothing reflows and
-   the reading position never jumps. */
-.reader-chrome-hidden .reader-bar {
-  opacity: 0;
-  transform: translateY(calc(var(--lift-3) * -1));
-  pointer-events: none;
-}
-
 /* Focus mode: the chrome leaves the flow entirely and the text takes the
    whole viewport. The script restores the scroll fraction after the
    reflow, so the paragraph you were on is still the paragraph you are on. */

@@ -132,7 +132,6 @@
     var observer = null;
     var speech = null;
     var chromeTimer = null;
-    var chromePinUntil = 0;
     var saveTimer = null;
     var sections = [];
     var activeSection = null;
@@ -470,20 +469,9 @@
       saveTimer = setTimeout(flush, 400);
     }
 
-    function pinChrome(ms) {
-      dom.reader.classList.remove("reader-chrome-hidden");
-      chromePinUntil = Date.now() + (ms || 2500);
-    }
-
     function onScroll() {
       measure();
       hideSelectionBar();
-      /* Programmatic chapter jumps pin the chrome so the follow-up scroll
-         events cannot hide the control bar mid-animation. Passive reading
-         scrolls below the fold still auto-hide it as before. */
-      if (Date.now() < chromePinUntil) dom.reader.classList.remove("reader-chrome-hidden");
-      else if (scroll.scrollTop > 120) dom.reader.classList.add("reader-chrome-hidden");
-      else dom.reader.classList.remove("reader-chrome-hidden");
       if (panel === "find" && findHits.length) {
         var current = findHits[findIndex];
         if (current && !isInView(current)) {
@@ -802,7 +790,6 @@
       dom.fsBtn.addEventListener("click", toggleFullscreen);
       if (dom.chapterPrevBtn) {
         dom.chapterPrevBtn.addEventListener("click", function () {
-          pinChrome(3500);
           var idx = -1;
           for (var i = 0; i < sections.length; i += 1) {
             if (sections[i].getBoundingClientRect().top <= 80) idx = i;
@@ -817,7 +804,6 @@
       }
       if (dom.chapterNextBtn) {
         dom.chapterNextBtn.addEventListener("click", function () {
-          pinChrome(3500);
           var idx = -1;
           for (var i = 0; i < sections.length; i += 1) {
             if (sections[i].getBoundingClientRect().top <= 120) idx = i;
@@ -834,7 +820,6 @@
         });
       }
       dom.topBtn.addEventListener("click", function () {
-        pinChrome(3500);
         scroll.scrollTo({ top: 0, behavior: "smooth" });
       });
       dom.copyBtn.addEventListener("click", function () {
@@ -853,7 +838,7 @@
         if (!row) return;
         var tool = row.getAttribute("data-tool");
         setDrawer(false);
-        if (tool === "top") { pinChrome(3500); scroll.scrollTo({ top: 0, behavior: "smooth" }); toast("Back to the top"); }
+        if (tool === "top") { scroll.scrollTo({ top: 0, behavior: "smooth" }); toast("Back to the top"); }
         else if (tool === "notes") setPanel("notes");
         else if (tool === "speech") { setPanel("speech"); toggleSpeech(); }
         else if (tool === "mode") setMode(dom.reader.getAttribute("data-mode") === "focus" ? "reader" : "focus");
@@ -918,9 +903,7 @@
         }, 10);
       });
 
-      dom.reader.addEventListener("mousemove", function (e) {
-        if (e.movementY < -6) dom.reader.classList.remove("reader-chrome-hidden");
-        else if (e.movementY > 10 && scroll.scrollTop > 120) dom.reader.classList.add("reader-chrome-hidden");
+      dom.reader.addEventListener("mousemove", function () {
         if (chromeTimer) clearTimeout(chromeTimer);
         chromeTimer = setTimeout(function () { hideSelectionBar(); }, 4000);
       });
