@@ -533,12 +533,14 @@
 }
 .tool-list .ico { color: var(--fg-faint); }
 
-/* The reader menu button is the phone route into the drawer. It is hidden
-   on wide screens, where the toolbar shows every control directly. */
-.reader-menu { display: none; }
+/* The reader menu button opens the drawer, which is the only place the
+   table of contents lives. It must be reachable at every width: on wide
+   screens the toolbar shows every tool directly, but not the contents, so
+   hiding this left desktop with no way into the TOC but a keyboard
+   shortcut. The narrow-screen rules below only trim the toolbar. */
+.reader-menu { display: inline-grid; }
 
 @media (max-width: 900px) {
-  .reader-menu { display: inline-grid; }
   #topBtn, #notesBtn, #ttsBtn, #modeBtn, #fsBtn { display: none; }
   #toolsWrap:not([hidden]) { display: block; }
 }
