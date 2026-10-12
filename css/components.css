@@ -182,6 +182,41 @@
   z-index: -1;
 }
 
+/* The featured cover is a seal: a decorative Chinese glyph, with the
+   author beneath it. The English title lives in the hero beside the
+   cover, not on it. */
+.cover-glyph {
+  font-size: var(--hero-glyph);
+  font-weight: var(--fw-semi);
+  line-height: 1.05;
+  letter-spacing: 0.08em;
+  color: var(--cover-fg, var(--c-chalk));
+}
+.hero-cover { text-align: center; }
+
+/* A locked cover keeps its face but drops its voice, and carries a lock
+   badge so the state reads without a legend. */
+.cover[data-locked] .cover-title,
+.cover[data-locked] .cover-author { opacity: 0.55; }
+.cover-lock {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  display: grid;
+  place-items: center;
+  width: var(--icon-box);
+  height: var(--icon-box);
+  border-radius: var(--radius-pill);
+  background: var(--scrim);
+  color: var(--c-chalk);
+}
+.cover-lock .ico { width: var(--icon-size-sm); height: var(--icon-size-sm); }
+
+.card[data-locked] { cursor: default; }
+.card[data-locked]:hover { transform: none; }
+.card[data-locked] .card-title { color: var(--fg-muted); }
+.card[data-locked] .card-foot { color: var(--fg-faint); }
+
 /* ==================================================================== *
  *  DRAWER - the shelf, and the table of contents
  * ==================================================================== */
@@ -276,71 +311,9 @@
 
 /* ==================================================================== *
  *  RESUME CARD
+ *  Removed: the featured hero carries continue reading now. The shelf
+ *  grid stays position:relative so nothing it holds can escape it.
  * ==================================================================== */
-
-.resume {
-  display: grid;
-  grid-template-columns: var(--thumb-size) 1fr auto;
-  align-items: center;
-  gap: var(--space-4);
-  width: 100%;
-  padding: var(--space-4);
-  border-radius: var(--radius-surface);
-  background: var(--surface-raised);
-  border: var(--rule-w) solid var(--border);
-  box-shadow: var(--shadow-1);
-  min-height: var(--tap);
-}
-
-.resume-body {
-  display: grid;
-  gap: var(--space-1);
-  min-width: 0;
-}
-
-.resume-title {
-  font-size: var(--fs-300);
-  font-weight: var(--fw-semi);
-  color: var(--fg);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.resume-meta {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-  font-size: var(--fs-100);
-  color: var(--fg-muted);
-}
-
-.resume-bar {
-  flex: 1;
-  height: var(--progress-h);
-  background: var(--c-void);
-  border-radius: var(--radius-pill);
-  overflow: hidden;
-}
-.resume-bar span {
-  display: block;
-  height: 100%;
-  background: var(--accent);
-  transition: width var(--dur) var(--ease);
-}
-
-.resume-actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
-}
-
-.resume .cover {
-  width: var(--thumb-size);
-  aspect-ratio: 2 / 3;
-}
-
-/* Ensure shelf grid is clickable */
 #shelfGrid {
   position: relative;
 }
@@ -703,3 +676,96 @@ mark.rd-mark:hover { background: var(--mark); }
 }
 .error h3 { font-size: var(--fs-500); }
 .error p { color: var(--fg-muted); font-size: var(--fs-200); max-width: 46ch; }
+
+/* ==================================================================== *
+ *  COMMAND PALETTE
+ *  Shelf scoped: a quick jump to the one book, its contents, the titles
+ *  still coming, or the About panel. The reader keeps Ctrl K for find.
+ * ==================================================================== */
+
+.palette {
+  display: flex;
+  flex-direction: column;
+  width: min(var(--palette-w), calc(100vw - var(--space-6)));
+  max-height: var(--palette-max-h);
+  margin: var(--palette-top) auto auto;
+  padding: 0;
+  overflow: hidden;
+  background: var(--surface-raised);
+  border: var(--rule-w) solid var(--border);
+  border-radius: var(--radius-surface);
+  color: var(--fg);
+  box-shadow: var(--shadow-3);
+}
+.palette::backdrop { background: var(--scrim); }
+
+.palette-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-5);
+  border-bottom: var(--rule-w) solid var(--border-soft);
+}
+.palette-head .ico { color: var(--fg-faint); }
+.palette-input {
+  flex: 1;
+  min-width: 0;
+  min-height: var(--tap);
+  padding: 0 var(--space-2);
+  background: transparent;
+  border: 0;
+  font-size: var(--fs-300);
+}
+.palette-input::placeholder { color: var(--fg-faint); }
+.palette-kbd {
+  flex: none;
+  font-size: var(--fs-100);
+  color: var(--fg-faint);
+  padding: 0 var(--space-1);
+  border: var(--rule-w) solid var(--border);
+  border-radius: var(--radius-xs);
+}
+
+.palette-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-2);
+  display: grid;
+  gap: var(--space-1);
+  align-content: start;
+}
+.palette-item {
+  display: grid;
+  grid-template-columns: var(--icon-size) 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-control);
+  color: var(--fg-muted);
+  cursor: pointer;
+  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
+}
+.palette-item .ico { color: var(--fg-faint); }
+.palette-item[aria-selected="true"] { background: var(--surface-hover); color: var(--fg); }
+.palette-item[aria-selected="true"] .ico { color: var(--accent); }
+.palette-item.is-locked { color: var(--fg-faint); }
+.palette-item-label {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-medium);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.palette-item-hint {
+  font-size: var(--fs-100);
+  color: var(--fg-faint);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.palette-empty {
+  padding: var(--space-6);
+  text-align: center;
+  color: var(--fg-faint);
+  font-size: var(--fs-200);
+}

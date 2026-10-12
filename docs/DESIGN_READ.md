@@ -27,7 +27,7 @@ Signals used, in the order the skill asks for them:
 
 | Dial | Value | Reasoning |
 |---|---|---|
-| `DESIGN_VARIANCE` | **6** | Off, not symmetrical. The shelf is an asymmetric grid and the reader is strictly single column, because a document has one correct shape. Above 6 would start fighting the prose. |
+| `DESIGN_VARIANCE` | **6** | Off, not symmetrical. The home page sets one featured book against an even rail of held back covers, and the reader is strictly single column, because a document has one correct shape. Above 6 would start fighting the prose. |
 | `MOTION_INTENSITY` | **4** | Fluid CSS only, and only where it carries meaning: background cross fade, drawer slide, toast, press feedback. The taste skill bans scroll listeners and the reading surface has zero scroll driven animation. Reduced motion collapses all of it. |
 | `VISUAL_DENSITY` | **3** | Art gallery spacing. The premium consumer preset is 3 and the read is the reason: room around the text is the product. |
 
@@ -90,8 +90,9 @@ The skill asks for sequential visible iterations with per iteration
 verification, not one mega batch. The build runs as four:
 
 1. Tokens and shell. Verify computed values by DOM probe.
-2. Shelf and listings. Verify at 1440, 768, 375 plus a 980x700 desktop site on
-   mobile viewport for horizontal overflow.
+2. Home: featured hero, locked rail, drawer listings, and the Ctrl K command
+   palette. Verify at 1440, 1024, 860, 768, 560, 375, 320 plus a 980x700
+   desktop site on mobile viewport for horizontal overflow.
 3. Reader: render, table of contents, find, backgrounds, type controls. Verify
    each of the eight backgrounds for contrast by probe.
 4. Annotations, read aloud, resume, full screen. Verify keyboard path end to

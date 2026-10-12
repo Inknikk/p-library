@@ -703,13 +703,17 @@
     }
 
     /* ---------------- open and close ---------------- */
-    function open(slug) {
+    function open(slug, opts) {
+      var wantToc = !!(opts && opts.toc);
       /* Opening a book sets the hash so the view can be linked and reloaded.
          That fires hashchange, route() runs, and it calls open() with the
          same slug. Without this guard every book was parsed and rendered
          twice: 250ms plus 186ms of main thread for one chapter, and the
          first render, including the restored position, was thrown away. */
-      if (book && book.slug === slug && !dom.reader.hidden && dom.page.childElementCount) return;
+      if (book && book.slug === slug && !dom.reader.hidden && dom.page.childElementCount) {
+        if (wantToc) setDrawer(true);
+        return;
+      }
 
       book = global.INKWELL_findBook(slug);
       if (!book) { toast("No such book: " + slug, "error"); return; }
@@ -725,6 +729,7 @@
       dom.modeBtn.setAttribute("aria-pressed", "false");
       dom.readerTitle.textContent = book.title;
       dom.readerAuthor.textContent = book.author;
+      dom.readerHeading.textContent = book.title + " by " + book.author;
       dom.page.innerHTML = '<div class="skeleton skeleton-title"></div>' +
         '<div class="skeleton skeleton-line" data-w="80"></div>'.repeat(4);
       applyPrefs();
@@ -751,6 +756,7 @@
           requestAnimationFrame(function () {
             applyMarks();
             buildToc();
+            if (wantToc) setDrawer(true);
             /* Only if the reader has not been scrolled by hand in the frame
                it took to get here. It is reset to the top, so any movement
                means the reader got there first. */
@@ -965,6 +971,7 @@
 
     api.open = open;
     api.close = close;
+    api.setDrawer = setDrawer;
     api.toggleFullscreen = toggleFullscreen;
     api.bind = bind;
     api.applyPrefs = applyPrefs;

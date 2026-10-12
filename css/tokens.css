@@ -76,6 +76,7 @@
   --fs-700: 1.75rem;    /* 28  section title */
   --fs-800: 2.5rem;     /* 40  page title */
   --fs-900: clamp(2.25rem, 5vw, 3.5rem);
+  --hero-glyph: clamp(1.6rem, 8vw, 3.25rem);   /* the seal on the featured cover */
 
   --lh-tight: 1.15;
   --lh-ui: 1.4;
@@ -162,6 +163,11 @@
   --cover-min-sm: 64px;
   --card-min: 190px;
   --card-min-sm: 140px;
+  --hero-cover: 220px;
+  --hero-cover-sm: 124px;
+  --palette-w: 560px;
+  --palette-max-h: 62dvh;
+  --palette-top: 12vh;
   --drawer-w: 300px;
   --drawer-w-sm: 320px;
   --scrim: rgba(4, 6, 9, 0.6);

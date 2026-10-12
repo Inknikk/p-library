@@ -59,88 +59,134 @@
   gap: var(--space-1);
 }
 
+/* The two app bar actions carry an icon, a word and, for search, the key
+   that does the same thing. On a narrow bar the word and the key fold away
+   and the icon stands in, with the aria-label keeping the name. */
+.appbar-btn { gap: var(--space-2); }
+.appbar-kbd {
+  font-size: var(--fs-100);
+  font-weight: var(--fw-normal);
+  letter-spacing: var(--track-ui);
+  color: var(--fg-faint);
+  padding: 0 var(--space-1);
+  border: var(--rule-w) solid var(--border);
+  border-radius: var(--radius-xs);
+}
+
 /* ==================================================================== *
- *  SHELF
+ *  HERO - the one title that is ready
+ *  Content sized and split screen: the cover carries the seal, the body
+ *  carries the pitch and the single decision. Not a 100dvh curtain.
  * ==================================================================== */
 
-.shelf { padding-block: var(--space-8) var(--space-10); }
-
-.shelf-head {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: var(--space-6);
-  flex-wrap: wrap;
-  padding-bottom: var(--space-6);
+.hero {
+  display: grid;
+  grid-template-columns: var(--hero-cover) 1fr;
+  gap: var(--space-8);
+  align-items: center;
+  padding-block: var(--space-8) var(--space-9);
   border-bottom: var(--rule-w) solid var(--border-soft);
 }
 
-.shelf-title {
+.hero-cover {
+  width: var(--hero-cover);
+  justify-self: start;
+}
+
+.hero-body {
+  display: grid;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.hero-title {
   font-size: var(--fs-900);
   letter-spacing: -0.03em;
   line-height: 1.02;
 }
 
-.shelf-lede {
-  max-width: 42ch;
-  margin-top: var(--space-4);
+.hero-byline {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  color: var(--fg-muted);
+  font-size: var(--fs-200);
+}
+
+.hero-lede {
+  max-width: 52ch;
   color: var(--fg-muted);
   font-size: var(--fs-300);
   line-height: var(--lh-loose);
 }
 
-/* Continue reading. The one thing the reader came back for, so it gets the
-   first viewport and the only filled panel on the page. */
-.resume {
-  display: grid;
-  grid-template-columns: var(--cover-min) 1fr auto;
-  gap: var(--space-6);
-  align-items: center;
-  margin-top: var(--space-7);
-  padding: var(--space-5);
-  background: var(--surface);
-  border: var(--rule-w) solid var(--border);
-  border-radius: var(--radius-surface);
-  box-shadow: var(--shadow-1);
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  color: var(--fg-faint);
+  font-size: var(--fs-100);
+  letter-spacing: var(--track-label);
+  text-transform: uppercase;
 }
-.resume .cover { width: var(--cover-min); }
-.resume-body { display: grid; gap: var(--space-2); min-width: 0; }
-.resume-title {
-  font-size: var(--fs-600);
-  letter-spacing: var(--track-tight);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.resume-meta {
+
+.hero-progress {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  font-size: var(--fs-200);
-  color: var(--fg-muted);
-  flex-wrap: wrap;
+  max-width: var(--maxw-prose);
 }
-.resume-bar {
+.hero-bar {
+  flex: 1;
   height: var(--rule-w-xl);
-  border-radius: var(--radius-pill);
   background: var(--c-void);
+  border-radius: var(--radius-pill);
   overflow: hidden;
 }
-.resume-bar span {
+.hero-bar span {
   display: block;
   height: 100%;
   border-radius: inherit;
   background: var(--accent);
+  transition: width var(--dur) var(--ease);
 }
-.resume-actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-3);
+.hero-pct {
+  color: var(--accent);
+  font-size: var(--fs-100);
+  white-space: nowrap;
 }
 
-/* The grid is asymmetric on purpose (VARIANCE 6): the first card is wider
-   because it is the one most likely to be opened. */
-/* The shelf is an app frame, not a document that scrolls: masthead at the
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+/* ==================================================================== *
+ *  RAIL - the titles still on the way
+ * ==================================================================== */
+
+.rail { padding-block: var(--space-8) var(--space-9); }
+
+.rail-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  padding-bottom: var(--space-4);
+  border-bottom: var(--rule-w) solid var(--border-soft);
+}
+
+.rail-title {
+  font-size: var(--fs-700);
+  letter-spacing: var(--track-tight);
+}
+
+/* The rail is an even grid: these are equals, all waiting. The featured
+   title above carries the asymmetry instead. */
+/* The shelf page is an app frame, not a document that scrolls: masthead at the
    top, footer pinned to the bottom, and only the book list scrolls in the
    middle. The reason is measurable. The grid is filled by script, and the
    parser has not finished the last two script files when the browser takes
@@ -499,16 +545,14 @@
 @media (max-width: 860px) {
   .appbar { padding-inline: var(--space-4); }
   .shell { padding-inline: var(--space-4); }
-  .shelf { padding-block: var(--space-6) var(--space-8); }
 
-  .resume {
-    grid-template-columns: var(--cover-min-sm) 1fr;
-    gap: var(--space-4);
-    padding: var(--space-4);
+  .hero {
+    grid-template-columns: var(--hero-cover-sm) 1fr;
+    gap: var(--space-5);
+    padding-block: var(--space-6) var(--space-7);
   }
-  .resume .cover { width: var(--cover-min-sm); }
-  .resume-actions { grid-column: 1 / -1; }
-  .resume-actions .btn { flex: 1; }
+  .hero-cover { width: var(--hero-cover-sm); }
+  .rail { padding-block: var(--space-6) var(--space-7); }
 
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(var(--card-min-sm), 1fr));
@@ -523,18 +567,33 @@
   .drawer { width: min(var(--drawer-w-sm), 88vw); }
 }
 
+@media (max-width: 560px) {
+  .appbar-kbd { display: none; }
+}
+
 @media (max-width: 420px) {
   .grid { grid-template-columns: 1fr 1fr; }
   .card-title { font-size: var(--fs-200); }
-  .shelf-lede { font-size: var(--fs-200); }
+
+  /* A 320px phone cannot fit the title, the byline and both calls to action
+     beside a full cover, so the hero tightens and the cover drops to the
+     small size. */
+  .hero { grid-template-columns: var(--cover-min) 1fr; gap: var(--space-4); }
+  .hero-cover { width: var(--cover-min); }
+  .hero-title { font-size: var(--fs-800); }
+  .hero-lede { font-size: var(--fs-200); }
+  .hero-meta { gap: var(--space-1) var(--space-3); }
+  .hero-cta .btn { flex: 1; }
+
   .reader-title { max-width: 10ch; margin-inline: var(--space-1); }
 
   /* A 320px phone cannot fit the app bar's count label next to the brand
-     and the About button, so the page scrolled sideways by 25px. The count
-     is redundant with the shelf on screen, so it goes. */
+     and the tools, so the page scrolled sideways by 25px. The count is
+     redundant with the shelf on screen, so it goes. */
   #countLabel { display: none; }
   .appbar { gap: var(--space-3); }
-  .appbar-tools .btn { padding-inline: var(--space-3); }
+  .appbar-btn-text { display: none; }
+  .appbar-tools .btn { padding-inline: var(--space-3); gap: 0; }
 
   /* Six tap-size targets plus the title and the percentage overflow a 320px
      bar (the Type button was pushed 47px off screen). Tighten the gaps and
@@ -569,5 +628,5 @@
 }
 
 @media (max-width: 1024px) {
-  .shelf-head { flex-direction: column; align-items: flex-start; gap: var(--space-4); }
+  .rail-head { flex-direction: column; align-items: flex-start; gap: var(--space-2); }
 }

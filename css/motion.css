@@ -16,18 +16,43 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.shelf-head,
-.resume,
+/* The rail takes one plain rise for its head and covers. */
+.rail-head,
 .grid .card {
   animation: rise var(--dur-slow) var(--ease-out) backwards;
 }
-.shelf-head { animation-delay: 0ms; }
-.resume { animation-delay: 40ms; }
+.rail-head { animation-delay: 40ms; }
 .grid .card:nth-child(1) { animation-delay: 60ms; }
 .grid .card:nth-child(2) { animation-delay: 100ms; }
 .grid .card:nth-child(3) { animation-delay: 140ms; }
 .grid .card:nth-child(4) { animation-delay: 180ms; }
 .grid .card:nth-child(n + 5) { animation-delay: 220ms; }
+
+/* The hero gets its own staged load rather than the shelf's generic rise:
+   the words read in order and the seal settles beside them. A single shot
+   on first paint, never scroll driven, so it cannot follow the reader. */
+@keyframes settle {
+  from { opacity: 0; transform: translateY(var(--lift-4)) scale(0.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.hero-cover {
+  animation: settle var(--dur-slow) var(--ease-out) backwards;
+  animation-delay: 100ms;
+}
+.hero-eyebrow,
+.hero-title,
+.hero-byline,
+.hero-lede,
+.hero-meta,
+.hero-cta {
+  animation: rise var(--dur-slow) var(--ease-out) backwards;
+}
+.hero-eyebrow { animation-delay: 0ms; }
+.hero-title { animation-delay: 60ms; }
+.hero-byline { animation-delay: 100ms; }
+.hero-lede { animation-delay: 140ms; }
+.hero-meta { animation-delay: 180ms; }
+.hero-cta { animation-delay: 220ms; }
 
 /* ---------------------------------------------------------------- *
  * PRESS
@@ -104,8 +129,14 @@
     scroll-behavior: auto !important;
   }
 
-  .shelf-head,
-  .resume,
+  .hero-cover,
+  .hero-eyebrow,
+  .hero-title,
+  .hero-byline,
+  .hero-lede,
+  .hero-meta,
+  .hero-cta,
+  .rail-head,
   .grid .card {
     animation: none;
     opacity: 1;

@@ -7,6 +7,12 @@
  * `cover` is optional: when it is absent the cover is typographic, which
  * is a finished state rather than a placeholder. Point it at
  * assets/covers/<slug>.jpg to use real artwork.
+ *
+ * `status` is "available" or "locked". Only one title is available right
+ * now; the rest stay on the shelf, greyed and unopenable, so the library
+ * still reads as a library without pretending the texts are ready.
+ * `featured` marks the one title the home page presents as the hero.
+ * `glyph` is a decorative Chinese seal set into the cover.
  */
 (function (global) {
   "use strict";
@@ -19,9 +25,13 @@
       year: 2026,
       src: "books/forbidden-flower.md",
       tone: "clay",
-      chapters: 10,
+      glyph: "禁花",
+      sections: 10,
+      chapters: 114,
       words: 126568,
-      blurb: "A story of love, dreams, and forbidden desires spanning ten chapters across Guangzhou's seasons."
+      status: "available",
+      featured: true,
+      blurb: "From Guangzhou's wet springs to its slow summers, a story about wanting what you were never meant to have."
     },
     {
       slug: "frankenstein",
@@ -32,6 +42,7 @@
       tone: "slate",
       chapters: 4,
       words: 11988,
+      status: "locked",
       blurb: "Four letters from the Arctic, and the thing that followed the ship home."
     },
     {
@@ -43,6 +54,7 @@
       tone: "ink",
       chapters: 3,
       words: 9342,
+      status: "locked",
       blurb: "A whaling voyage, a pale deck, and a captain who has read too much about whales."
     },
     {
@@ -54,6 +66,7 @@
       tone: "moss",
       chapters: 2,
       words: 29526,
+      status: "locked",
       blurb: "Two years in a hut by a pond, written down plainly on purpose."
     },
     {
@@ -65,6 +78,7 @@
       tone: "plum",
       chapters: 6,
       words: 12024,
+      status: "locked",
       blurb: "Six chapters of falling down holes, taken at the pace of a curious child."
     }
   ];

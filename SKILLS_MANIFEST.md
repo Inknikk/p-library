@@ -55,9 +55,10 @@
 | 2 | brand | [-] | `/root/.config/opencode/skills/brand/SKILL.md` not loaded; the palette is derived in DESIGN_READ.md section on palette family, no brand guide exists yet |
 | 3 | brand-voice | [-] | `/root/.config/opencode/skills/brand-voice/SKILL.md` not loaded; the build ships UI strings only, there is no prose register to match |
 | 4 | popular-web-designs | [-] | `/root/.config/opencode/skills/popular-web-designs/SKILL.md` not loaded; the design language is taken from the measured reader teardown instead of a gallery |
-| 5 | web-motion-design | [-] | `/root/.config/opencode/skills/web-motion-design/SKILL.md` not loaded; motion is limited to short transitions already covered by make-interfaces-feel-better |
-| 6 | apple-hig-expert | [-] | `NOT FOUND` | python3 |  -  | Skill not found in opencode harness |
-| 7 | personal-humaniser | [-] | `/root/.config/opencode/skills/personal-humaniser/SKILL.md` not loaded; UI strings only, no long-form copy in the build |
+| 5 | web-motion-design | [x] | `/root/.config/opencode/skills/web-motion-design/SKILL.md` | Loaded for the home redesign. Its scroll-driven reveal engine is out of scope (`DESIGN.md` bans scroll driven effects and the reader takes no entrance), but its hero rule landed: the hero now runs its own staged load (words read in order, seal settles) instead of sharing the rail's generic rise |
+| 6 | web-copywriting | [x] | `/root/.config/opencode/skills/web-copywriting/SKILL.md` | Loaded for the hero copy. Its buyer-first rule caught the stale blurb ("Ten chapters", which named the old top level and now conflicted with 10 sections / 114 chapters). The lede now leads on the reader's pull, not a count |
+| 7 | apple-hig-expert | [-] | `NOT FOUND` | python3 |  -  | Skill not found in opencode harness |
+| 8 | personal-humaniser | [-] | `/root/.config/opencode/skills/personal-humaniser/SKILL.md` not loaded; UI strings only, no long-form copy in the build |
 
 ---
 

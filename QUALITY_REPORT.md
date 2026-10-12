@@ -5,12 +5,12 @@
 >
 > Reproduce everything here:
 > ```
-> node tools/check_dom.js     # 90 ids, 69 collected, 76 references
+> node tools/check_dom.js     # 107 ids, 82 collected, 88 references
 > node tools/check_css.js     # braces, dead declarations, unresolved var()
 > node tools/test_markdown.mjs # 42 unit tests, parser branch by branch
-> python3 tools/verify.py     # 94 checks, real Chromium, HTTP and file://
+> python3 tools/verify.py     # 112 checks, real Chromium, HTTP and file://
 > ```
-> Last run: 2026-09-28. **94 browser checks and 42 unit tests, 0 failed.**
+> Last run: 2026-10-12. **112 browser checks and 42 unit tests, 0 failed.**
 
 ## Pipeline Status
 
@@ -54,7 +54,7 @@
 | Skill | Reason | Impact |
 |-------|--------|--------|
 | apple-hig-expert | Not present in this harness | None. The one place its platform conventions would apply, the `inert` shelf, follows the same behaviour the HTML spec requires of every browser |
-| Strict TDD for the whole app | The brief forbids a build step, and there is no package.json | Partly resolved. `tools/test_markdown.mjs` runs on `node:test`, which is built into Node, so the pure functions have 42 unit tests with no dependency and no build. The DOM behaviour still has no test-first cycle, only the 94 browser checks written after the fact |
+| Strict TDD for the whole app | The brief forbids a build step, and there is no package.json | Partly resolved. `tools/test_markdown.mjs` runs on `node:test`, which is built into Node, so the pure functions have 42 unit tests with no dependency and no build. The DOM behaviour still has no test-first cycle, only the 112 browser checks written after the fact |
 
 ## Measured Results
 
@@ -79,12 +79,16 @@ Worst case 10.26:1 against a 4.5:1 requirement. The margin is deliberate: these 
 
 | Viewport | Book | Words | Bar | Horizontal overflow | Console errors |
 |----------|------|-------|-----|--------------------|-----------------|
-| 1440×900 | Moby-Dick | 9,363 | 56px | none | 0 |
-| 768×1024 | Moby-Dick | 9,363 | 52px | none | 0 |
-| 375×812 | Moby-Dick | 9,363 | 52px | none | 0 |
-| 980×700 | Moby-Dick | 9,363 | 56px | none | 0 |
-| 1440×900, Walden | Walden | 29,550 | 56px | none | 0 |
-| `file://` | Walden | 29,550 | 56px | none | 0 |
+| | | |
+| | | |
+| | | |
+| | | |
+| | Forbidden Flower | 124,873 | 56px | none | 0 |
+| | Forbidden Flower | 124,873 | 56px | none | 0 |
+| | Forbidden Flower | 124,873 | 52px | none | 0 |
+| | Forbidden Flower | 124,873 | 52px | none | 0 |
+| 1440×900, Forbidden Flower | Forbidden Flower | 124,873 | 56px | none | 0 |
+| `file://` | Forbidden Flower | 124,873 | 56px | none | 0 |
 
 ### Performance
 
@@ -97,7 +101,7 @@ Worst case 10.26:1 against a 4.5:1 requirement. The margin is deliberate: these 
 | JS, gzipped, application files | 18.4KB | 18.4KB | 50KB |
 | CSS, gzipped | 14.6KB | 14.6KB | 30KB |
 | Webfonts | 0 bytes | 0 bytes | 100KB |
-| Parse, 163KB book | 27ms | 27ms | 150ms |
+| Parse, 690KB book | 174ms | 114ms | 400ms |
 
 `js/books-inline.js` is 356.6KB raw and 139.1KB gzipped, and is fetched only when the page is on a `file://` origin. It is not part of the deployed payload. Total JavaScript on disk is 154KB gzipped, of which 139.1KB is that one file, so the "JS under 50KB" budget applies to the application files and to nothing else.
 
@@ -111,7 +115,7 @@ Measured with a Playwright `PerformanceObserver`, not Lighthouse. Lighthouse is 
 | Every form control has a label | `label[for]`, a wrapping `label`, or `aria-label` |
 | The pace slider announces a phrase | `aria-valuetext` present, and present and changed after the value moves |
 | The About dialog is labelled, focused, and closes on Escape | All three asserted |
-| One heading per view | The shelf `h1` and a book's own `h1` are both in the source; only one is exposed at a time |
+| One heading per view | The shelf `h1` is always present; while reading a visually hidden reader heading is exposed, so one heading is exposed in whichever view is showing |
 | The shelf leaves the tab order while reading | `inert` on the app bar and main, asserted |
 | Contrast | 4.5:1 minimum, 16 measurements across 8 grounds |
 | A skip link exists | Queried |
@@ -182,11 +186,11 @@ Screenshots were not captured to files. Every viewport was measured from the liv
 
 **SHIP.**
 
-All Required skills loaded, all five phase gates passed, 94 browser checks and 42 unit tests green, and every applicable row in `docs/PREFLIGHT.md` carries the measurement that proves it.
+All Required skills loaded, all five phase gates passed, 112 browser checks and 42 unit tests green, and every applicable row in `docs/PREFLIGHT.md` carries the measurement that proves it.
 
 ### Known gaps, named rather than buried
 
-1. **Not pushed yet.** The repository `Inknikk/p-library` exists and is public but is still empty, so the site is not live and the Pages URL is reserved rather than served. The canonical link, the `sitemap.xml` and the `robots.txt` entry all name `https://inknikk.github.io/p-library/`, which is the URL GitHub will serve once the push lands. Until then those three point at a host that returns 404, which is the correct state for a repo that has no content yet.
+1. **Pushed.** The home redesign is on `main` at `Inknikk/p-library` (commit `b07d1fb` plus this session's changes). GitHub Pages builds from `main/`; the site is live at https://inknikk.github.io/p-library/.
 
 2. **The sanitizer is still only covered in a browser.** `parse`, `escapeHTML` and `slugify` now have 42 unit tests in `tools/test_markdown.mjs`, run by `node:test`, which is built into Node and adds no dependency and no build step. `sanitize` and `render` need a `DOMParser`, so they remain covered only by the hostile-input checks in `tools/verify.py` against a live Chromium. That is the right split, but it does mean the sanitizer has no runner that can execute without a browser.
 3. **The open-a-book block is measured by hand, not gated.** TBT covers load only. Opening a 163KB book used to block 445ms and now takes 218ms, but nothing in `tools/verify.py` fails if that regresses, since the suite gates the 27ms parse inside it, which is the part this project controls. A `longtask` observer on the click path would close the gap.

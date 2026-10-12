@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>p library: five books, read slowly</title>
-  <meta name="description" content="Five public domain and original stories to read slowly in the browser. No account, no tracking, your place stays on your own machine.">
+<title>p library: Forbidden Flower, read slowly</title>
+  <meta name="description" content="One story ready to read now, four classics on the way. Plain Markdown in the browser, no account, no tracking, your place stays on your machine.">
   <link rel="canonical" href="https://inknikk.github.io/p-library/">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#0b0d10">
   <meta name="author" content="p library">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="p library">
-  <meta property="og:title" content="p library: five books, read slowly">
-  <meta property="og:description" content="Five stories including Forbidden Flower and four classics. Read in the browser, no account, no tracking.">
+  <meta property="og:title" content="p library: Forbidden Flower, read slowly">
+  <meta property="og:description" content="One story ready to read now, four classics on the way. Plain Markdown in the browser, no account, no tracking.">
   <meta property="og:locale" content="en">
   <meta property="og:url" content="https://inknikk.github.io/p-library/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="p library: five books, read slowly">
-  <meta name="twitter:description" content="Five stories. Read in the browser, no account, no tracking.">
+  <meta name="twitter:title" content="p library: Forbidden Flower, read slowly">
+  <meta name="twitter:description" content="One story ready now, four classics on the way. Read in the browser, no account, no tracking.">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,6 +65,9 @@
   <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v10M8 11l4 4 4-4M5 19h14"/></symbol>
   <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13"/></symbol>
   <symbol id="i-shelf" viewBox="0 0 24 24"><path d="M4 5h4v14H4zM10 5h4v14h-4zM16 6l3.4 13 2.2-.6L18.2 5z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 018 0v3"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5M12 8h.01"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M5 4h9a3 3 0 013 3v13H8a3 3 0 01-3-3z"/><path d="M17 7a3 3 0 00-3-3"/><path d="M5 17a3 3 0 013-3h9"/></symbol>
 </defs></svg>
 
 <header class="appbar" id="appbar">
@@ -74,8 +77,16 @@
   <a class="brand" href="#"><span class="brand-mark" aria-hidden="true"></span>p library</a>
   <span class="appbar-spacer"></span>
 <div class="appbar-tools">
-    <span class="label" id="countLabel">5 titles</span>
-    <button type="button" class="btn btn-ghost btn-sm" id="aboutOpen">About &amp; keys</button>
+    <span class="label" id="countLabel">1 title</span>
+    <button type="button" class="btn btn-ghost btn-sm appbar-btn" id="paletteOpen" aria-haspopup="dialog" aria-label="Search the library">
+      <svg class="ico" aria-hidden="true"><use href="#i-search"></use></svg>
+      <span class="appbar-btn-text">Search</span>
+      <kbd class="appbar-kbd">Ctrl K</kbd>
+    </button>
+    <button type="button" class="btn btn-ghost btn-sm appbar-btn" id="aboutOpen" aria-label="About and keyboard shortcuts">
+      <svg class="ico" aria-hidden="true"><use href="#i-info"></use></svg>
+      <span class="appbar-btn-text">About</span>
+    </button>
   </div>
 </header>
 
@@ -86,38 +97,39 @@
   </p>
 
   <div class="shelf-scroll" id="shelfScroll" tabindex="-1">
-  <section class="shelf" aria-labelledby="shelfTitle">
-    <div class="shelf-head">
-      <div>
-        <h1 class="shelf-title" id="shelfTitle">Five books,<br>read slowly.</h1>
-        <p class="shelf-lede">Stories kept as plain Markdown. Your place, your highlights and your reading preferences stay in this browser and never leave it.</p>
+  <section class="hero" id="hero" aria-labelledby="heroTitle">
+    <span class="hero-cover cover" id="heroCover" data-tone="clay" aria-hidden="true">
+      <span class="cover-glyph" id="heroGlyph"></span>
+      <span class="cover-author" id="heroCoverAuthor"></span>
+    </span>
+    <div class="hero-body">
+      <p class="label hero-eyebrow">Available now</p>
+      <h1 class="hero-title" id="heroTitle"></h1>
+      <p class="hero-byline" id="heroByline"></p>
+      <p class="hero-lede" id="heroLede"></p>
+      <ul class="hero-meta" id="heroMeta"></ul>
+      <div class="hero-progress" id="heroProgress" hidden>
+        <span class="hero-bar" aria-hidden="true"><span id="heroBar"></span></span>
+        <span class="hero-pct" id="heroPct"></span>
       </div>
-      <p class="label">Plain text, no accounts, no tracking</p>
+      <div class="hero-cta">
+        <button type="button" class="btn btn-primary hero-read" id="heroRead">Start reading</button>
+        <button type="button" class="btn" id="heroToc">See contents</button>
+      </div>
     </div>
+  </section>
 
-    <button type="button" class="resume" id="resumeCard" hidden>
-      <span class="cover" id="resumeCover" data-tone="ink" aria-hidden="true">
-        <span class="cover-title" id="resumeCoverTitle"></span>
-        <span class="cover-author" id="resumeCoverAuthor"></span>
-      </span>
-      <span class="resume-body">
-        <span class="label">Continue reading</span>
-        <span class="resume-title" id="resumeTitle"></span>
-        <span class="resume-meta" id="resumeMeta"></span>
-        <span class="resume-bar" id="resumeBar"><span></span></span>
-      </span>
-      <span class="resume-actions">
-        <span class="shelf-pct" id="resumePct"></span>
-        <span class="btn btn-primary">Resume</span>
-      </span>
-    </button>
-
-    <div class="grid" id="shelfGrid"></div>
+  <section class="rail" aria-labelledby="railTitle">
+    <div class="rail-head">
+      <h2 class="rail-title" id="railTitle">More titles</h2>
+      <p class="label">Coming soon</p>
+    </div>
+    <div class="grid grid-locked" id="shelfGrid"></div>
   </section>
   </div>
 
   <footer class="foot">
-    <p>Markdown files live in <code>books/</code>; add a row to <code>js/library.js</code> and a new title appears on the shelf.</p>
+    <p>Every title lives as plain Markdown in <code>books/</code>. Four classics are being prepared; Forbidden Flower is ready to read now.</p>
   </footer>
 </main>
 
@@ -299,6 +311,7 @@
   </div>
 
   <div class="reader-scroll" id="readerScroll" tabindex="-1">
+    <h1 class="sr-only" id="readerHeading"></h1>
     <article class="reader-page" id="readerPage"></article>
   </div>
   <div class="progress-line" id="progress" aria-hidden="true"></div>
@@ -316,34 +329,34 @@
   </div>
 <div class="drawer-body" id="shelfList">
       <button type="button" class="shelf-row" data-slug="forbidden-flower">
-        <span class="shelf-thumb" data-tone="plum"></span>
+        <span class="shelf-thumb" data-tone="clay"></span>
         <span><span class="shelf-name">Forbidden Flower</span>
         <span class="shelf-meta">Anonymous</span></span>
-        <span class="shelf-pct">-</span>
+        <span class="shelf-pct">—</span>
       </button>
-      <button type="button" class="shelf-row" data-slug="frankenstein">
+      <button type="button" class="shelf-row" data-slug="frankenstein" data-locked="true">
         <span class="shelf-thumb" data-tone="slate"></span>
         <span><span class="shelf-name">Frankenstein</span>
-        <span class="shelf-meta">Mary Shelley</span></span>
-        <span class="shelf-pct">-</span>
+        <span class="shelf-meta">Mary Shelley, coming soon</span></span>
+        <span class="shelf-pct"><svg class="ico" aria-hidden="true"><use href="#i-lock"></use></svg></span>
       </button>
-      <button type="button" class="shelf-row" data-slug="moby-dick">
+      <button type="button" class="shelf-row" data-slug="moby-dick" data-locked="true">
         <span class="shelf-thumb" data-tone="ink"></span>
         <span><span class="shelf-name">Moby-Dick</span>
-        <span class="shelf-meta">Herman Melville</span></span>
-        <span class="shelf-pct">-</span>
+        <span class="shelf-meta">Herman Melville, coming soon</span></span>
+        <span class="shelf-pct"><svg class="ico" aria-hidden="true"><use href="#i-lock"></use></svg></span>
       </button>
-      <button type="button" class="shelf-row" data-slug="walden">
+      <button type="button" class="shelf-row" data-slug="walden" data-locked="true">
         <span class="shelf-thumb" data-tone="moss"></span>
         <span><span class="shelf-name">Walden</span>
-        <span class="shelf-meta">Henry David Thoreau</span></span>
-        <span class="shelf-pct">-</span>
+        <span class="shelf-meta">Henry David Thoreau, coming soon</span></span>
+        <span class="shelf-pct"><svg class="ico" aria-hidden="true"><use href="#i-lock"></use></svg></span>
       </button>
-      <button type="button" class="shelf-row" data-slug="wonderland">
+      <button type="button" class="shelf-row" data-slug="wonderland" data-locked="true">
         <span class="shelf-thumb" data-tone="plum"></span>
         <span><span class="shelf-name">Alice's Adventures in Wonderland</span>
-        <span class="shelf-meta">Lewis Carroll</span></span>
-        <span class="shelf-pct">-</span>
+        <span class="shelf-meta">Lewis Carroll, coming soon</span></span>
+        <span class="shelf-pct"><svg class="ico" aria-hidden="true"><use href="#i-lock"></use></svg></span>
       </button>
     </div>
   <div class="drawer-body" id="toolsWrap" hidden>
@@ -383,14 +396,15 @@
 <dialog class="prefs" id="aboutDialog" aria-labelledby="aboutTitle">
   <h2 id="aboutTitle" class="prefs-title">About this shelf</h2>
   <p class="prefs-lede">
-    Five stories, stored as Markdown, parsed in your browser. There is no account, no
-    server and no analytics. Reading position, highlights and preferences are kept in
+    Stories stored as plain Markdown and parsed in your browser. One title is ready
+    now and four classics are on the way. There is no account, no server and no
+    analytics. Reading position, highlights and preferences are kept in
     <code>localStorage</code> on this device only, and clearing site data removes them for good.
   </p>
   <div>
     <span class="label">Keyboard</span>
     <div class="keymap">
-      <span><code>Ctrl K</code> find</span>
+      <span><code>Ctrl K</code> search the shelf, find in a book</span>
       <span><code>Ctrl J</code> shelf and contents</span>
       <span><code>F</code> fullscreen</span>
       <span><code>R</code> focus mode</span>
@@ -403,6 +417,19 @@
     <span class="label">v1, static, no build step</span>
     <button type="button" class="btn btn-primary" id="aboutClose">Close</button>
   </div>
+</dialog>
+
+<dialog class="palette" id="palette" aria-label="Search the library">
+  <div class="palette-head">
+    <svg class="ico" aria-hidden="true"><use href="#i-search"></use></svg>
+    <input type="text" class="palette-input" id="paletteInput" role="combobox"
+      aria-expanded="true" aria-controls="paletteList" aria-autocomplete="list"
+      aria-activedescendant="" autocomplete="off" spellcheck="false"
+      placeholder="Search books and actions" aria-label="Search books and actions">
+    <kbd class="palette-kbd">Esc</kbd>
+  </div>
+  <ul class="palette-list" id="paletteList" role="listbox" aria-label="Results"></ul>
+  <p class="palette-empty" id="paletteEmpty" hidden>Nothing matches that.</p>
 </dialog>
 
 <script src="js/store.js"></script>

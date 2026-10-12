@@ -6,7 +6,11 @@ Desktop plus mobile, one bounded pass, per the project rules. Checks:
   * no horizontal overflow at any viewport (mobile browsers scroll
     horizontally, so a desktop layout on a phone is a fail, not a pass)
   * every interactive element clears 44px
-  * a book opens, renders, and produces a real table of contents
+  * one featured book on the hero, four titles held back on the rail, and a
+    held back title toasts instead of opening
+  * the featured book opens from the hero, renders, and produces a real
+    table of contents
+  * the Ctrl K command palette filters, jumps and closes
   * all eight reading grounds render and every body contrast clears 4.5:1
   * find, notes, progress and persistence across a reload
   * no raw values leaked into the component stylesheets
@@ -93,6 +97,24 @@ def small_targets(page):
       .filter(x => x.h < 44 || x.w < 44)""")
 
 
+def settle(page, tries=24, step_ms=150):
+    """Wait for the reading scroll to stop moving.
+
+    Forbidden Flower renders around 6,000 nodes, and the browser lays that
+    out in stages, so a restored position climbs for about a second after the
+    first frame. Measuring during that climb reads a transient value, so this
+    polls until two consecutive reads agree before the caller trusts it.
+    """
+    last = None
+    for _ in range(tries):
+        page.wait_for_timeout(step_ms)
+        cur = page.evaluate("() => document.getElementById('readerScroll').scrollTop")
+        if cur == last:
+            return cur
+        last = cur
+    return last
+
+
 def run():
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -112,10 +134,26 @@ def run():
             ok(f"{label} touch targets >= 44px", not v["smallTargets"],
                v["smallTargets"][:8])
             v["cards"] = page.locator("#shelfGrid .card").count()
-            ok(f"{label} five covers on the shelf", v["cards"] == 5, v["cards"])
+            v["locked"] = page.evaluate(
+                "() => Array.from(document.querySelectorAll('#shelfGrid .card'))"
+                ".every((c) => c.getAttribute('data-locked') === 'true')")
+            ok(f"{label} four titles held back on the rail",
+               v["cards"] == 4 and v["locked"], v)
+            v["featured"] = page.inner_text("#heroTitle")
+            ok(f"{label} the featured book is the one on the hero",
+               v["featured"] == "Forbidden Flower", v["featured"])
 
-            step(label + " click a cover")
+            step(label + " a held back title")
             page.locator("#shelfGrid .card").first.click()
+            page.wait_for_timeout(220)
+            v["locked"] = page.evaluate("""() => ({
+              toasts: document.querySelectorAll('#toastDock .toast').length,
+              readerHidden: document.getElementById('reader').hidden })""")
+            ok(f"{label} a held back title does not open the reader",
+               v["locked"]["readerHidden"] and v["locked"]["toasts"] >= 1, v["locked"])
+
+            step(label + " open from the hero")
+            page.locator("#heroRead").click()
             page.wait_for_selector("#reader:not([hidden])")
             page.wait_for_function("() => document.querySelectorAll('#readerPage h2').length > 1")
             v["h2"] = page.locator("#readerPage h2").count()
@@ -124,7 +162,7 @@ def run():
                 "() => document.getElementById('readerTitle').textContent")
             v["words"] = page.evaluate(
                 "() => document.getElementById('readerPage').innerText.split(/\\s+/).length")
-            ok(f"{label} book renders headings", v["h2"] >= 1, v)
+            ok(f"{label} the featured book renders its ten sections", v["h2"] == 10, v["h2"])
             ok(f"{label} book renders real text", v["words"] > 800, v["words"])
             v["readerOverflow"] = overflow(page)
             ok(f"{label} reader no horizontal overflow",
@@ -152,7 +190,7 @@ def run():
         page = ctx.new_page()
         watch(page)
         page.goto(BASE, wait_until="networkidle")
-        page.locator("#shelfGrid .card").nth(3).click()   # walden, longest
+        page.locator("#heroRead").click()          # the featured book
         page.wait_for_selector("#reader:not([hidden])")
         page.wait_for_function("() => document.querySelectorAll('#readerPage h2').length > 0")
 
@@ -231,18 +269,19 @@ def run():
         # progress + persistence
         page.evaluate("() => { const s = document.getElementById('readerScroll');"
                       " s.scrollTop = s.scrollHeight * 0.42; }")
-        page.wait_for_timeout(900)
+        settle(page)
         pct = page.inner_text("#progressPct")
         state = page.evaluate("() => JSON.parse(localStorage.getItem('inkwell:reading:v1')||'{}')")
         report["progress"] = {"label": pct, "stored": state}
         ok("progress is measured and stored", pct not in ("0%", "100%"), pct)
         keys = list(state.keys())
-        ok("reading state is keyed by book", "walden" in keys, keys)
+        ok("reading state is keyed by book", "forbidden-flower" in keys, keys)
 
         step("progress stored")
         page.reload(wait_until="networkidle")
         page.wait_for_selector("#reader:not([hidden])")
         page.wait_for_function("() => document.querySelectorAll('#readerPage p').length > 3")
+        settle(page)
         restored = page.evaluate("() => document.getElementById('readerScroll').scrollTop")
         report["restored"] = restored
         ok("position is restored after a reload", restored > 100, restored)
@@ -316,8 +355,9 @@ def run():
             'modeBtn','typeBtn','notesBtn','findBtn','ttsBtn','topBtn','copyBtn','drawer',
             'drawerClose','scrim','menuBtn','shelfList','tocWrap','toastDock','aboutDialog',
             'aboutOpen','aboutClose','storageWarn','countLabel','readerTitle','readerAuthor',
-            'shelfGrid','resumeCard','resumeTitle','resumeMeta','resumePct','resumeBar',
-            'resumeCover','resumeCoverTitle','resumeCoverAuthor'];
+            'shelfGrid','heroCover','heroGlyph','heroCoverAuthor','heroTitle','heroByline',
+            'heroLede','heroMeta','heroProgress','heroBar','heroPct','heroRead','heroToc',
+            'paletteOpen','palette','paletteInput','paletteList','paletteEmpty'];
           return ids.filter(id => !document.getElementById(id));
         }""")
         ok("every id the script asks for exists", not needed, needed)
@@ -358,6 +398,7 @@ def run():
     ok("no page errors", not report["pageerrors"], report["pageerrors"][:5])
     ok("no failed requests", not report["requests"], report["requests"][:5])
 
+    report["features"] = features()
     report["heavy"] = heavy_book()
     report["a11y"] = a11y()
     report["offline"] = offline()
@@ -432,12 +473,105 @@ def performance():
     return report
 
 
-def heavy_book():
-    """Walden, the largest excerpt, opened from cold.
+def features():
+    """The home surface: the featured hero and the Ctrl K command palette.
 
-    Every other check opens the first card, which is Moby-Dick at 9,363
-    words. This is the 29,550 word one, where the parse and the render are
-    at their worst, so the budget belongs here rather than on a small book.
+    One desktop pass. The rail is already checked at every viewport above,
+    so this is about the two things the redesign added: the hero as the way
+    in, and the palette as the shelf's jump list.
+    """
+    step("hero and palette pass")
+    out = {"console": [], "pageerrors": [], "requests": []}
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        page = browser.new_context(viewport={"width": 1440, "height": 900}).new_page()
+        watch(page)
+        page.goto(BASE, wait_until="networkidle")
+        page.wait_for_selector("#shelfGrid .card")
+
+        out["hero"] = page.evaluate("""() => ({
+          title: document.getElementById('heroTitle').textContent,
+          glyph: document.getElementById('heroGlyph').textContent,
+          lede: document.getElementById('heroLede').textContent.length,
+          meta: document.querySelectorAll('#heroMeta li').length,
+          read: document.getElementById('heroRead').textContent,
+          toc: document.getElementById('heroToc').textContent,
+          count: document.getElementById('countLabel').textContent })""")
+        ok("the hero carries the featured book", out["hero"]["title"] == "Forbidden Flower"
+           and out["hero"]["glyph"] == "禁花", out["hero"])
+        ok("the hero carries a lede, a meta line and two actions",
+           out["hero"]["lede"] > 40 and out["hero"]["meta"] >= 4
+           and bool(out["hero"]["read"]) and bool(out["hero"]["toc"]), out["hero"])
+        ok("the shelf count states what is ready", "ready" in out["hero"]["count"],
+           out["hero"]["count"])
+
+        page.keyboard.press("Control+k")
+        page.wait_for_timeout(150)
+        out["palette"] = page.evaluate("""() => ({
+          open: document.getElementById('palette').open,
+          items: document.querySelectorAll('#paletteList .palette-item').length,
+          locked: document.querySelectorAll('#paletteList .palette-item.is-locked').length })""")
+        ok("Ctrl K opens the palette on the shelf", out["palette"]["open"]
+           and out["palette"]["items"] >= 6, out["palette"])
+
+        page.fill("#paletteInput", "walden")
+        page.wait_for_timeout(120)
+        out["filter"] = page.evaluate(
+            "() => Array.from(document.querySelectorAll('#paletteList .palette-item-label'))"
+            ".map((e) => e.textContent)")
+        ok("the palette filters to the typed title", out["filter"] == ["Walden"], out["filter"])
+
+        page.keyboard.press("Enter")
+        page.wait_for_timeout(200)
+        out["enterLocked"] = page.evaluate("""() => ({
+          open: document.getElementById('palette').open,
+          readerHidden: document.getElementById('reader').hidden,
+          toasts: document.querySelectorAll('#toastDock .toast').length })""")
+        ok("running a held back title from the palette toasts, not opens",
+           not out["enterLocked"]["open"] and out["enterLocked"]["readerHidden"]
+           and out["enterLocked"]["toasts"] >= 1, out["enterLocked"])
+
+        page.keyboard.press("Control+k")
+        page.wait_for_timeout(120)
+        page.keyboard.press("Enter")
+        page.wait_for_selector("#reader:not([hidden])")
+        page.wait_for_function("() => document.querySelectorAll('#readerPage h2').length > 1")
+        out["started"] = page.evaluate(
+            "() => document.getElementById('readerTitle').textContent")
+        ok("the palette starts the featured book", out["started"] == "Forbidden Flower",
+           out["started"])
+        page.locator("#closeBtn").click()
+        page.wait_for_selector("#shelfGrid .card", state="visible")
+
+        page.locator("#heroToc").click()
+        page.wait_for_selector("#reader:not([hidden])")
+        page.wait_for_timeout(500)
+        out["toc"] = page.evaluate("""() => ({
+          drawer: document.getElementById('drawer').getAttribute('data-open'),
+          tocVisible: !document.getElementById('tocWrap').hidden,
+          items: document.querySelectorAll('#tocList .toc-item').length })""")
+        ok("See contents opens the book with its contents showing",
+           out["toc"]["drawer"] == "true" and out["toc"]["tocVisible"]
+           and out["toc"]["items"] >= 114, out["toc"])
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(150)
+        page.keyboard.press("Escape")
+
+        browser.close()
+
+    errs = [c for c in out["console"] if c.startswith("error")]
+    ok("the hero and palette raise no console errors", not errs, errs[:5])
+    ok("the hero and palette raise no page errors", not out["pageerrors"],
+       out["pageerrors"][:5])
+    return out
+
+
+def heavy_book():
+    """The featured book, the only one shipped, opened from cold.
+
+    Forbidden Flower is 126,568 words across 10 sections and 114 chapters,
+    so the parse and the render are at their worst here, and the budget
+    belongs on the one book that actually ships rather than a small excerpt.
     """
     step("largest book pass")
     report = {"console": [], "pageerrors": [], "requests": []}
@@ -471,10 +605,7 @@ def heavy_book():
             return out;
           };
         }""")
-        report["slug"] = page.evaluate("""() => {
-          const c = document.querySelector('#shelfGrid .card[data-slug="walden"]');
-          return c ? 'walden' : null; }""")
-        page.locator('#shelfGrid .card[data-slug="walden"]').click()
+        page.locator("#heroRead").click()
         page.wait_for_function(
             "() => document.querySelectorAll('#readerPage p').length > 3", timeout=20000)
         report["words"] = page.evaluate(
@@ -501,8 +632,10 @@ def heavy_book():
     ok("the largest book is parsed once",
        report["state"]["skeletons"] == 0 and report["state"]["text"] > 100000, report["state"])
     # The parse is the only part the application controls, and it is the part
-    # that scales with book length. The fetch is the host's problem.
-    ok("the largest book parses in under 150ms", report["phases"]["parseMs"] < 150,
+    # that scales with book length. Forbidden Flower is ~690 kB of Markdown
+    # (126k words), so the budget is set against the one book that ships and
+    # measured, not assumed: it parses in a little over 200ms.
+    ok("the largest book parses in under 400ms", report["phases"]["parseMs"] < 400,
        report["phases"])
     ok("the largest book is fetched whole", report["phases"]["bytes"] > 150000,
        report["phases"])
@@ -526,7 +659,7 @@ def a11y():
         page.wait_for_selector("#shelfGrid .card", timeout=10000)
         # Most of these controls live in the reader, so a book has to be open
         # before any of them is clickable.
-        page.locator("#shelfGrid .card").nth(3).click()
+        page.locator("#heroRead").click()
         page.wait_for_function(
             "() => document.querySelectorAll('#readerPage p').length > 3", timeout=15000)
 
@@ -589,7 +722,7 @@ def a11y():
         shelf_h1 = page.evaluate(
             "() => document.querySelectorAll('#main h1').length")
         ok("one heading on the shelf", shelf_h1 == 1, shelf_h1)
-        page.locator("#shelfGrid .card").nth(3).click()
+        page.locator("#heroRead").click()
         page.wait_for_function(
             "() => document.querySelectorAll('#readerPage p').length > 3", timeout=15000)
         views = page.evaluate("""() => {
@@ -645,7 +778,7 @@ def offline():
         page.goto((ROOT / "index.html").as_uri(), wait_until="load", timeout=25000)
         page.wait_for_selector("#shelfGrid .card", timeout=10000)
         report["cards"] = page.locator("#shelfGrid .card").count()
-        page.locator("#shelfGrid .card").nth(3).click()
+        page.locator("#heroRead").click()
         page.wait_for_function(
             "() => document.querySelectorAll('#readerPage p').length > 3", timeout=15000)
         report["words"] = page.evaluate(
@@ -665,7 +798,7 @@ def offline():
             "() => JSON.parse(localStorage.getItem('inkwell:reading:v1') || '{}')")
         browser.close()
 
-    ok("offline file:// opens the shelf", report["cards"] == 5, report["cards"])
+    ok("offline file:// opens the shelf", report["cards"] == 4, report["cards"])
     ok("offline file:// renders real text", report["words"] > 2000, report["words"])
     ok("offline file:// shows the full reading bar", report["barH"] == 56, report["barH"])
     state = next(iter(report["state"].values())) if report["state"] else {}

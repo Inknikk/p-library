@@ -1,6 +1,7 @@
 # DESIGN.md: inkwell
 
-The design system for a four book shelf with a Markdown reader. This file is
+The design system for a one-book shelf with four titles held back on the
+rail, plus a Markdown reader. This file is
 the contract: if a value is not here and not in `css/tokens.css`, it does not
 exist. Component stylesheets reference the semantic token layer only.
 
@@ -54,9 +55,9 @@ Semantic aliases: `--bg`, `--bg-sunk`, `--surface`, `--surface-raised`,
 `--mark-wash`, `--focus`.
 
 **Accent budget.** Jade appears on: primary buttons, active icons, the
-brand mark, the reading progress hairline, active shelf row, pressed chips,
-and focus rings. Nowhere else. There is no second accent. Amber appears
-only where a reader has marked text.
+brand mark, the reading progress hairline and its readout, active shelf
+row, pressed chips, and focus rings. Nowhere else. There is no second
+accent. Amber appears only where a reader has marked text.
 
 ---
 
@@ -142,9 +143,11 @@ offset. A flat shadow reads as a bug, not as restraint.
 | Component | Note |
 | --- | --- |
 | `.appbar` | one line, capped at 64px, sticky |
-| `.card` | a cover plus title, author and progress. Covers are the right component for a book, which is why this is not a list of thin rows |
-| `.cover` | typographic by default, `data-tone` picks one of five grounds. Real artwork is a drop in at `assets/covers/<slug>.jpg` |
-| `.resume` | the one filled panel on the page, because continue reading is the only reason most people come back |
+| `.hero` | the one featured book: a cover that carries a Chinese seal glyph, the English title beside it, byline, lede, meta, and a progress readout. The only filled, full width panel on the shelf |
+| `.rail` | the rest of the shelf: a heading, a count line, and an even grid of locked covers. Same `.card` as the shelf, held back with `[data-locked]` |
+| `.card` | a cover plus title, author and progress. Covers are the right component for a book, which is why this is not a list of thin rows. A locked card dims its cover, carries a lock badge, and click raises a toast instead of opening |
+| `.cover` | typographic by default, `data-tone` picks one of five grounds. Real artwork is a drop in at `assets/covers/<slug>.jpg`. `.cover-glyph` is a decorative Chinese seal for the featured cover only |
+| `.palette` | the shelf's Ctrl K command palette. A jump list over the shelf: the featured book, its contents, the locked titles, About. Reader keeps Ctrl K for find |
 | `.btn`, `.icon-btn` | 44px minimum target, the icon box stays 40px and a pseudo element carries the extra 2px on each side |
 | `.chip`, `.swatch` | the background switcher, each chip carrying its real ground |
 | `.seg` | segmented control for type, size, leading, measure. The chosen option is a pressed state, never a colour swap |
@@ -166,7 +169,7 @@ duration comes from `--dur-fast` (120ms), `--dur` (200ms) or `--dur-slow`
 
 - **Press**: `scale(0.96)`, never below 0.95, on every interactive element.
 - **Shelf entrance**: a 10px rise, 380ms, staggered 40ms, capped at 220ms
-  so the fourth card is not waiting on the tenth.
+  so the fifth card is not waiting on the tenth.
 - **Drawer**: 380ms `ease-out` transform, nothing else.
 - **Reader**: no entrance animation anywhere. Text that fades in is text you
   wait for, and a reader who opens a book at 2am does not want a curtain.
@@ -228,8 +231,8 @@ The reader takes untrusted text and puts it in the DOM, so:
 | Rejected | Why |
 | --- | --- |
 | Warm cream chrome | The design read is cold smoke. A cream shelf fights every reading surface the reader can pick. |
-| Hero with `min-height: 100dvh` | Four books do not need a curtain. The resume card is the first thing in the viewport. |
-| Marquee and carousel | A shelf of four is not a feed. |
+| Hero with `min-height: 100dvh` | A full viewport is a curtain before the shelf. The featured book leads the page, but the rail stays in reach without a scroll |
+| Marquee and carousel | A shelf of five is not a feed. |
 | Card grid of thin rows | Books have covers. Covers are the component. |
 | Floating action button | Nothing here needs one primary floating action. |
 | Glassmorphism and mesh gradients | Neither survives a reading surface, and both cost contrast. |
