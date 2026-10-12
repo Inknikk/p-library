@@ -339,22 +339,25 @@
 
     function applyMarks() {
       marks.forEach(function (m) {
-        if (findText(dom.page, m.text)) return;
         wrapFirst(dom.page, m.text, m.id);
       });
     }
 
-    function findText(root, needle) {
+    function findTextNode(root, needle) {
       var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
       var n;
-      while ((n = walker.nextNode())) if (n.nodeValue.indexOf(needle) > -1) return n;
+      while ((n = walker.nextNode())) {
+        if (n.parentNode && n.parentNode.closest && n.parentNode.closest(".rd-mark")) continue;
+        if (n.nodeValue.indexOf(needle) > -1) return n;
+      }
       return null;
     }
 
     function wrapFirst(root, needle, id) {
-      var node = findText(root, needle);
+      var node = findTextNode(root, needle);
       if (!node) return false;
       var at = node.nodeValue.indexOf(needle);
+      if (at < 0) return false;
       var mark = document.createElement("mark");
       mark.className = "rd-mark";
       mark.setAttribute("data-id", id || "");
