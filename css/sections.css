@@ -481,6 +481,16 @@
 }
 .reader[data-mode="focus"] .reader-scroll { scroll-behavior: auto; }
 
+/* Focus mode has no toolbar, so on a touch screen there was no way out:
+   the bar was transparent and pointer-events:none, the drawer closed, and
+   the only exit was the R key, which a phone does not have. A tap on the
+   page now reveals the chrome again for a few seconds. */
+.reader[data-mode="focus"].chrome-reveal .reader-bar {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
 /* ==================================================================== *
  *  RESPONSIVE
  *  Declared per section, not left to chance.
@@ -517,7 +527,20 @@
   .grid { grid-template-columns: 1fr 1fr; }
   .card-title { font-size: var(--fs-200); }
   .shelf-lede { font-size: var(--fs-200); }
-  .reader-title { max-width: 12ch; }
+  .reader-title { max-width: 10ch; margin-inline: var(--space-1); }
+
+  /* A 320px phone cannot fit the app bar's count label next to the brand
+     and the About button, so the page scrolled sideways by 25px. The count
+     is redundant with the shelf on screen, so it goes. */
+  #countLabel { display: none; }
+  .appbar { gap: var(--space-3); }
+  .appbar-tools .btn { padding-inline: var(--space-3); }
+
+  /* Six tap-size targets plus the title and the percentage overflow a 320px
+     bar (the Type button was pushed 47px off screen). Tighten the gaps and
+     drop the redundant percentage so every control fits. */
+  .reader-bar { gap: var(--space-1); padding-inline: var(--space-1); }
+  #progressPct { display: none; }
 }
 
 /* Desktop site shown on a phone. The layout gate hard fails on horizontal

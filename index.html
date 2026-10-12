@@ -307,7 +307,7 @@
 <!-- ==================================================================== -->
 <!-- DRAWER: the shelf on the way in, the contents once a book is open     -->
 <!-- ==================================================================== -->
-<aside class="drawer" id="drawer" data-open="false" aria-label="Shelf and contents">
+<aside class="drawer" id="drawer" data-open="false" aria-hidden="true" inert aria-label="Shelf and contents">
   <div class="drawer-head">
     <span class="label">p library</span>
     <button type="button" class="icon-btn" id="drawerClose" aria-label="Close the panel">
@@ -376,7 +376,7 @@
     <div id="tocList"></div>
   </div>
 </aside>
-<div class="scrim" id="scrim" data-open="false"></div>
+<div class="scrim" id="scrim" data-open="false" aria-hidden="true"></div>
 
 <div class="toast-dock" id="toastDock" role="status" aria-live="polite"></div>
 

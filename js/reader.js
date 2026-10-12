@@ -132,9 +132,12 @@
     var observer = null;
     var speech = null;
     var chromeTimer = null;
+    var focusChromeTimer = null;
     var saveTimer = null;
     var sections = [];
     var activeSection = null;
+    var navLock = 0;
+    var navUnlockTimer = null;
 
     /* ---------------- toasts ---------------- */
     function toast(message, tone) {
@@ -169,8 +172,11 @@
     /* ---------------- drawer ---------------- */
     function setDrawer(open) {
       dom.drawer.setAttribute("data-open", open ? "true" : "false");
+      dom.drawer.setAttribute("aria-hidden", open ? "false" : "true");
       dom.scrim.setAttribute("data-open", open ? "true" : "false");
+      dom.scrim.setAttribute("aria-hidden", open ? "false" : "true");
       dom.menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      if (open) { dom.drawer.removeAttribute("inert"); } else { dom.drawer.setAttribute("inert", ""); }
       if (open) {
         var focusable = dom.drawer.querySelector("button, a, input");
         if (focusable) focusable.focus();
@@ -218,15 +224,14 @@
     function buildToc() {
       sections = Array.prototype.slice.call(dom.page.querySelectorAll("h2, h3"));
       dom.tocList.innerHTML = "";
-      sections.forEach(function (h) {
+      sections.forEach(function (h, i) {
         var btn = document.createElement("button");
         btn.type = "button";
         btn.className = "toc-item";
         btn.textContent = h.textContent;
         btn.addEventListener("click", function () {
-          h.scrollIntoView({ behavior: "smooth", block: "start" });
+          navToSection(i);
           setDrawer(false);
-          setActiveSection(h.id);
         });
         dom.tocList.appendChild(btn);
       });
@@ -236,9 +241,23 @@
     }
 
     function onSection(entries) {
+      if (Date.now() < navLock) return;
       entries.forEach(function (e) {
         if (e.isIntersecting) setActiveSection(e.target.id);
       });
+    }
+
+    /* Jump to a section, label it, and mute the scroll-spy for the length of
+       the smooth scroll. Without this the observer fired for the sections the
+       viewport passed over and the chapter label flickered between neighbours
+       (e.g. Prev showed Chapter 2 then snapped back to Chapter 3). */
+    function navToSection(index) {
+      if (index < 0 || index >= sections.length) return;
+      navLock = Date.now() + 1200;
+      sections[index].scrollIntoView({ behavior: "smooth", block: "start" });
+      setActiveSection(sections[index].id);
+      if (navUnlockTimer) clearTimeout(navUnlockTimer);
+      navUnlockTimer = setTimeout(function () { navLock = 0; }, 1200);
     }
 
     function setActiveSection(id) {
@@ -250,6 +269,22 @@
       dom.sectionNow.textContent = sections.findIndex(function (h) { return h.id === id; }) > -1
         ? sections[sections.findIndex(function (h) { return h.id === id; })].textContent
         : "";
+    }
+
+    /* Index of the section currently at the top of the reader. The old fixed
+       80px / 120px thresholds were smaller than the first heading's on-screen
+       offset (~172px), so the probe returned -1 at the top of a book and the
+       prev / next buttons jumped to the wrong place. A viewport-relative line
+       (with a floor for short screens) always finds a current section. */
+    function currentSectionIndex() {
+      if (!sections.length) return -1;
+      var limit = scroll.getBoundingClientRect().top + Math.max(140, scroll.clientHeight * 0.3);
+      var idx = 0;
+      for (var i = 0; i < sections.length; i += 1) {
+        if (sections[i].getBoundingClientRect().top <= limit) idx = i;
+        else break;
+      }
+      return idx;
     }
 
     /* ---------------- find ---------------- */
@@ -764,10 +799,25 @@
       measure();
       var at = progress;
       if (mode === "focus") setPanel(null);
+      if (mode !== "focus") {
+        dom.reader.classList.remove("chrome-reveal");
+        if (focusChromeTimer) { clearTimeout(focusChromeTimer); focusChromeTimer = null; }
+      }
       dom.reader.setAttribute("data-mode", mode);
       dom.modeBtn.setAttribute("aria-pressed", mode === "focus" ? "true" : "false");
       var max = scroll.scrollHeight - scroll.clientHeight;
       scroll.scrollTop = max > 8 ? at * max : 0;
+    }
+
+    /* In focus mode the chrome is hidden, so on touch there is no visible
+       way back. A tap reveals the toolbar for a few seconds. */
+    function revealFocusChrome() {
+      if (dom.reader.getAttribute("data-mode") !== "focus") return;
+      dom.reader.classList.add("chrome-reveal");
+      if (focusChromeTimer) clearTimeout(focusChromeTimer);
+      focusChromeTimer = setTimeout(function () {
+        dom.reader.classList.remove("chrome-reveal");
+      }, 3000);
     }
 
     /* ---------------- wiring ---------------- */
@@ -791,16 +841,13 @@
       dom.modeBtn.addEventListener("click", function () {
         setMode(dom.reader.getAttribute("data-mode") === "focus" ? "reader" : "focus");
       });
+      dom.reader.addEventListener("pointerdown", revealFocusChrome);
       dom.fsBtn.addEventListener("click", toggleFullscreen);
       if (dom.chapterPrevBtn) {
         dom.chapterPrevBtn.addEventListener("click", function () {
-          var idx = -1;
-          for (var i = 0; i < sections.length; i += 1) {
-            if (sections[i].getBoundingClientRect().top <= 80) idx = i;
-            else break;
-          }
+          var idx = currentSectionIndex();
           if (idx > 0) {
-            sections[idx - 1].scrollIntoView({ behavior: "smooth", block: "start" });
+            navToSection(idx - 1);
           } else {
             toast("Already at the first chapter");
           }
@@ -808,18 +855,12 @@
       }
       if (dom.chapterNextBtn) {
         dom.chapterNextBtn.addEventListener("click", function () {
-          var idx = -1;
-          for (var i = 0; i < sections.length; i += 1) {
-            if (sections[i].getBoundingClientRect().top <= 120) idx = i;
-          }
-          if (idx >= 0 && idx < sections.length - 1) {
-            sections[idx + 1].scrollIntoView({ behavior: "smooth", block: "start" });
-          } else if (sections.length > 0 && idx === sections.length - 1) {
-            toast("Already at the last chapter");
-          } else if (sections.length > 0) {
-            sections[0].scrollIntoView({ behavior: "smooth", block: "start" });
+          if (!sections.length) { toast("No chapters found"); return; }
+          var idx = currentSectionIndex();
+          if (idx < sections.length - 1) {
+            navToSection(idx + 1);
           } else {
-            toast("No chapters found");
+            toast("Already at the last chapter");
           }
         });
       }
