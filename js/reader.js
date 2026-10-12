@@ -226,6 +226,7 @@
         btn.addEventListener("click", function () {
           h.scrollIntoView({ behavior: "smooth", block: "start" });
           setDrawer(false);
+          setActiveSection(h.id);
         });
         dom.tocList.appendChild(btn);
       });
